@@ -62,10 +62,15 @@ const API_BASE_MAP = {
   'yi': 'https://api.lingyiwanwu.com/v1',
   'stepfun': 'https://api.stepfun.com/v1',
   'baichuan': 'https://api.baichuan-ai.com/v1',
+  'bytedance': 'https://ark.cn-beijing.volces.com/api/v3',
+  'tencent': 'https://hunyuan.tencentcloudapi.com',
+  'baidu': 'https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop',
   'groq': 'https://api.groq.com/openai/v1',
   'together': 'https://api.together.xyz/v1',
+  'fireworks': 'https://api.fireworks.ai/inference/v1',
   'voyageai': 'https://api.voyageai.com/v1',
-  'jina': 'https://api.jina.ai/v1'
+  'jina': 'https://api.jina.ai/v1',
+  'upstage': 'https://api.upstage.ai/v1'
 };
 
 async function fetchModels() {

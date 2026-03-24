@@ -107,10 +107,9 @@ function run() {
   const finalProvidersMap = new Map();
 
   data.forEach(p => {
-    const providerId = p.models[0].id.split('/')[0].toLowerCase();
-    const isOfficial = TOP_TIER_PROVIDERS.includes(providerId);
+    // Decision Rule: Only providers with a confirmed, non-Unknown native API URL are treated as Top-Tier
+    const isOfficial = p.nativeApiUrl && p.nativeApiUrl !== 'Unknown';
     
-    // Rule: If not top-tier, the provider is "OpenRouter"
     let targetProviderName = isOfficial ? p.name : 'OpenRouter';
     
     if (!finalProvidersMap.has(targetProviderName)) {

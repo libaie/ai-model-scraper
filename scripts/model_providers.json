@@ -953,7 +953,7 @@
     "name": "Baidu",
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=baidu.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop",
     "models": [
       {
         "id": "baidu/ernie-4.5-21b-a3b-thinking",
@@ -1068,7 +1068,7 @@
     "name": "Bytedance",
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=bytedance.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://ark.cn-beijing.volces.com/api/v3",
     "models": [
       {
         "id": "bytedance/ui-tars-1.5-7b",
@@ -7618,7 +7618,7 @@
     "name": "Tencent",
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=tencent.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://hunyuan.tencentcloudapi.com",
     "models": [
       {
         "id": "tencent/hunyuan-a13b-instruct",
@@ -7798,7 +7798,7 @@
     "name": "Upstage",
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=upstage.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://api.upstage.ai/v1",
     "models": [
       {
         "id": "upstage/solar-pro-3",

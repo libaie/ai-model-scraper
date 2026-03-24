@@ -1,203 +1,5 @@
 [
   {
-    "name": "Alibaba",
-    "type": [
-      "LLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=alibaba.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 1,
-    "families": [
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "alibaba/tongyi-deepresearch-30b-a3b",
-            "name": "Tongyi DeepResearch 30B A3B",
-            "description": "统一DeepResearch是统一实验室开发的代理大语言模型，总参数300亿个，每个token只激活30亿个。它针对长期、深度信息搜索任务进行了优化，并在 Humanity's Last Exam、BrowserComp、BrowserComp-ZH、WebWalkerQA、GAIA、xbench-DeepSearch 和 FRAMES 等基准测试中提供最先进的性能。与之前的模型相比，这使得它在复杂的代理搜索、推理和多步骤问题解决方面表现出色。\n\n该模型包括一个全自动合成数据管道，用于可扩展的预训练、微调和强化学习。它使用对不同代理数据的大规模持续预训练来增强推理并保持新鲜感。它还具有端到端同策略 RL 和定制的组相对策略优化，包括令牌级梯度和用于稳定训练的负样本过滤。该模型支持 ReAct 进行核心能力检查，并支持基于 IterResearch 的“Heavy”模式，通过测试时间扩展实现最大性能。它非常适合高级研究代理、工具使用和繁重的推理工作流程。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.00000009",
-              "completion": "0.00000045",
-              "input_cache_read": "0.00000009"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Amazon",
-    "type": [
-      "LLM",
-      "VLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=amazon.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 5,
-    "families": [
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "amazon/nova-2-lite-v1",
-            "name": "Amazon: Nova 2 Lite",
-            "description": "Nova 2 Lite 是一种快速、经济高效的推理模型，适用于日常工作负载，可以处理文本、图像和视频以生成文本。 \n\nNova 2 Lite 在处理文档、从视频中提取信息、生成代码、提供准确的答案以及自动化多步骤代理工作流程方面展现了出色的功能。",
-            "contextLength": 1000000,
-            "pricing": {
-              "prompt": "0.0000003",
-              "completion": "0.0000025"
-            },
-            "architecture": {
-              "modality": "text+image+file+video->text",
-              "input_modalities": [
-                "text",
-                "image",
-                "video",
-                "file"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Nova",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text",
-              "video"
-            ]
-          },
-          {
-            "id": "amazon/nova-premier-v1",
-            "name": "Amazon: Nova Premier 1.0",
-            "description": "Amazon Nova Premier 是 Amazon 多模式模型中最有能力完成复杂推理任务的模型，也是提炼自定义模型的最佳老师。",
-            "contextLength": 1000000,
-            "pricing": {
-              "prompt": "0.0000025",
-              "completion": "0.0000125",
-              "input_cache_read": "0.000000625"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Nova",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "amazon/nova-lite-v1",
-            "name": "Amazon: Nova Lite 1.0",
-            "description": "Amazon Nova Lite 1.0 是 Amazon 的一种非常低成本的多模式模型，专注于快速处理图像、视频和文本输入以生成文本输出。 Amazon Nova Lite 可以高精度处理实时客户交互、文档分析和可视化问答任务。\n\n通过 300K 令牌的输入上下文，它可以在单个输入中分析多个图像或长达 30 分钟的视频。",
-            "contextLength": 300000,
-            "pricing": {
-              "prompt": "0.00000006",
-              "completion": "0.00000024"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Nova",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "amazon/nova-micro-v1",
-            "name": "Amazon: Nova Micro 1.0",
-            "description": "Amazon Nova Micro 1.0 是纯文本模型，能够以极低的成本提供 Amazon Nova 系列模型中最低的延迟响应。 Amazon Nova Micro 的上下文长度为 128K 令牌，并针对速度和成本进行了优化，擅长执行文本摘要、翻译、内容分类、交互式聊天和头脑风暴等任务。它具有简单的数学推理和编码能力。",
-            "contextLength": 128000,
-            "pricing": {
-              "prompt": "0.000000035",
-              "completion": "0.00000014"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Nova",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "amazon/nova-pro-v1",
-            "name": "Amazon: Nova Pro 1.0",
-            "description": "Amazon Nova Pro 1.0 是 Amazon 的一款功能强大的多模式模型，专注于为各种任务提供准确性、速度和成本的组合。截至 2024 年 12 月，它在视觉问答 (TextVQA) 和视频理解 (VATEX) 等关键基准测试中实现了最先进的性能。\n\nAmazon Nova Pro 在处理视觉和文本信息以及分析财务文档方面表现出强大的能力。\n\n**注意**：目前不支持视频输入。",
-            "contextLength": 300000,
-            "pricing": {
-              "prompt": "0.0000008",
-              "completion": "0.0000032"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Nova",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Anthropic",
     "type": [
       "VLM"
@@ -641,205 +443,6 @@
     ]
   },
   {
-    "name": "Arcee-ai",
-    "type": [
-      "LLM",
-      "VLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=arcee-ai.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 7,
-    "families": [
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "arcee-ai/trinity-large-preview:free",
-            "name": "Arcee AI: Trinity Large Preview (free)",
-            "description": "Trinity-Large-Preview 是 Arcee 的前沿规模开放权重语言模型，构建为 400B 参数稀疏专家混合，每个令牌有 13B 活动参数，使用 256 个专家路由中的 4 个。 \n\n它在创意写作、讲故事、角色扮演、聊天场景和实时语音帮助方面表现出色，比一般的推理模型通常更好。但我们也推出了一些较新的代理性能。它经过训练，可以在 OpenCode、Cline 和 Kilo Code 等代理工具中很好地导航，并处理复杂的工具链和长且充满约束的提示。 \n\n该架构本身支持长达 512k 令牌的超长上下文窗口，预览 API 目前在 128k 上下文中使用 8 位量化进行实际部署。 Trinity-Large-Preview 体现了 Arcee 效率第一的设计理念，提供了面向生产的前沿模型，具有开放权重和适合现实世界应用和实验的许可许可。",
-            "contextLength": 131000,
-            "pricing": {
-              "prompt": "0",
-              "completion": "0",
-              "request": "0",
-              "image": "0",
-              "web_search": "0",
-              "internal_reasoning": "0"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/trinity-mini:free",
-            "name": "Arcee AI: Trinity Mini (free)",
-            "description": "Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0",
-              "completion": "0"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/trinity-mini",
-            "name": "Arcee AI: Trinity Mini",
-            "description": "Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.000000045",
-              "completion": "0.00000015"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/spotlight",
-            "name": "Arcee AI: Spotlight",
-            "description": "Spotlight 是一个源自 Qwen2.5-VL 的 70 亿参数视觉语言模型，并由 Arcee AI 进行微调，用于执行严格的图像文本基础任务。它提供了一个 32k-token 上下文窗口，可实现丰富的多模式对话，将冗长的文档与一张或多张图像结合在一起。培训强调在消费级 GPU 上进行快速推理，同时保持强大的字幕、视觉问答和图表分析的准确性。因此，Spotlight 可以巧妙地融入代理工作流程中，其中需要即时解释屏幕截图、图表或 UI 模型。早期基准测试表明，它在流行的 VQA 和 POPE 对齐测试中匹配或超过了更大的 VLM，例如 LLaVA-1.6 13B。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.00000018",
-              "completion": "0.00000018"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "image",
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/maestro-reasoning",
-            "name": "Arcee AI: Maestro Reasoning",
-            "description": "Maestro Reasoning 是 Arcee 的旗舰分析模型：Qwen2.5-32B 的 32B 参数衍生模型，通过 DPO 和思想链 RL 进行调整，实现逐步逻辑。与早期的 7B 预览版相比，生产版 32B 将上下文窗口扩大到 128k 令牌，并将 MATH 和 GSM-8K 的通过率提高了一倍，同时还提高了代码完成的准确性。其指令风格鼓励结构化的“思想→答案”痕迹，可以根据用户偏好进行解析或隐藏。这种透明度与金融或医疗保健等以审计为重点的行业相得益彰，在这些行业中，了解推理路径很重要。在 Arcee Conductor 中，会自动选择 Maestro 来执行小型 SLM 反弹的复杂、多约束查询。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.0000009",
-              "completion": "0.0000033"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/virtuoso-large",
-            "name": "Arcee AI: Virtuoso Large",
-            "description": "Virtuoso‑Large 是 Arcee 的顶级通用 LLM，参数为 72B，旨在解决跨领域推理、创意写作和企业 QA 问题。与许多 70B 同行不同，它保留了从 Qwen2.5 继承的 128k 上下文，使其可以批量摄取书籍、代码库或财务文件。训练混合 DeepSeekR1 蒸馏、多周期监督微调和最终 DPO/RLHF 对齐阶段，在 BIG-Bench-Hard、GSM-8K 和长上下文 Needle-In-Haystack 测试中产生强大的性能。当其他 SLM 标记为低置信度时，企业使用 Virtuoso‑Large 作为 Conductor 管道中的“后备”大脑。尽管其规模很大，但积极的 KV 缓存优化将 8×H100 节点上的第一个令牌延迟保持在低秒范围内，使其成为实用的生产级动力源。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.00000075",
-              "completion": "0.0000012"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "arcee-ai/coder-large",
-            "name": "Arcee AI: Coder Large",
-            "description": "Coder‑Large 是 Qwen2.5‑Instruct 的 32B 参数后代，已在许可的 GitHub、CodeSearchNet 和综合错误修复语料库上接受了进一步培训。它支持 32k 上下文窗口，可在一次调用中实现多文件重构或长差异审查，并理解 30 多种编程语言，特别关注 TypeScript、Go 和 Terraform。内部基准测试显示，由于奖励可编译输出的强化通道，HumanEval 和具有竞争力的 BugFix 分数比 CodeLlama-34B-Python 提高了 5-8 分。默认情况下，该模型会随代码块一起发出结构化解释，使其适用于教育工具以及生产副驾驶场景。从成本角度来看，Together AI 的价格远低于专有的现有产品，因此团队可以在不失控支出的情况下扩展交互式编码。",
-            "contextLength": 32768,
-            "pricing": {
-              "prompt": "0.0000005",
-              "completion": "0.0000008"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Baidu",
     "type": [
       "LLM",
@@ -847,7 +450,7 @@
     ],
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=baidu.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop",
     "totalModels": 5,
     "families": [
       {
@@ -993,7 +596,7 @@
     ],
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=bytedance.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://ark.cn-beijing.volces.com/api/v3",
     "totalModels": 1,
     "families": [
       {
@@ -2474,407 +2077,6 @@
             "type": [
               "embeddings",
               "vector"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Meta-llama",
-    "type": [
-      "LLM",
-      "VLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=meta.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 14,
-    "families": [
-      {
-        "familyName": "Llama 3 系列",
-        "models": [
-          {
-            "id": "meta-llama/llama-3-8b-instruct",
-            "name": "Meta: Llama 3 8B Instruct",
-            "description": "Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 8B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
-            "contextLength": 8192,
-            "pricing": {
-              "prompt": "0.00000003",
-              "completion": "0.00000004"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3-70b-instruct",
-            "name": "Meta: Llama 3 70B Instruct",
-            "description": "Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
-            "contextLength": 8192,
-            "pricing": {
-              "prompt": "0.00000051",
-              "completion": "0.00000074"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      },
-      {
-        "familyName": "Llama 3.1 系列",
-        "models": [
-          {
-            "id": "meta-llama/llama-3.1-8b-instruct",
-            "name": "Meta: Llama 3.1 8B Instruct",
-            "description": "Meta 的最新型号（Llama 3.1）推出了多种尺寸和口味。这个 8B 指令调整版本快速高效。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3-1/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
-            "contextLength": 16384,
-            "pricing": {
-              "prompt": "0.00000002",
-              "completion": "0.00000005"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3.1-70b-instruct",
-            "name": "Meta: Llama 3.1 70B Instruct",
-            "description": "Meta 的最新型号（Llama 3.1）推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3-1/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.0000004",
-              "completion": "0.0000004"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      },
-      {
-        "familyName": "Llama 3.2 系列",
-        "models": [
-          {
-            "id": "meta-llama/llama-3.2-3b-instruct:free",
-            "name": "Meta: Llama 3.2 3B Instruct (free)",
-            "description": "Llama 3.2 3B 是一个拥有 30 亿参数的多语言大语言模型，针对对话生成、推理和摘要等高级自然语言处理任务进行了优化。它采用最新的变压器架构设计，支持八种语言，包括英语、西班牙语和印地语，并适用于其他语言。\n\nLlama 3.2 3B 模型经过 9 万亿个代币的训练，在指令遵循、复杂推理和工具使用方面表现出色。其均衡的性能使其成为需要跨多语言设置的文本生成准确性和效率的应用程序的理想选择。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0",
-              "completion": "0"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3.2-3b-instruct",
-            "name": "Meta: Llama 3.2 3B Instruct",
-            "description": "Llama 3.2 3B 是一个拥有 30 亿参数的多语言大语言模型，针对对话生成、推理和摘要等高级自然语言处理任务进行了优化。它采用最新的变压器架构设计，支持八种语言，包括英语、西班牙语和印地语，并适用于其他语言。\n\nLlama 3.2 3B 模型经过 9 万亿个代币的训练，在指令遵循、复杂推理和工具使用方面表现出色。其均衡的性能使其成为需要跨多语言设置的文本生成准确性和效率的应用程序的理想选择。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
-            "contextLength": 80000,
-            "pricing": {
-              "prompt": "0.000000051",
-              "completion": "0.00000034"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3.2-1b-instruct",
-            "name": "Meta: Llama 3.2 1B Instruct",
-            "description": "Llama 3.2 1B 是一个拥有 10 亿参数的语言模型，专注于高效执行自然语言任务，例如摘要、对话和多语言文本分析。其较小的尺寸使其能够在资源匮乏的环境中高效运行，同时保持强大的任务性能。\n\nLlama 1.3B 支持八种核心语言并可微调更多语言，非常适合寻求轻量级但功能强大的 AI 解决方案的企业或开发人员，这些解决方案可以在不同的多语言环境中运行，而无需大型模型的高计算需求。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
-            "contextLength": 60000,
-            "pricing": {
-              "prompt": "0.000000027",
-              "completion": "0.0000002"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3.2-11b-vision-instruct",
-            "name": "Meta: Llama 3.2 11B Vision Instruct",
-            "description": "Llama 3.2 11B Vision 是一个具有 110 亿个参数的多模态模型，旨在处理结合视觉和文本数据的任务。它在图像字幕和视觉问答等任务中表现出色，弥合了语言生成和视觉推理之间的差距。它在大量图像-文本对数据集上进行了预训练，在复杂、高精度的图像分析中表现良好。\n\n其将视觉理解与语言处理相结合的能力使其成为需要全面视觉语言人工智能应用的行业的理想解决方案，例如内容创建、人工智能驱动的客户服务和研究。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.000000049",
-              "completion": "0.000000049"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          }
-        ]
-      },
-      {
-        "familyName": "Llama 3.3 系列",
-        "models": [
-          {
-            "id": "meta-llama/llama-3.3-70b-instruct:free",
-            "name": "Meta: Llama 3.3 70B Instruct (free)",
-            "description": "Meta Llama 3.3 多语言大语言模型 (LLM) 是 70B（文本输入/文本输出）中的预训练和指令调整生成模型。 Llama 3.3 指令调整的纯文本模型针对多语言对话用例进行了优化，并且在常见行业基准上优于许多可用的开源和封闭式聊天模型。\n\n支持的语言：英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语。\n\n[模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)",
-            "contextLength": 65536,
-            "pricing": {
-              "prompt": "0",
-              "completion": "0"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-3.3-70b-instruct",
-            "name": "Meta: Llama 3.3 70B Instruct",
-            "description": "Meta Llama 3.3 多语言大语言模型 (LLM) 是 70B（文本输入/文本输出）中的预训练和指令调整生成模型。 Llama 3.3 指令调整的纯文本模型针对多语言对话用例进行了优化，并且在常见行业基准上优于许多可用的开源和封闭式聊天模型。\n\n支持的语言：英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语。\n\n[模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.0000001",
-              "completion": "0.00000032"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "llama3"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      },
-      {
-        "familyName": "Llama 4 系列",
-        "models": [
-          {
-            "id": "meta-llama/llama-4-maverick",
-            "name": "Meta: Llama 4 Maverick",
-            "description": "Llama 4 Maverick 17B Instruct (128E) 是 Meta 的高容量多模式语言模型，建立在专家混合 (MoE) 架构之上，每个前向传递有 128 位专家和 170 亿个活动参数（总共 400B）。它支持多语言文本和图像输入，并生成跨 12 种支持语言的多语言文本和代码输出。 Maverick 针对视觉语言任务进行了优化，并针对类似助手的行为、图像推理和通用多模式交互进行了指令调整。\n\nMaverick 具有原生多模态的早期融合和 100 万个令牌上下文窗口。它接受了公共、许可和元平台数据的精心组合训练，涵盖约 22 万亿代币，知识截止日期为 2024 年 8 月。Maverick 于 2025 年 4 月 5 日根据 Llama 4 社区许可证发布，适合需要高级多模式理解和高模型吞吐量的研究和商业应用。",
-            "contextLength": 1048576,
-            "pricing": {
-              "prompt": "0.00000015",
-              "completion": "0.0000006"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama4",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-4-scout",
-            "name": "Meta: Llama 4 Scout",
-            "description": "Llama 4 Scout 17B Instruct (16E) 是 Meta 开发的混合专家 (MoE) 语言模型，激活总共 109B 中的 170 亿个参数。它支持 12 种受支持语言的本机多模式输入（文本和图像）和多语言输出（文本和代码）。 Scout 专为助理式交互和视觉推理而设计，每次前向传递使用 16 名专家，上下文长度为 1000 万个令牌，训练语料库约为 40 万亿个令牌。\n\nLlama 4 Scout 专为高效率和本地或商业部署而构建，融合了早期融合以实现无缝模态集成。它经过指令调整，可用于多语言聊天、字幕和图像理解任务。它根据 Llama 4 社区许可证发布，最后一次接受了截至 2024 年 8 月的数据训练，并于 2025 年 4 月 5 日公开发布。",
-            "contextLength": 327680,
-            "pricing": {
-              "prompt": "0.00000008",
-              "completion": "0.0000003"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama4",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          }
-        ]
-      },
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "meta-llama/llama-guard-4-12b",
-            "name": "Meta: Llama Guard 4 12B",
-            "description": "Llama Guard 4 是 Llama 4 Scout 衍生的多模式预训练模型，针对内容安全分类进行了微调。与以前的版本类似，它可用于对 LLM 输入（提示分类）和 LLM 响应（响应分类）中的内容进行分类。它充当 LLM，在其输出中生成文本，指示给定的提示或响应是安全还是不安全，如果不安全，它还会列出违反的内容类别。\n\nLlama Guard 4 旨在防范标准化 MLCommons 危险分类法，并旨在支持多模式 Llama 4 功能。具体来说，它结合了之前 Llama Guard 模型的功能，提供英语和多种支持语言的内容审核，以及处理混合文本和图像提示（包括多个图像）的增强功能。此外，Llama Guard 4 集成到 Llama Moderations API 中，将强大的安全分类扩展到文本和图像。",
-            "contextLength": 163840,
-            "pricing": {
-              "prompt": "0.00000018",
-              "completion": "0.00000018"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "image",
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "meta-llama/llama-guard-3-8b",
-            "name": "Llama Guard 3 8B",
-            "description": "Llama Guard 3 是 Llama-3.1-8B 预训练模型，针对内容安全分类进行了微调。与以前的版本类似，它可用于对 LLM 输入（提示分类）和 LLM 响应（响应分类）中的内容进行分类。它充当法学硕士 - 它在输出中生成文本，指示给定的提示或响应是安全还是不安全，如果不安全，它还会列出违反的内容类别。\n\nLlama Guard 3 旨在防范 MLCommons 标准化危险分类法，并旨在支持 Llama 3.1 功能。具体来说，它提供 8 种语言的内容审核，并经过优化以支持搜索和代码解释器工具调用的安全性。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.00000002",
-              "completion": "0.00000006"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Llama3",
-              "instruct_type": "none"
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
             ]
           }
         ]
@@ -7739,7 +6941,7 @@
     ],
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=tencent.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://hunyuan.tencentcloudapi.com",
     "totalModels": 1,
     "families": [
       {
@@ -7781,7 +6983,7 @@
     ],
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=upstage.com",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
+    "nativeApiUrl": "https://api.upstage.ai/v1",
     "totalModels": 1,
     "families": [
       {
@@ -8173,414 +7375,6 @@
     ]
   },
   {
-    "name": "Xiaomi",
-    "type": [
-      "LLM",
-      "VLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=xiaomi.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 3,
-    "families": [
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "xiaomi/mimo-v2-omni",
-            "name": "Xiaomi: MiMo-V2-Omni",
-            "description": "MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。",
-            "contextLength": 262144,
-            "pricing": {
-              "prompt": "0.0000004",
-              "completion": "0.000002",
-              "input_cache_read": "0.00000008"
-            },
-            "architecture": {
-              "modality": "text+image+audio+video->text",
-              "input_modalities": [
-                "text",
-                "audio",
-                "image",
-                "video"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "🌌 全模态 (图/文/音/视)",
-            "type": [
-              "audio",
-              "image",
-              "text",
-              "video"
-            ]
-          },
-          {
-            "id": "xiaomi/mimo-v2-pro",
-            "name": "Xiaomi: MiMo-V2-Pro",
-            "description": "MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。",
-            "contextLength": 1048576,
-            "pricing": {
-              "prompt": "0.000001",
-              "completion": "0.000003",
-              "input_cache_read": "0.0000002"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "xiaomi/mimo-v2-flash",
-            "name": "Xiaomi: MiMo-V2-Flash",
-            "description": "MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。\n\n用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。",
-            "contextLength": 262144,
-            "pricing": {
-              "prompt": "0.00000009",
-              "completion": "0.00000029",
-              "input_cache_read": "0.000000045"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Z-ai",
-    "type": [
-      "LLM",
-      "VLM"
-    ],
-    "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=z-ai.com",
-    "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
-    "nativeApiUrl": "Unknown",
-    "totalModels": 11,
-    "families": [
-      {
-        "familyName": "其他型号/迭代",
-        "models": [
-          {
-            "id": "z-ai/glm-5-turbo",
-            "name": "Z.ai: GLM 5 Turbo",
-            "description": "GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。",
-            "contextLength": 202752,
-            "pricing": {
-              "prompt": "0.0000012",
-              "completion": "0.000004",
-              "input_cache_read": "0.00000024"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-5",
-            "name": "Z.ai: GLM 5",
-            "description": "GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。",
-            "contextLength": 202752,
-            "pricing": {
-              "prompt": "0.0000008",
-              "completion": "0.00000256",
-              "input_cache_read": "0.00000016"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.7-flash",
-            "name": "Z.ai: GLM 4.7 Flash",
-            "description": "作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。",
-            "contextLength": 202752,
-            "pricing": {
-              "prompt": "0.00000006",
-              "completion": "0.0000004",
-              "input_cache_read": "0.0000000100000002"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.7",
-            "name": "Z.ai: GLM 4.7",
-            "description": "GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。",
-            "contextLength": 202752,
-            "pricing": {
-              "prompt": "0.00000039",
-              "completion": "0.00000175",
-              "input_cache_read": "0.000000195"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.6v",
-            "name": "Z.ai: GLM 4.6V",
-            "description": "GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.0000003",
-              "completion": "0.0000009"
-            },
-            "architecture": {
-              "modality": "text+image+video->text",
-              "input_modalities": [
-                "image",
-                "text",
-                "video"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text",
-              "video"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.6",
-            "name": "Z.ai: GLM 4.6",
-            "description": "与GLM-4.5相比，这一代带来了几项关键改进：\n\n更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。\n卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。\n高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。\n更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。\n文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。",
-            "contextLength": 204800,
-            "pricing": {
-              "prompt": "0.00000039",
-              "completion": "0.0000019"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.5v",
-            "name": "Z.ai: GLM 4.5V",
-            "description": "GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-            "contextLength": 65536,
-            "pricing": {
-              "prompt": "0.0000006",
-              "completion": "0.0000018",
-              "input_cache_read": "0.00000011"
-            },
-            "architecture": {
-              "modality": "text+image->text",
-              "input_modalities": [
-                "text",
-                "image"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "👁️ 视觉多模态",
-            "type": [
-              "image",
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.5",
-            "name": "Z.ai: GLM 4.5",
-            "description": "GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.0000006",
-              "completion": "0.0000022",
-              "input_cache_read": "0.00000011"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.5-air:free",
-            "name": "Z.ai: GLM 4.5 Air (free)",
-            "description": "GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0",
-              "completion": "0"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4.5-air",
-            "name": "Z.ai: GLM 4.5 Air",
-            "description": "GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-            "contextLength": 131072,
-            "pricing": {
-              "prompt": "0.00000013",
-              "completion": "0.00000085",
-              "input_cache_read": "0.000000025"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          },
-          {
-            "id": "z-ai/glm-4-32b",
-            "name": "Z.ai: GLM 4 32B ",
-            "description": "GLM 4 32B 是一种经济高效的基础语言模型。\n\n它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。\n\n它是由 thudm 模型背后的同一实验室制造的。",
-            "contextLength": 128000,
-            "pricing": {
-              "prompt": "0.0000001",
-              "completion": "0.0000001"
-            },
-            "architecture": {
-              "modality": "text->text",
-              "input_modalities": [
-                "text"
-              ],
-              "output_modalities": [
-                "text"
-              ],
-              "tokenizer": "Other",
-              "instruct_type": null
-            },
-            "tag": "📝 语言模型",
-            "type": [
-              "text"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "OpenRouter",
     "type": [
       "EMBEDDING",
@@ -8591,7 +7385,7 @@
     "logoUrl": "https://www.google.com/s2/favicons?sz=128&domain=openrouter.ai",
     "openrouterApiUrl": "https://openrouter.ai/api/v1/chat/completions",
     "nativeApiUrl": "https://openrouter.ai/api/v1",
-    "totalModels": 66,
+    "totalModels": 107,
     "families": [
       {
         "familyName": "Ai21",
@@ -8760,6 +7554,37 @@
         ]
       },
       {
+        "familyName": "Alibaba",
+        "models": [
+          {
+            "id": "alibaba/tongyi-deepresearch-30b-a3b",
+            "name": "Tongyi DeepResearch 30B A3B",
+            "description": "统一DeepResearch是统一实验室开发的代理大语言模型，总参数300亿个，每个token只激活30亿个。它针对长期、深度信息搜索任务进行了优化，并在 Humanity's Last Exam、BrowserComp、BrowserComp-ZH、WebWalkerQA、GAIA、xbench-DeepSearch 和 FRAMES 等基准测试中提供最先进的性能。与之前的模型相比，这使得它在复杂的代理搜索、推理和多步骤问题解决方面表现出色。\n\n该模型包括一个全自动合成数据管道，用于可扩展的预训练、微调和强化学习。它使用对不同代理数据的大规模持续预训练来增强推理并保持新鲜感。它还具有端到端同策略 RL 和定制的组相对策略优化，包括令牌级梯度和用于稳定训练的负样本过滤。该模型支持 ReAct 进行核心能力检查，并支持基于 IterResearch 的“Heavy”模式，通过测试时间扩展实现最大性能。它非常适合高级研究代理、工具使用和繁重的推理工作流程。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.00000009",
+              "completion": "0.00000045",
+              "input_cache_read": "0.00000009"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          }
+        ]
+      },
+      {
         "familyName": "Allenai",
         "models": [
           {
@@ -8895,6 +7720,148 @@
         ]
       },
       {
+        "familyName": "Amazon",
+        "models": [
+          {
+            "id": "amazon/nova-2-lite-v1",
+            "name": "Amazon: Nova 2 Lite",
+            "description": "Nova 2 Lite 是一种快速、经济高效的推理模型，适用于日常工作负载，可以处理文本、图像和视频以生成文本。 \n\nNova 2 Lite 在处理文档、从视频中提取信息、生成代码、提供准确的答案以及自动化多步骤代理工作流程方面展现了出色的功能。",
+            "contextLength": 1000000,
+            "pricing": {
+              "prompt": "0.0000003",
+              "completion": "0.0000025"
+            },
+            "architecture": {
+              "modality": "text+image+file+video->text",
+              "input_modalities": [
+                "text",
+                "image",
+                "video",
+                "file"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Nova",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text",
+              "video"
+            ]
+          },
+          {
+            "id": "amazon/nova-premier-v1",
+            "name": "Amazon: Nova Premier 1.0",
+            "description": "Amazon Nova Premier 是 Amazon 多模式模型中最有能力完成复杂推理任务的模型，也是提炼自定义模型的最佳老师。",
+            "contextLength": 1000000,
+            "pricing": {
+              "prompt": "0.0000025",
+              "completion": "0.0000125",
+              "input_cache_read": "0.000000625"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Nova",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "amazon/nova-lite-v1",
+            "name": "Amazon: Nova Lite 1.0",
+            "description": "Amazon Nova Lite 1.0 是 Amazon 的一种非常低成本的多模式模型，专注于快速处理图像、视频和文本输入以生成文本输出。 Amazon Nova Lite 可以高精度处理实时客户交互、文档分析和可视化问答任务。\n\n通过 300K 令牌的输入上下文，它可以在单个输入中分析多个图像或长达 30 分钟的视频。",
+            "contextLength": 300000,
+            "pricing": {
+              "prompt": "0.00000006",
+              "completion": "0.00000024"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Nova",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "amazon/nova-micro-v1",
+            "name": "Amazon: Nova Micro 1.0",
+            "description": "Amazon Nova Micro 1.0 是纯文本模型，能够以极低的成本提供 Amazon Nova 系列模型中最低的延迟响应。 Amazon Nova Micro 的上下文长度为 128K 令牌，并针对速度和成本进行了优化，擅长执行文本摘要、翻译、内容分类、交互式聊天和头脑风暴等任务。它具有简单的数学推理和编码能力。",
+            "contextLength": 128000,
+            "pricing": {
+              "prompt": "0.000000035",
+              "completion": "0.00000014"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Nova",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "amazon/nova-pro-v1",
+            "name": "Amazon: Nova Pro 1.0",
+            "description": "Amazon Nova Pro 1.0 是 Amazon 的一款功能强大的多模式模型，专注于为各种任务提供准确性、速度和成本的组合。截至 2024 年 12 月，它在视觉问答 (TextVQA) 和视频理解 (VATEX) 等关键基准测试中实现了最先进的性能。\n\nAmazon Nova Pro 在处理视觉和文本信息以及分析财务文档方面表现出强大的能力。\n\n**注意**：目前不支持视频输入。",
+            "contextLength": 300000,
+            "pricing": {
+              "prompt": "0.0000008",
+              "completion": "0.0000032"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Nova",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          }
+        ]
+      },
+      {
         "familyName": "Anthracite-org",
         "models": [
           {
@@ -8916,6 +7883,192 @@
               ],
               "tokenizer": "Qwen",
               "instruct_type": "chatml"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          }
+        ]
+      },
+      {
+        "familyName": "Arcee-ai",
+        "models": [
+          {
+            "id": "arcee-ai/trinity-large-preview:free",
+            "name": "Arcee AI: Trinity Large Preview (free)",
+            "description": "Trinity-Large-Preview 是 Arcee 的前沿规模开放权重语言模型，构建为 400B 参数稀疏专家混合，每个令牌有 13B 活动参数，使用 256 个专家路由中的 4 个。 \n\n它在创意写作、讲故事、角色扮演、聊天场景和实时语音帮助方面表现出色，比一般的推理模型通常更好。但我们也推出了一些较新的代理性能。它经过训练，可以在 OpenCode、Cline 和 Kilo Code 等代理工具中很好地导航，并处理复杂的工具链和长且充满约束的提示。 \n\n该架构本身支持长达 512k 令牌的超长上下文窗口，预览 API 目前在 128k 上下文中使用 8 位量化进行实际部署。 Trinity-Large-Preview 体现了 Arcee 效率第一的设计理念，提供了面向生产的前沿模型，具有开放权重和适合现实世界应用和实验的许可许可。",
+            "contextLength": 131000,
+            "pricing": {
+              "prompt": "0",
+              "completion": "0",
+              "request": "0",
+              "image": "0",
+              "web_search": "0",
+              "internal_reasoning": "0"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/trinity-mini:free",
+            "name": "Arcee AI: Trinity Mini (free)",
+            "description": "Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0",
+              "completion": "0"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/trinity-mini",
+            "name": "Arcee AI: Trinity Mini",
+            "description": "Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.000000045",
+              "completion": "0.00000015"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/spotlight",
+            "name": "Arcee AI: Spotlight",
+            "description": "Spotlight 是一个源自 Qwen2.5-VL 的 70 亿参数视觉语言模型，并由 Arcee AI 进行微调，用于执行严格的图像文本基础任务。它提供了一个 32k-token 上下文窗口，可实现丰富的多模式对话，将冗长的文档与一张或多张图像结合在一起。培训强调在消费级 GPU 上进行快速推理，同时保持强大的字幕、视觉问答和图表分析的准确性。因此，Spotlight 可以巧妙地融入代理工作流程中，其中需要即时解释屏幕截图、图表或 UI 模型。早期基准测试表明，它在流行的 VQA 和 POPE 对齐测试中匹配或超过了更大的 VLM，例如 LLaVA-1.6 13B。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.00000018",
+              "completion": "0.00000018"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "image",
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/maestro-reasoning",
+            "name": "Arcee AI: Maestro Reasoning",
+            "description": "Maestro Reasoning 是 Arcee 的旗舰分析模型：Qwen2.5-32B 的 32B 参数衍生模型，通过 DPO 和思想链 RL 进行调整，实现逐步逻辑。与早期的 7B 预览版相比，生产版 32B 将上下文窗口扩大到 128k 令牌，并将 MATH 和 GSM-8K 的通过率提高了一倍，同时还提高了代码完成的准确性。其指令风格鼓励结构化的“思想→答案”痕迹，可以根据用户偏好进行解析或隐藏。这种透明度与金融或医疗保健等以审计为重点的行业相得益彰，在这些行业中，了解推理路径很重要。在 Arcee Conductor 中，会自动选择 Maestro 来执行小型 SLM 反弹的复杂、多约束查询。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.0000009",
+              "completion": "0.0000033"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/virtuoso-large",
+            "name": "Arcee AI: Virtuoso Large",
+            "description": "Virtuoso‑Large 是 Arcee 的顶级通用 LLM，参数为 72B，旨在解决跨领域推理、创意写作和企业 QA 问题。与许多 70B 同行不同，它保留了从 Qwen2.5 继承的 128k 上下文，使其可以批量摄取书籍、代码库或财务文件。训练混合 DeepSeekR1 蒸馏、多周期监督微调和最终 DPO/RLHF 对齐阶段，在 BIG-Bench-Hard、GSM-8K 和长上下文 Needle-In-Haystack 测试中产生强大的性能。当其他 SLM 标记为低置信度时，企业使用 Virtuoso‑Large 作为 Conductor 管道中的“后备”大脑。尽管其规模很大，但积极的 KV 缓存优化将 8×H100 节点上的第一个令牌延迟保持在低秒范围内，使其成为实用的生产级动力源。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.00000075",
+              "completion": "0.0000012"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "arcee-ai/coder-large",
+            "name": "Arcee AI: Coder Large",
+            "description": "Coder‑Large 是 Qwen2.5‑Instruct 的 32B 参数后代，已在许可的 GitHub、CodeSearchNet 和综合错误修复语料库上接受了进一步培训。它支持 32k 上下文窗口，可在一次调用中实现多文件重构或长差异审查，并理解 30 多种编程语言，特别关注 TypeScript、Go 和 Terraform。内部基准测试显示，由于奖励可编译输出的强化通道，HumanEval 和具有竞争力的 BugFix 分数比 CodeLlama-34B-Python 提高了 5-8 分。默认情况下，该模型会随代码块一起发出结构化解释，使其适用于教育工具以及生产副驾驶场景。从成本角度来看，Together AI 的价格远低于专有的现有产品，因此团队可以在不失控支出的情况下扩展交互式编码。",
+            "contextLength": 32768,
+            "pricing": {
+              "prompt": "0.0000005",
+              "completion": "0.0000008"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
             },
             "tag": "📝 语言模型",
             "type": [
@@ -9577,6 +8730,369 @@
               ],
               "tokenizer": "Other",
               "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          }
+        ]
+      },
+      {
+        "familyName": "Meta-llama",
+        "models": [
+          {
+            "id": "meta-llama/llama-guard-4-12b",
+            "name": "Meta: Llama Guard 4 12B",
+            "description": "Llama Guard 4 是 Llama 4 Scout 衍生的多模式预训练模型，针对内容安全分类进行了微调。与以前的版本类似，它可用于对 LLM 输入（提示分类）和 LLM 响应（响应分类）中的内容进行分类。它充当 LLM，在其输出中生成文本，指示给定的提示或响应是安全还是不安全，如果不安全，它还会列出违反的内容类别。\n\nLlama Guard 4 旨在防范标准化 MLCommons 危险分类法，并旨在支持多模式 Llama 4 功能。具体来说，它结合了之前 Llama Guard 模型的功能，提供英语和多种支持语言的内容审核，以及处理混合文本和图像提示（包括多个图像）的增强功能。此外，Llama Guard 4 集成到 Llama Moderations API 中，将强大的安全分类扩展到文本和图像。",
+            "contextLength": 163840,
+            "pricing": {
+              "prompt": "0.00000018",
+              "completion": "0.00000018"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "image",
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-4-maverick",
+            "name": "Meta: Llama 4 Maverick",
+            "description": "Llama 4 Maverick 17B Instruct (128E) 是 Meta 的高容量多模式语言模型，建立在专家混合 (MoE) 架构之上，每个前向传递有 128 位专家和 170 亿个活动参数（总共 400B）。它支持多语言文本和图像输入，并生成跨 12 种支持语言的多语言文本和代码输出。 Maverick 针对视觉语言任务进行了优化，并针对类似助手的行为、图像推理和通用多模式交互进行了指令调整。\n\nMaverick 具有原生多模态的早期融合和 100 万个令牌上下文窗口。它接受了公共、许可和元平台数据的精心组合训练，涵盖约 22 万亿代币，知识截止日期为 2024 年 8 月。Maverick 于 2025 年 4 月 5 日根据 Llama 4 社区许可证发布，适合需要高级多模式理解和高模型吞吐量的研究和商业应用。",
+            "contextLength": 1048576,
+            "pricing": {
+              "prompt": "0.00000015",
+              "completion": "0.0000006"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama4",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-4-scout",
+            "name": "Meta: Llama 4 Scout",
+            "description": "Llama 4 Scout 17B Instruct (16E) 是 Meta 开发的混合专家 (MoE) 语言模型，激活总共 109B 中的 170 亿个参数。它支持 12 种受支持语言的本机多模式输入（文本和图像）和多语言输出（文本和代码）。 Scout 专为助理式交互和视觉推理而设计，每次前向传递使用 16 名专家，上下文长度为 1000 万个令牌，训练语料库约为 40 万亿个令牌。\n\nLlama 4 Scout 专为高效率和本地或商业部署而构建，融合了早期融合以实现无缝模态集成。它经过指令调整，可用于多语言聊天、字幕和图像理解任务。它根据 Llama 4 社区许可证发布，最后一次接受了截至 2024 年 8 月的数据训练，并于 2025 年 4 月 5 日公开发布。",
+            "contextLength": 327680,
+            "pricing": {
+              "prompt": "0.00000008",
+              "completion": "0.0000003"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama4",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-guard-3-8b",
+            "name": "Llama Guard 3 8B",
+            "description": "Llama Guard 3 是 Llama-3.1-8B 预训练模型，针对内容安全分类进行了微调。与以前的版本类似，它可用于对 LLM 输入（提示分类）和 LLM 响应（响应分类）中的内容进行分类。它充当法学硕士 - 它在输出中生成文本，指示给定的提示或响应是安全还是不安全，如果不安全，它还会列出违反的内容类别。\n\nLlama Guard 3 旨在防范 MLCommons 标准化危险分类法，并旨在支持 Llama 3.1 功能。具体来说，它提供 8 种语言的内容审核，并经过优化以支持搜索和代码解释器工具调用的安全性。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.00000002",
+              "completion": "0.00000006"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "none"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.3-70b-instruct:free",
+            "name": "Meta: Llama 3.3 70B Instruct (free)",
+            "description": "Meta Llama 3.3 多语言大语言模型 (LLM) 是 70B（文本输入/文本输出）中的预训练和指令调整生成模型。 Llama 3.3 指令调整的纯文本模型针对多语言对话用例进行了优化，并且在常见行业基准上优于许多可用的开源和封闭式聊天模型。\n\n支持的语言：英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语。\n\n[模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)",
+            "contextLength": 65536,
+            "pricing": {
+              "prompt": "0",
+              "completion": "0"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.3-70b-instruct",
+            "name": "Meta: Llama 3.3 70B Instruct",
+            "description": "Meta Llama 3.3 多语言大语言模型 (LLM) 是 70B（文本输入/文本输出）中的预训练和指令调整生成模型。 Llama 3.3 指令调整的纯文本模型针对多语言对话用例进行了优化，并且在常见行业基准上优于许多可用的开源和封闭式聊天模型。\n\n支持的语言：英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语。\n\n[模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md)",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.0000001",
+              "completion": "0.00000032"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.2-3b-instruct:free",
+            "name": "Meta: Llama 3.2 3B Instruct (free)",
+            "description": "Llama 3.2 3B 是一个拥有 30 亿参数的多语言大语言模型，针对对话生成、推理和摘要等高级自然语言处理任务进行了优化。它采用最新的变压器架构设计，支持八种语言，包括英语、西班牙语和印地语，并适用于其他语言。\n\nLlama 3.2 3B 模型经过 9 万亿个代币的训练，在指令遵循、复杂推理和工具使用方面表现出色。其均衡的性能使其成为需要跨多语言设置的文本生成准确性和效率的应用程序的理想选择。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0",
+              "completion": "0"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.2-3b-instruct",
+            "name": "Meta: Llama 3.2 3B Instruct",
+            "description": "Llama 3.2 3B 是一个拥有 30 亿参数的多语言大语言模型，针对对话生成、推理和摘要等高级自然语言处理任务进行了优化。它采用最新的变压器架构设计，支持八种语言，包括英语、西班牙语和印地语，并适用于其他语言。\n\nLlama 3.2 3B 模型经过 9 万亿个代币的训练，在指令遵循、复杂推理和工具使用方面表现出色。其均衡的性能使其成为需要跨多语言设置的文本生成准确性和效率的应用程序的理想选择。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
+            "contextLength": 80000,
+            "pricing": {
+              "prompt": "0.000000051",
+              "completion": "0.00000034"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.2-1b-instruct",
+            "name": "Meta: Llama 3.2 1B Instruct",
+            "description": "Llama 3.2 1B 是一个拥有 10 亿参数的语言模型，专注于高效执行自然语言任务，例如摘要、对话和多语言文本分析。其较小的尺寸使其能够在资源匮乏的环境中高效运行，同时保持强大的任务性能。\n\nLlama 1.3B 支持八种核心语言并可微调更多语言，非常适合寻求轻量级但功能强大的 AI 解决方案的企业或开发人员，这些解决方案可以在不同的多语言环境中运行，而无需大型模型的高计算需求。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
+            "contextLength": 60000,
+            "pricing": {
+              "prompt": "0.000000027",
+              "completion": "0.0000002"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.2-11b-vision-instruct",
+            "name": "Meta: Llama 3.2 11B Vision Instruct",
+            "description": "Llama 3.2 11B Vision 是一个具有 110 亿个参数的多模态模型，旨在处理结合视觉和文本数据的任务。它在图像字幕和视觉问答等任务中表现出色，弥合了语言生成和视觉推理之间的差距。它在大量图像-文本对数据集上进行了预训练，在复杂、高精度的图像分析中表现良好。\n\n其将视觉理解与语言处理相结合的能力使其成为需要全面视觉语言人工智能应用的行业的理想解决方案，例如内容创建、人工智能驱动的客户服务和研究。\n\n单击此处获取[原始模型卡](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md)。\n\n该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.000000049",
+              "completion": "0.000000049"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.1-8b-instruct",
+            "name": "Meta: Llama 3.1 8B Instruct",
+            "description": "Meta 的最新型号（Llama 3.1）推出了多种尺寸和口味。这个 8B 指令调整版本快速高效。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3-1/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
+            "contextLength": 16384,
+            "pricing": {
+              "prompt": "0.00000002",
+              "completion": "0.00000005"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3.1-70b-instruct",
+            "name": "Meta: Llama 3.1 70B Instruct",
+            "description": "Meta 的最新型号（Llama 3.1）推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3-1/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.0000004",
+              "completion": "0.0000004"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3-8b-instruct",
+            "name": "Meta: Llama 3 8B Instruct",
+            "description": "Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 8B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
+            "contextLength": 8192,
+            "pricing": {
+              "prompt": "0.00000003",
+              "completion": "0.00000004"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "meta-llama/llama-3-70b-instruct",
+            "name": "Meta: Llama 3 70B Instruct",
+            "description": "Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。\n\n与人类评估中领先的闭源模型相比，它表现出了强大的性能。\n\n要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。",
+            "contextLength": 8192,
+            "pricing": {
+              "prompt": "0.00000051",
+              "completion": "0.00000074"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Llama3",
+              "instruct_type": "llama3"
             },
             "tag": "📝 语言模型",
             "type": [
@@ -10421,6 +9937,388 @@
             "pricing": {
               "prompt": "0.0000006",
               "completion": "0.000006"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          }
+        ]
+      },
+      {
+        "familyName": "Xiaomi",
+        "models": [
+          {
+            "id": "xiaomi/mimo-v2-omni",
+            "name": "Xiaomi: MiMo-V2-Omni",
+            "description": "MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。",
+            "contextLength": 262144,
+            "pricing": {
+              "prompt": "0.0000004",
+              "completion": "0.000002",
+              "input_cache_read": "0.00000008"
+            },
+            "architecture": {
+              "modality": "text+image+audio+video->text",
+              "input_modalities": [
+                "text",
+                "audio",
+                "image",
+                "video"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "🌌 全模态 (图/文/音/视)",
+            "type": [
+              "audio",
+              "image",
+              "text",
+              "video"
+            ]
+          },
+          {
+            "id": "xiaomi/mimo-v2-pro",
+            "name": "Xiaomi: MiMo-V2-Pro",
+            "description": "MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。",
+            "contextLength": 1048576,
+            "pricing": {
+              "prompt": "0.000001",
+              "completion": "0.000003",
+              "input_cache_read": "0.0000002"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "xiaomi/mimo-v2-flash",
+            "name": "Xiaomi: MiMo-V2-Flash",
+            "description": "MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。\n\n用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。",
+            "contextLength": 262144,
+            "pricing": {
+              "prompt": "0.00000009",
+              "completion": "0.00000029",
+              "input_cache_read": "0.000000045"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          }
+        ]
+      },
+      {
+        "familyName": "Z-ai",
+        "models": [
+          {
+            "id": "z-ai/glm-5-turbo",
+            "name": "Z.ai: GLM 5 Turbo",
+            "description": "GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。",
+            "contextLength": 202752,
+            "pricing": {
+              "prompt": "0.0000012",
+              "completion": "0.000004",
+              "input_cache_read": "0.00000024"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-5",
+            "name": "Z.ai: GLM 5",
+            "description": "GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。",
+            "contextLength": 202752,
+            "pricing": {
+              "prompt": "0.0000008",
+              "completion": "0.00000256",
+              "input_cache_read": "0.00000016"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.7-flash",
+            "name": "Z.ai: GLM 4.7 Flash",
+            "description": "作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。",
+            "contextLength": 202752,
+            "pricing": {
+              "prompt": "0.00000006",
+              "completion": "0.0000004",
+              "input_cache_read": "0.0000000100000002"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.7",
+            "name": "Z.ai: GLM 4.7",
+            "description": "GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。",
+            "contextLength": 202752,
+            "pricing": {
+              "prompt": "0.00000039",
+              "completion": "0.00000175",
+              "input_cache_read": "0.000000195"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.6v",
+            "name": "Z.ai: GLM 4.6V",
+            "description": "GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.0000003",
+              "completion": "0.0000009"
+            },
+            "architecture": {
+              "modality": "text+image+video->text",
+              "input_modalities": [
+                "image",
+                "text",
+                "video"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text",
+              "video"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.6",
+            "name": "Z.ai: GLM 4.6",
+            "description": "与GLM-4.5相比，这一代带来了几项关键改进：\n\n更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。\n卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。\n高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。\n更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。\n文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。",
+            "contextLength": 204800,
+            "pricing": {
+              "prompt": "0.00000039",
+              "completion": "0.0000019"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.5v",
+            "name": "Z.ai: GLM 4.5V",
+            "description": "GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
+            "contextLength": 65536,
+            "pricing": {
+              "prompt": "0.0000006",
+              "completion": "0.0000018",
+              "input_cache_read": "0.00000011"
+            },
+            "architecture": {
+              "modality": "text+image->text",
+              "input_modalities": [
+                "text",
+                "image"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "👁️ 视觉多模态",
+            "type": [
+              "image",
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.5",
+            "name": "Z.ai: GLM 4.5",
+            "description": "GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.0000006",
+              "completion": "0.0000022",
+              "input_cache_read": "0.00000011"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.5-air:free",
+            "name": "Z.ai: GLM 4.5 Air (free)",
+            "description": "GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0",
+              "completion": "0"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4.5-air",
+            "name": "Z.ai: GLM 4.5 Air",
+            "description": "GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
+            "contextLength": 131072,
+            "pricing": {
+              "prompt": "0.00000013",
+              "completion": "0.00000085",
+              "input_cache_read": "0.000000025"
+            },
+            "architecture": {
+              "modality": "text->text",
+              "input_modalities": [
+                "text"
+              ],
+              "output_modalities": [
+                "text"
+              ],
+              "tokenizer": "Other",
+              "instruct_type": null
+            },
+            "tag": "📝 语言模型",
+            "type": [
+              "text"
+            ]
+          },
+          {
+            "id": "z-ai/glm-4-32b",
+            "name": "Z.ai: GLM 4 32B ",
+            "description": "GLM 4 32B 是一种经济高效的基础语言模型。\n\n它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。\n\n它是由 thudm 模型背后的同一实验室制造的。",
+            "contextLength": 128000,
+            "pricing": {
+              "prompt": "0.0000001",
+              "completion": "0.0000001"
             },
             "architecture": {
               "modality": "text->text",
