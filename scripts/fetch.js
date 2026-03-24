@@ -64,7 +64,8 @@ async function fetchModels() {
         name: model.name,
         description: model.description || 'No description provided.',
         contextLength: model.context_length,
-        pricing: model.pricing
+        pricing: model.pricing,
+        architecture: model.architecture
       });
     });
 

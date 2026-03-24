@@ -17,6 +17,7 @@ An OpenClaw skill to automatically fetch, translate, and organize the global AI 
 - 🧠 **Auto-Translation & Caching**: Translates model descriptions into Chinese using incremental caching to avoid API rate limits and speed up subsequent runs.
 - 📂 **Smart Grouping**: Automatically categorizes models into product families (e.g., *GPT-4o Series*, *Claude 3.5 Series*, *Llama 3 Series*).
 - 💰 **Pricing & Context**: Accurately extracts and formats token pricing (USD / 1M tokens) and maximum context window limits.
+- 🏷️ **Modality Tagging**: Analyzes model architecture and names to automatically tag them as text (LLMs), multimodal (Vision/Audio), image generation, embeddings, etc.
 - 🖼️ **Logo Resolution**: Automatically fetches accurate provider logos using the Google Favicon API.
 - 🗺️ **Multi-Format Export**: Generates structured `Markdown` documents and `OPML` files for mind mapping tools (e.g., XMind, MindNode, FreeMind).
 
@@ -57,6 +58,7 @@ After running, the following files will be generated in the `scripts/` directory
 - 🧠 **增量翻译机制**：自带本地缓存机制，自动将官方英文描述翻译为中文，秒级完成增量更新，拒绝 API 封控。
 - 📂 **智能家族分类**：根据模型命名自动进行家族归类（如 *GPT-4o 系列*、*Claude 3.5 系列*、*DeepSeek V3 系列* 等），告别杂乱无章。
 - 💰 **价格与上下文**：自动计算并格式化每百万 Token (1M Tokens) 的输入/输出价格，提取最大上下文长度（如 128K）。
+- 🏷️ **自动模态标记**：基于模型架构和命名惯例，自动打上“📝 语言模型”、“👁️ 视觉多模态”、“🎨 图像生成”、“🔢 向量/Embedding”等类型标签。
 - 🖼️ **Logo 自动补全**：内置域名映射，通过 Google 接口自动获取各家 AI 厂商的高清 Logo 图标。
 - 🗺️ **多格式完美导出**：一键生成结构化 Markdown 表格文档和 OPML 格式的思维导图（可直接导入 XMind、幕布等工具生成树状图）。
 

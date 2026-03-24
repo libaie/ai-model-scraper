@@ -35,13 +35,14 @@ data.forEach(provider => {
   md += `## 🏢 ${provider.name} (${provider.totalModels} 个模型)\n\n`;
   provider.families.forEach(family => {
     md += `### 📂 ${family.familyName}\n\n`;
-    md += `| 模型名称 | ID | 上下文 | 价格 (1M Tokens) | 描述 |\n`;
-    md += `| :--- | :--- | :--- | :--- | :--- |\n`;
+    md += `| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |\n`;
+    md += `| :--- | :--- | :--- | :--- | :--- | :--- |\n`;
     family.models.forEach(model => {
       let priceInfo = formatPrice(model.pricing);
       let contextInfo = model.contextLength ? (model.contextLength >= 1000 ? (model.contextLength/1000)+'K' : model.contextLength) : '未知';
       let desc = model.description.replace(/\n/g, ' '); // remove newlines for table
-      md += `| **${model.name}** | \`${model.id}\` | ${contextInfo} | ${priceInfo} | ${desc} |\n`;
+      let tag = model.tag || '📝 语言模型';
+      md += `| **${model.name}** | ${tag} | \`${model.id}\` | ${contextInfo} | ${priceInfo} | ${desc} |\n`;
     });
     md += '\n';
   });
@@ -79,9 +80,11 @@ data.forEach(provider => {
     family.models.forEach(model => {
         let priceInfo = formatPrice(model.pricing);
         let contextInfo = model.contextLength ? (model.contextLength >= 1000 ? (model.contextLength/1000)+'K' : model.contextLength) : '未知';
-        let note = `ID: ${model.id}\n上下文: ${contextInfo}\n价格: ${priceInfo}\n描述: ${model.description}`;
+        let tag = model.tag || '📝 语言模型';
+        let note = `ID: ${model.id}\n类型: ${tag}\n上下文: ${contextInfo}\n价格: ${priceInfo}\n描述: ${model.description}`;
         // Create an outline for the model, and sub-outlines for context/price to make mind map cleaner
         opml += `          <outline text="${escapeXml(model.name)}" _note="${escapeXml(note)}">\n`;
+        opml += `            <outline text="${escapeXml('类型: ' + tag)}" />\n`;
         opml += `            <outline text="${escapeXml('上下文: ' + contextInfo)}" />\n`;
         opml += `            <outline text="${escapeXml('价格: ' + priceInfo)}" />\n`;
         opml += `          </outline>\n`;

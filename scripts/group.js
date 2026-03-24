@@ -72,6 +72,41 @@ function getFamily(modelName) {
   return '其他独立模型';
 }
 
+function getModalityTag(arch, name) {
+  const lowerName = name.toLowerCase();
+  
+  // Explicit names fallback
+  if (lowerName.includes('embedding') || lowerName.includes('embed')) return '🔢 向量/Embedding';
+  if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) return '🎨 图像生成';
+  if (lowerName.includes('whisper')) return '🎵 音频处理';
+  
+  if (arch) {
+    const inputs = arch.input_modalities || [];
+    const outputs = arch.output_modalities || [];
+
+    if (outputs.includes('image')) return '🎨 图像生成';
+    
+    // Evaluate multiple inputs
+    let isVision = inputs.includes('image');
+    let isAudio = inputs.includes('audio');
+    let isVideo = inputs.includes('video');
+    
+    if (isVision && isAudio && isVideo) return '🌌 全模态 (图/文/音/视)';
+    if (isVision && isAudio) return '👁️🎵 多模态 (视+听)';
+    if (isVision) return '👁️ 视觉多模态';
+    if (isAudio) return '🎵 音频多模态';
+    if (isVideo) return '🎥 视频多模态';
+  }
+  
+  // Fallback heuristics
+  if (lowerName.includes('vision') || lowerName.includes('-vl') || lowerName.includes('omni') || lowerName.includes('multimodal')) return '👁️ 视觉多模态';
+  if (lowerName.includes('audio')) return '🎵 音频多模态';
+  if (lowerName.includes('coder') || lowerName.includes('codex') || lowerName.includes('-coder')) return '💻 代码模型';
+  if (lowerName.includes('math')) return '🧮 数学模型';
+  
+  return '📝 语言模型';
+}
+
 function run() {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
   
@@ -79,9 +114,9 @@ function run() {
     const familiesMap = new Map();
     
     provider.models.forEach(model => {
-      // Ignore provider name in the model name if it's there (e.g., "OpenAI: GPT-4") for grouping
       let cleanName = model.name.replace(new RegExp('^' + provider.name + '\\s*:\\s*', 'i'), '');
       const familyName = getFamily(cleanName);
+      model.tag = getModalityTag(model.architecture, cleanName); // Added Tag
       
       if (!familiesMap.has(familyName)) {
         familiesMap.set(familyName, {

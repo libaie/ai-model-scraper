@@ -12,6 +12,17 @@
         "pricing": {
           "prompt": "0.000002",
           "completion": "0.000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -30,6 +41,17 @@
           "prompt": "0.0000008",
           "completion": "0.0000016",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -40,6 +62,17 @@
         "pricing": {
           "prompt": "0.000004",
           "completion": "0.000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -50,6 +83,17 @@
         "pricing": {
           "prompt": "0.0000007",
           "completion": "0.0000014"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -60,6 +104,17 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000016"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -77,6 +132,17 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": "alpaca"
         }
       }
     ]
@@ -95,6 +161,17 @@
           "prompt": "0.00000009",
           "completion": "0.00000045",
           "input_cache_read": "0.00000009"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -112,6 +189,17 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -122,6 +210,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -132,6 +231,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -142,6 +252,17 @@
         "pricing": {
           "prompt": "0.00000005",
           "completion": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -159,6 +280,17 @@
         "pricing": {
           "prompt": "0.00000375",
           "completion": "0.0000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama2",
+          "instruct_type": "airoboros"
         }
       }
     ]
@@ -176,6 +308,20 @@
         "pricing": {
           "prompt": "0.0000003",
           "completion": "0.0000025"
+        },
+        "architecture": {
+          "modality": "text+image+file+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Nova",
+          "instruct_type": null
         }
       },
       {
@@ -187,6 +333,18 @@
           "prompt": "0.0000025",
           "completion": "0.0000125",
           "input_cache_read": "0.000000625"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Nova",
+          "instruct_type": null
         }
       },
       {
@@ -197,6 +355,18 @@
         "pricing": {
           "prompt": "0.00000006",
           "completion": "0.00000024"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Nova",
+          "instruct_type": null
         }
       },
       {
@@ -207,6 +377,17 @@
         "pricing": {
           "prompt": "0.000000035",
           "completion": "0.00000014"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Nova",
+          "instruct_type": null
         }
       },
       {
@@ -217,6 +398,18 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000032"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Nova",
+          "instruct_type": null
         }
       }
     ]
@@ -234,6 +427,17 @@
         "pricing": {
           "prompt": "0.000003",
           "completion": "0.000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "chatml"
         }
       }
     ]
@@ -254,6 +458,18 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000003",
           "input_cache_write": "0.00000375"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -267,6 +483,18 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000005",
           "input_cache_write": "0.00000625"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -280,6 +508,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000005",
           "input_cache_write": "0.00000625"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -293,6 +534,18 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000001",
           "input_cache_write": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -306,6 +559,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000003",
           "input_cache_write": "0.00000375"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -319,6 +585,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000015",
           "input_cache_write": "0.00001875"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -332,6 +611,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000015",
           "input_cache_write": "0.00001875"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -345,6 +637,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000003",
           "input_cache_write": "0.00000375"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -358,6 +663,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000003",
           "input_cache_write": "0.00000375"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -371,6 +689,19 @@
           "web_search": "0.01",
           "input_cache_read": "0.0000003",
           "input_cache_write": "0.00000375"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -384,6 +715,18 @@
           "web_search": "0.01",
           "input_cache_read": "0.00000008",
           "input_cache_write": "0.000001"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -396,6 +739,19 @@
           "completion": "0.00003",
           "input_cache_read": "0.0000006",
           "input_cache_write": "0.0000075"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       },
       {
@@ -408,6 +764,18 @@
           "completion": "0.00000125",
           "input_cache_read": "0.00000003",
           "input_cache_write": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Claude",
+          "instruct_type": null
         }
       }
     ]
@@ -429,6 +797,17 @@
           "image": "0",
           "web_search": "0",
           "internal_reasoning": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -439,6 +818,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -449,6 +839,17 @@
         "pricing": {
           "prompt": "0.000000045",
           "completion": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -459,6 +860,18 @@
         "pricing": {
           "prompt": "0.00000018",
           "completion": "0.00000018"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -469,6 +882,17 @@
         "pricing": {
           "prompt": "0.0000009",
           "completion": "0.0000033"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -479,6 +903,17 @@
         "pricing": {
           "prompt": "0.00000075",
           "completion": "0.0000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -489,6 +924,17 @@
         "pricing": {
           "prompt": "0.0000005",
           "completion": "0.0000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -506,6 +952,17 @@
         "pricing": {
           "prompt": "0.00000007",
           "completion": "0.00000028"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -516,6 +973,17 @@
         "pricing": {
           "prompt": "0.00000007",
           "completion": "0.00000028"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -526,6 +994,18 @@
         "pricing": {
           "prompt": "0.00000014",
           "completion": "0.00000056"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -536,6 +1016,18 @@
         "pricing": {
           "prompt": "0.00000042",
           "completion": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -546,6 +1038,17 @@
         "pricing": {
           "prompt": "0.00000028",
           "completion": "0.0000011"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -563,6 +1066,18 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -580,6 +1095,19 @@
         "pricing": {
           "prompt": "0.00000025",
           "completion": "0.000002"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -590,6 +1118,19 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000004"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -600,6 +1141,19 @@
         "pricing": {
           "prompt": "0.000000075",
           "completion": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -610,6 +1164,19 @@
         "pricing": {
           "prompt": "0.00000025",
           "completion": "0.000002"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -627,6 +1194,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -644,6 +1222,17 @@
         "pricing": {
           "prompt": "0.0000025",
           "completion": "0.00001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -654,6 +1243,17 @@
         "pricing": {
           "prompt": "0.0000000375",
           "completion": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Cohere",
+          "instruct_type": null
         }
       },
       {
@@ -664,6 +1264,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Cohere",
+          "instruct_type": null
         }
       },
       {
@@ -674,6 +1285,17 @@
         "pricing": {
           "prompt": "0.0000025",
           "completion": "0.00001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Cohere",
+          "instruct_type": null
         }
       }
     ]
@@ -691,6 +1313,17 @@
         "pricing": {
           "prompt": "0.00000125",
           "completion": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -709,6 +1342,17 @@
           "prompt": "0.0000004",
           "completion": "0.0000012",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       },
       {
@@ -720,6 +1364,17 @@
           "prompt": "0.00000026",
           "completion": "0.00000038",
           "input_cache_read": "0.00000013"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       },
       {
@@ -730,6 +1385,17 @@
         "pricing": {
           "prompt": "0.00000027",
           "completion": "0.00000041"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": "deepseek-v3.1"
         }
       },
       {
@@ -741,6 +1407,17 @@
           "prompt": "0.00000021",
           "completion": "0.00000079",
           "input_cache_read": "0.0000001300000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": "deepseek-v3.1"
         }
       },
       {
@@ -751,6 +1428,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.00000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": "deepseek-v3.1"
         }
       },
       {
@@ -762,6 +1450,17 @@
           "prompt": "0.00000045",
           "completion": "0.00000215",
           "input_cache_read": "0.000000225"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -773,6 +1472,17 @@
           "prompt": "0.0000002",
           "completion": "0.00000077",
           "input_cache_read": "0.000000135"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       },
       {
@@ -783,6 +1493,17 @@
         "pricing": {
           "prompt": "0.00000029",
           "completion": "0.00000029"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -793,6 +1514,17 @@
         "pricing": {
           "prompt": "0.0000007",
           "completion": "0.0000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -803,6 +1535,17 @@
         "pricing": {
           "prompt": "0.0000007",
           "completion": "0.0000025"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -813,6 +1556,17 @@
         "pricing": {
           "prompt": "0.00000032",
           "completion": "0.00000089"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       }
     ]
@@ -830,6 +1584,17 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": "code-llama"
         }
       }
     ]
@@ -847,6 +1612,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -869,6 +1645,21 @@
           "internal_reasoning": "0.0000015",
           "input_cache_read": "0.000000025",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video",
+            "file",
+            "audio"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -879,6 +1670,19 @@
         "pricing": {
           "prompt": "0.0000005",
           "completion": "0.000003"
+        },
+        "architecture": {
+          "modality": "text+image->text+image",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -894,6 +1698,21 @@
           "internal_reasoning": "0.000012",
           "input_cache_read": "0.0000002",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "audio",
+            "image",
+            "video",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -909,6 +1728,21 @@
           "internal_reasoning": "0.000012",
           "input_cache_read": "0.0000002",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "audio",
+            "file",
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -924,6 +1758,21 @@
           "internal_reasoning": "0.000003",
           "input_cache_read": "0.00000005",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -939,6 +1788,19 @@
           "internal_reasoning": "0.000012",
           "input_cache_read": "0.0000002",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image->text+image",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -954,6 +1816,21 @@
           "internal_reasoning": "0.000012",
           "input_cache_read": "0.0000002",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -969,6 +1846,19 @@
           "internal_reasoning": "0.0000025",
           "input_cache_read": "0.00000003",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image->text+image",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -984,6 +1874,21 @@
           "internal_reasoning": "0.0000004",
           "input_cache_read": "0.00000001",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -999,6 +1904,21 @@
           "internal_reasoning": "0.0000004",
           "input_cache_read": "0.00000001",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1009,6 +1929,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1024,6 +1955,21 @@
           "internal_reasoning": "0.0000025",
           "input_cache_read": "0.00000003",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1039,6 +1985,21 @@
           "internal_reasoning": "0.00001",
           "input_cache_read": "0.000000125",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1054,6 +2015,20 @@
           "internal_reasoning": "0.00001",
           "input_cache_read": "0.000000125",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text",
+            "audio"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1064,6 +2039,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1074,6 +2060,17 @@
         "pricing": {
           "prompt": "0.00000002",
           "completion": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1089,6 +2086,21 @@
           "internal_reasoning": "0.00001",
           "input_cache_read": "0.000000125",
           "input_cache_write": "0.000000375"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1099,6 +2111,18 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1109,6 +2133,18 @@
         "pricing": {
           "prompt": "0.00000004",
           "completion": "0.00000008"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1119,6 +2155,18 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1129,6 +2177,18 @@
         "pricing": {
           "prompt": "0.00000004",
           "completion": "0.00000013"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1139,6 +2199,18 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1149,6 +2221,18 @@
         "pricing": {
           "prompt": "0.00000008",
           "completion": "0.00000016"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1162,6 +2246,21 @@
           "image": "0.000000075",
           "audio": "0.000000075",
           "internal_reasoning": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1177,6 +2276,21 @@
           "internal_reasoning": "0.0000004",
           "input_cache_read": "0.000000025",
           "input_cache_write": "0.00000008333333333333334"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file",
+            "audio",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": null
         }
       },
       {
@@ -1187,6 +2301,17 @@
         "pricing": {
           "prompt": "0.00000065",
           "completion": "0.00000065"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       },
       {
@@ -1197,6 +2322,17 @@
         "pricing": {
           "prompt": "0.00000003",
           "completion": "0.00000009"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Gemini",
+          "instruct_type": "gemma"
         }
       }
     ]
@@ -1214,6 +2350,17 @@
         "pricing": {
           "prompt": "0.00000006",
           "completion": "0.00000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama2",
+          "instruct_type": "alpaca"
         }
       }
     ]
@@ -1231,6 +2378,17 @@
         "pricing": {
           "prompt": "0.000000017",
           "completion": "0.00000011"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1249,6 +2407,17 @@
           "prompt": "0.00000025",
           "completion": "0.00000075",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1260,6 +2429,17 @@
           "prompt": "0.00000025",
           "completion": "0.00000075",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1271,6 +2451,17 @@
           "prompt": "0.00000025",
           "completion": "0.00000075",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1288,6 +2479,17 @@
         "pricing": {
           "prompt": "0.0000025",
           "completion": "0.00001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1298,6 +2500,17 @@
         "pricing": {
           "prompt": "0.0000025",
           "completion": "0.00001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1316,6 +2529,17 @@
           "prompt": "0.000000207",
           "completion": "0.000000828",
           "input_cache_read": "0.0000000414"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1333,6 +2557,17 @@
         "pricing": {
           "prompt": "0.00000003",
           "completion": "0.00000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1343,6 +2578,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1353,6 +2599,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1363,6 +2620,17 @@
         "pricing": {
           "prompt": "0.00000001",
           "completion": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1373,6 +2641,17 @@
         "pricing": {
           "prompt": "0.00000001",
           "completion": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1390,6 +2669,17 @@
         "pricing": {
           "prompt": "0.00000075",
           "completion": "0.000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama2",
+          "instruct_type": "alpaca"
         }
       }
     ]
@@ -1408,6 +2698,17 @@
           "prompt": "0.0000002",
           "completion": "0.0000008",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1425,6 +2726,18 @@
         "pricing": {
           "prompt": "0.00000018",
           "completion": "0.00000018"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1435,6 +2748,18 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama4",
+          "instruct_type": null
         }
       },
       {
@@ -1445,6 +2770,18 @@
         "pricing": {
           "prompt": "0.00000008",
           "completion": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama4",
+          "instruct_type": null
         }
       },
       {
@@ -1455,6 +2792,17 @@
         "pricing": {
           "prompt": "0.00000002",
           "completion": "0.00000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "none"
         }
       },
       {
@@ -1465,6 +2813,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1475,6 +2834,17 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.00000032"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1485,6 +2855,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1495,6 +2876,17 @@
         "pricing": {
           "prompt": "0.000000051",
           "completion": "0.00000034"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1505,6 +2897,17 @@
         "pricing": {
           "prompt": "0.000000027",
           "completion": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1515,16 +2918,18 @@
         "pricing": {
           "prompt": "0.000000049",
           "completion": "0.000000049"
-        }
-      },
-      {
-        "id": "meta-llama/llama-3.1-405b",
-        "name": "Meta: Llama 3.1 405B (base)",
-        "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This is the base 405B pre-trained version.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-        "contextLength": 32768,
-        "pricing": {
-          "prompt": "0.000004",
-          "completion": "0.000004"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1535,6 +2940,17 @@
         "pricing": {
           "prompt": "0.00000002",
           "completion": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1545,6 +2961,17 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.0000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1555,6 +2982,17 @@
         "pricing": {
           "prompt": "0.00000051",
           "completion": "0.00000074"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -1565,6 +3003,17 @@
         "pricing": {
           "prompt": "0.00000003",
           "completion": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       }
     ]
@@ -1582,6 +3031,17 @@
         "pricing": {
           "prompt": "0.000000065",
           "completion": "0.00000014"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1592,6 +3052,17 @@
         "pricing": {
           "prompt": "0.00000062",
           "completion": "0.00000062"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "vicuna"
         }
       }
     ]
@@ -1610,6 +3081,17 @@
           "prompt": "0.0000003",
           "completion": "0.0000012",
           "input_cache_read": "0.00000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1620,6 +3102,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1631,6 +3124,17 @@
           "prompt": "0.0000002",
           "completion": "0.00000117",
           "input_cache_read": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1642,6 +3146,17 @@
           "prompt": "0.0000003",
           "completion": "0.0000012",
           "input_cache_read": "0.00000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1653,6 +3168,17 @@
           "prompt": "0.00000027",
           "completion": "0.00000095",
           "input_cache_read": "0.0000000290000007"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1664,6 +3190,17 @@
           "prompt": "0.000000255",
           "completion": "0.000001",
           "input_cache_read": "0.00000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1674,6 +3211,17 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.0000022"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -1684,6 +3232,18 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000011"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -1702,6 +3262,18 @@
           "prompt": "0.00000015",
           "completion": "0.0000006",
           "input_cache_read": "0.000000015"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1713,6 +3285,17 @@
           "prompt": "0.0000001",
           "completion": "0.0000003",
           "input_cache_read": "0.00000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1724,6 +3307,17 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1735,6 +3329,18 @@
           "prompt": "0.0000002",
           "completion": "0.0000002",
           "input_cache_read": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1746,6 +3352,18 @@
           "prompt": "0.00000015",
           "completion": "0.00000015",
           "input_cache_read": "0.000000015"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1757,6 +3375,18 @@
           "prompt": "0.0000001",
           "completion": "0.0000001",
           "input_cache_read": "0.00000001"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1768,6 +3398,18 @@
           "prompt": "0.0000005",
           "completion": "0.0000015",
           "input_cache_read": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1780,6 +3422,18 @@
           "completion": "0.0000003",
           "audio": "0.0001",
           "input_cache_read": "0.00000001"
+        },
+        "architecture": {
+          "modality": "text+audio->text",
+          "input_modalities": [
+            "text",
+            "audio"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1791,6 +3445,18 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1802,6 +3468,17 @@
           "prompt": "0.0000003",
           "completion": "0.0000009",
           "input_cache_read": "0.00000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1813,6 +3490,17 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1824,6 +3512,17 @@
           "prompt": "0.0000001",
           "completion": "0.0000003",
           "input_cache_read": "0.00000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1834,6 +3533,18 @@
         "pricing": {
           "prompt": "0.000000075",
           "completion": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1845,6 +3556,18 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1855,6 +3578,18 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1866,6 +3601,18 @@
           "prompt": "0.00000003",
           "completion": "0.00000011",
           "input_cache_read": "0.000000015"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1877,6 +3624,17 @@
           "prompt": "0.0000002",
           "completion": "0.0000006",
           "input_cache_read": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1887,6 +3645,17 @@
         "pricing": {
           "prompt": "0.00000005",
           "completion": "0.00000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1898,6 +3667,17 @@
           "prompt": "0.000002",
           "completion": "0.000006",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1909,6 +3689,17 @@
           "prompt": "0.000002",
           "completion": "0.000006",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1920,16 +3711,18 @@
           "prompt": "0.000002",
           "completion": "0.000006",
           "input_cache_read": "0.0000002"
-        }
-      },
-      {
-        "id": "mistralai/pixtral-12b",
-        "name": "Mistral: Pixtral 12B",
-        "description": "The first multi-modal, text+image-to-text model from Mistral AI. Its weights were launched via torrent: https://x.com/mistralai/status/1833758285167722836.",
-        "contextLength": 32768,
-        "pricing": {
-          "prompt": "0.00000010000000000000001",
-          "completion": "0.00000010000000000000001"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1940,6 +3733,17 @@
         "pricing": {
           "prompt": "0.00000002",
           "completion": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "mistral"
         }
       },
       {
@@ -1951,6 +3755,17 @@
           "prompt": "0.000002",
           "completion": "0.000006",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "mistral"
         }
       },
       {
@@ -1962,6 +3777,17 @@
           "prompt": "0.000002",
           "completion": "0.000006",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": null
         }
       },
       {
@@ -1972,6 +3798,17 @@
         "pricing": {
           "prompt": "0.00000054",
           "completion": "0.00000054"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "mistral"
         }
       },
       {
@@ -1982,6 +3819,17 @@
         "pricing": {
           "prompt": "0.00000011",
           "completion": "0.00000019"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "mistral"
         }
       }
     ]
@@ -2000,6 +3848,18 @@
           "prompt": "0.00000045",
           "completion": "0.0000022",
           "input_cache_read": "0.000000225"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2011,6 +3871,17 @@
           "prompt": "0.00000047",
           "completion": "0.000002",
           "input_cache_read": "0.000000141"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2022,16 +3893,38 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
         "id": "moonshotai/kimi-k2",
         "name": "MoonshotAI: Kimi K2 0711",
         "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. Kimi K2 excels across a broad range of benchmarks, particularly in coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) tasks. It supports long-context inference up to 128K tokens and is designed with a novel training stack that includes the MuonClip optimizer for stable large-scale MoE training.",
-        "contextLength": 131000,
+        "contextLength": 131072,
         "pricing": {
-          "prompt": "0.00000055",
-          "completion": "0.0000022"
+          "prompt": "0.00000057",
+          "completion": "0.0000023"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -2049,6 +3942,17 @@
         "pricing": {
           "prompt": "0.0000009",
           "completion": "0.0000019"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2059,6 +3963,17 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -2076,6 +3991,17 @@
         "pricing": {
           "prompt": "0.000000135",
           "completion": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       }
     ]
@@ -2093,6 +4019,17 @@
         "pricing": {
           "prompt": "0.00000013",
           "completion": "0.0000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": null
         }
       },
       {
@@ -2103,6 +4040,17 @@
         "pricing": {
           "prompt": "0.000001",
           "completion": "0.000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2113,6 +4061,17 @@
         "pricing": {
           "prompt": "0.0000003",
           "completion": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -2123,6 +4082,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -2133,6 +4103,17 @@
         "pricing": {
           "prompt": "0.000001",
           "completion": "0.000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -2143,6 +4124,17 @@
         "pricing": {
           "prompt": "0.00000014",
           "completion": "0.00000014"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "chatml"
         }
       }
     ]
@@ -2160,6 +4152,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2171,6 +4174,17 @@
           "prompt": "0.0000001",
           "completion": "0.0000005",
           "input_cache_read": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2181,6 +4195,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2191,6 +4216,17 @@
         "pricing": {
           "prompt": "0.00000005",
           "completion": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2201,6 +4237,19 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2211,6 +4260,19 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2221,6 +4283,17 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": null
         }
       },
       {
@@ -2231,6 +4304,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2241,6 +4325,17 @@
         "pricing": {
           "prompt": "0.00000004",
           "completion": "0.00000016"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -2251,6 +4346,17 @@
         "pricing": {
           "prompt": "0.0000006",
           "completion": "0.0000018"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": null
         }
       },
       {
@@ -2261,6 +4367,17 @@
         "pricing": {
           "prompt": "0.0000012",
           "completion": "0.0000012"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       }
     ]
@@ -2280,6 +4397,19 @@
           "completion": "0.00000125",
           "web_search": "0.01",
           "input_cache_read": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2292,6 +4422,19 @@
           "completion": "0.0000045",
           "web_search": "0.01",
           "input_cache_read": "0.000000075"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2303,6 +4446,19 @@
           "prompt": "0.00003",
           "completion": "0.00018",
           "web_search": "0.01"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2315,6 +4471,19 @@
           "completion": "0.000015",
           "web_search": "0.01",
           "input_cache_read": "0.00000025"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2327,6 +4496,19 @@
           "completion": "0.000014",
           "web_search": "0.1",
           "input_cache_read": "0.000000175"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2339,6 +4521,19 @@
           "completion": "0.000014",
           "web_search": "0.01",
           "input_cache_read": "0.000000175"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2350,6 +4545,19 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "audio": "0.000032"
+        },
+        "architecture": {
+          "modality": "text+audio->text+audio",
+          "input_modalities": [
+            "text",
+            "audio"
+          ],
+          "output_modalities": [
+            "text",
+            "audio"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2361,6 +4569,19 @@
           "prompt": "0.0000006",
           "completion": "0.0000024",
           "audio": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text+audio->text+audio",
+          "input_modalities": [
+            "text",
+            "audio"
+          ],
+          "output_modalities": [
+            "text",
+            "audio"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2373,6 +4594,18 @@
           "completion": "0.000014",
           "web_search": "0.01",
           "input_cache_read": "0.000000175"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2385,6 +4618,19 @@
           "completion": "0.000014",
           "web_search": "0.01",
           "input_cache_read": "0.000000175"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2396,6 +4642,19 @@
           "prompt": "0.000021",
           "completion": "0.000168",
           "web_search": "0.01"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2408,6 +4667,19 @@
           "completion": "0.000014",
           "web_search": "0.01",
           "input_cache_read": "0.000000175"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2420,6 +4692,18 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2432,6 +4716,19 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2444,6 +4741,19 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2455,6 +4765,18 @@
           "prompt": "0.00000125",
           "completion": "0.00001",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2466,6 +4788,18 @@
           "prompt": "0.00000025",
           "completion": "0.000002",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2477,6 +4811,17 @@
           "prompt": "0.000000075",
           "completion": "0.0000003",
           "input_cache_read": "0.000000037"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2489,6 +4834,20 @@
           "completion": "0.000002",
           "web_search": "0.01",
           "input_cache_read": "0.00000025"
+        },
+        "architecture": {
+          "modality": "text+image+file->text+image",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2501,6 +4860,20 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text+image",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2513,6 +4886,19 @@
           "completion": "0.00004",
           "web_search": "0.01",
           "input_cache_read": "0.0000025"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2525,6 +4911,19 @@
           "completion": "0.000008",
           "web_search": "0.01",
           "input_cache_read": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2536,6 +4935,19 @@
           "prompt": "0.000015",
           "completion": "0.00012",
           "web_search": "0.01"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2547,6 +4959,18 @@
           "prompt": "0.00000125",
           "completion": "0.00001",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2558,6 +4982,19 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "audio": "0.00004"
+        },
+        "architecture": {
+          "modality": "text+audio->text+audio",
+          "input_modalities": [
+            "audio",
+            "text"
+          ],
+          "output_modalities": [
+            "text",
+            "audio"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2570,6 +5007,19 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "file",
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2582,6 +5032,19 @@
           "completion": "0.00001",
           "web_search": "0.01",
           "input_cache_read": "0.000000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2594,6 +5057,19 @@
           "completion": "0.000002",
           "web_search": "0.01",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2606,6 +5082,19 @@
           "completion": "0.0000004",
           "web_search": "0.01",
           "input_cache_read": "0.000000005"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2616,6 +5105,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2626,6 +5126,17 @@
         "pricing": {
           "prompt": "0.000000039",
           "completion": "0.00000019"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2636,6 +5147,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2647,6 +5169,17 @@
           "prompt": "0.00000003",
           "completion": "0.00000011",
           "input_cache_read": "0.000000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2658,6 +5191,19 @@
           "prompt": "0.00002",
           "completion": "0.00008",
           "web_search": "0.01"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "file",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2670,6 +5216,19 @@
           "completion": "0.0000044",
           "web_search": "0.01",
           "input_cache_read": "0.000000275"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2682,6 +5241,19 @@
           "completion": "0.000008",
           "web_search": "0.01",
           "input_cache_read": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2694,6 +5266,19 @@
           "completion": "0.0000044",
           "web_search": "0.01",
           "input_cache_read": "0.000000275"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2706,6 +5291,19 @@
           "completion": "0.000008",
           "web_search": "0.01",
           "input_cache_read": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2718,6 +5316,19 @@
           "completion": "0.0000016",
           "web_search": "0.01",
           "input_cache_read": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2730,6 +5341,19 @@
           "completion": "0.0000004",
           "web_search": "0.01",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2740,6 +5364,19 @@
         "pricing": {
           "prompt": "0.00015",
           "completion": "0.0006"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2751,6 +5388,17 @@
           "prompt": "0.00000015",
           "completion": "0.0000006",
           "web_search": "0.0275"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2762,6 +5410,17 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "web_search": "0.035"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2773,6 +5432,18 @@
           "prompt": "0.0000011",
           "completion": "0.0000044",
           "input_cache_read": "0.00000055"
+        },
+        "architecture": {
+          "modality": "text+file->text",
+          "input_modalities": [
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2784,6 +5455,18 @@
           "prompt": "0.0000011",
           "completion": "0.0000044",
           "input_cache_read": "0.00000055"
+        },
+        "architecture": {
+          "modality": "text+file->text",
+          "input_modalities": [
+            "text",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2795,6 +5478,19 @@
           "prompt": "0.000015",
           "completion": "0.00006",
           "input_cache_read": "0.0000075"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2806,6 +5502,19 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "input_cache_read": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2817,6 +5526,19 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "input_cache_read": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2828,6 +5550,19 @@
           "prompt": "0.00000015",
           "completion": "0.0000006",
           "input_cache_read": "0.000000075"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2839,6 +5574,19 @@
           "prompt": "0.00000015",
           "completion": "0.0000006",
           "input_cache_read": "0.000000075"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2849,6 +5597,19 @@
         "pricing": {
           "prompt": "0.000005",
           "completion": "0.000015"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2860,6 +5621,19 @@
           "prompt": "0.0000025",
           "completion": "0.00001",
           "input_cache_read": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2870,6 +5644,19 @@
         "pricing": {
           "prompt": "0.000006",
           "completion": "0.000018"
+        },
+        "architecture": {
+          "modality": "text+image+file->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "file"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2880,6 +5667,18 @@
         "pricing": {
           "prompt": "0.00001",
           "completion": "0.00003"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2890,6 +5689,17 @@
         "pricing": {
           "prompt": "0.000001",
           "completion": "0.000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2900,6 +5710,17 @@
         "pricing": {
           "prompt": "0.00001",
           "completion": "0.00003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2910,6 +5731,17 @@
         "pricing": {
           "prompt": "0.00001",
           "completion": "0.00003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2920,6 +5752,17 @@
         "pricing": {
           "prompt": "0.0000015",
           "completion": "0.000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -2930,6 +5773,17 @@
         "pricing": {
           "prompt": "0.000003",
           "completion": "0.000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2940,6 +5794,17 @@
         "pricing": {
           "prompt": "0.00003",
           "completion": "0.00006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2950,6 +5815,17 @@
         "pricing": {
           "prompt": "0.00003",
           "completion": "0.00006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       },
       {
@@ -2960,6 +5836,17 @@
         "pricing": {
           "prompt": "0.0000005",
           "completion": "0.0000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "GPT",
+          "instruct_type": null
         }
       }
     ]
@@ -2977,6 +5864,18 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Router",
+          "instruct_type": null
         }
       },
       {
@@ -2987,6 +5886,17 @@
         "pricing": {
           "prompt": "-1",
           "completion": "-1"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Router",
+          "instruct_type": null
         }
       },
       {
@@ -2997,6 +5907,22 @@
         "pricing": {
           "prompt": "-1",
           "completion": "-1"
+        },
+        "architecture": {
+          "modality": "text+image+file+audio+video->text+image",
+          "input_modalities": [
+            "text",
+            "image",
+            "audio",
+            "file",
+            "video"
+          ],
+          "output_modalities": [
+            "text",
+            "image"
+          ],
+          "tokenizer": "Router",
+          "instruct_type": null
         }
       }
     ]
@@ -3015,6 +5941,18 @@
           "prompt": "0.000003",
           "completion": "0.000015",
           "web_search": "0.018"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3026,6 +5964,18 @@
           "prompt": "0.000002",
           "completion": "0.000008",
           "web_search": "0.005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -3037,6 +5987,18 @@
           "prompt": "0.000003",
           "completion": "0.000015",
           "web_search": "0.005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3049,6 +6011,17 @@
           "completion": "0.000008",
           "web_search": "0.005",
           "internal_reasoning": "0.000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": "deepseek-r1"
         }
       },
       {
@@ -3060,6 +6033,18 @@
           "prompt": "0.000001",
           "completion": "0.000001",
           "web_search": "0.005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3077,6 +6062,17 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000011"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3094,6 +6090,19 @@
         "pricing": {
           "prompt": "0.00000005",
           "completion": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3104,6 +6113,19 @@
         "pricing": {
           "prompt": "0.0000001625",
           "completion": "0.0000013"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3114,6 +6136,19 @@
         "pricing": {
           "prompt": "0.000000195",
           "completion": "0.00000156"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3124,6 +6159,19 @@
         "pricing": {
           "prompt": "0.00000026",
           "completion": "0.00000208"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3134,6 +6182,19 @@
         "pricing": {
           "prompt": "0.000000065",
           "completion": "0.00000026"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3144,6 +6205,19 @@
         "pricing": {
           "prompt": "0.00000026",
           "completion": "0.00000156"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3154,6 +6228,19 @@
         "pricing": {
           "prompt": "0.00000039",
           "completion": "0.00000234"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "text",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3164,6 +6251,17 @@
         "pricing": {
           "prompt": "0.00000078",
           "completion": "0.0000039"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3175,6 +6273,17 @@
           "prompt": "0.00000012",
           "completion": "0.00000075",
           "input_cache_read": "0.00000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3185,6 +6294,18 @@
         "pricing": {
           "prompt": "0.000000104",
           "completion": "0.000000416"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3195,6 +6316,18 @@
         "pricing": {
           "prompt": "0.000000117",
           "completion": "0.000001365"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3205,6 +6338,18 @@
         "pricing": {
           "prompt": "0.00000008",
           "completion": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3215,6 +6360,18 @@
         "pricing": {
           "prompt": "0.00000013",
           "completion": "0.00000156"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3225,6 +6382,18 @@
         "pricing": {
           "prompt": "0.00000013",
           "completion": "0.00000052"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3235,6 +6404,18 @@
         "pricing": {
           "prompt": "0.00000026",
           "completion": "0.0000026"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3246,6 +6427,18 @@
           "prompt": "0.0000002",
           "completion": "0.00000088",
           "input_cache_read": "0.00000011"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3257,6 +6450,17 @@
           "prompt": "0.00000078",
           "completion": "0.0000039",
           "input_cache_read": "0.000000156"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3268,6 +6472,17 @@
           "prompt": "0.00000065",
           "completion": "0.00000325",
           "input_cache_read": "0.00000013"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3279,6 +6494,17 @@
           "prompt": "0.000000195",
           "completion": "0.000000975",
           "input_cache_read": "0.000000039"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3289,6 +6515,17 @@
         "pricing": {
           "prompt": "0.0000000975",
           "completion": "0.00000078"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3299,6 +6536,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3309,6 +6557,17 @@
         "pricing": {
           "prompt": "0.00000009",
           "completion": "0.0000011"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3319,6 +6578,17 @@
         "pricing": {
           "prompt": "0.00000026",
           "completion": "0.00000078"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3329,6 +6599,17 @@
         "pricing": {
           "prompt": "0.00000026",
           "completion": "0.00000078"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3340,6 +6621,17 @@
           "prompt": "0.00000008",
           "completion": "0.0000004",
           "input_cache_read": "0.00000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3350,6 +6642,17 @@
         "pricing": {
           "prompt": "0.00000007",
           "completion": "0.00000027"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3360,6 +6663,17 @@
         "pricing": {
           "prompt": "0.00000009",
           "completion": "0.0000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3370,6 +6684,17 @@
         "pricing": {
           "prompt": "0.0000001495",
           "completion": "0.000001495"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3380,6 +6705,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3391,6 +6727,17 @@
           "prompt": "0.00000022",
           "completion": "0.000001",
           "input_cache_read": "0.000000022"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3401,6 +6748,17 @@
         "pricing": {
           "prompt": "0.000000071",
           "completion": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": null
         }
       },
       {
@@ -3411,6 +6769,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3421,6 +6790,17 @@
         "pricing": {
           "prompt": "0.00000008",
           "completion": "0.00000028"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3432,6 +6812,17 @@
           "prompt": "0.00000005",
           "completion": "0.0000004",
           "input_cache_read": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3442,6 +6833,17 @@
         "pricing": {
           "prompt": "0.00000006",
           "completion": "0.00000024"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3453,6 +6855,17 @@
           "prompt": "0.00000008",
           "completion": "0.00000024",
           "input_cache_read": "0.00000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3463,6 +6876,17 @@
         "pricing": {
           "prompt": "0.000000455",
           "completion": "0.00000182"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3",
+          "instruct_type": "qwen3"
         }
       },
       {
@@ -3473,6 +6897,17 @@
         "pricing": {
           "prompt": "0.00000003",
           "completion": "0.00000009"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3483,6 +6918,18 @@
         "pricing": {
           "prompt": "0.0000002",
           "completion": "0.0000006"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3493,6 +6940,17 @@
         "pricing": {
           "prompt": "0.00000015",
           "completion": "0.00000058"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "qwq"
         }
       },
       {
@@ -3504,6 +6962,18 @@
           "prompt": "0.0000001365",
           "completion": "0.0000004095",
           "input_cache_read": "0.0000000273"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3514,6 +6984,18 @@
         "pricing": {
           "prompt": "0.00000052",
           "completion": "0.00000208"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3525,6 +7007,17 @@
           "prompt": "0.0000000325",
           "completion": "0.00000013",
           "input_cache_read": "0.0000000065"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3535,6 +7028,18 @@
         "pricing": {
           "prompt": "0.0000008",
           "completion": "0.0000008"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3546,6 +7051,17 @@
           "prompt": "0.00000026",
           "completion": "0.00000078",
           "input_cache_read": "0.000000052"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3557,6 +7073,17 @@
           "prompt": "0.00000104",
           "completion": "0.00000416",
           "input_cache_read": "0.000000208"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": null
         }
       },
       {
@@ -3567,6 +7094,17 @@
         "pricing": {
           "prompt": "0.00000066",
           "completion": "0.000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -3577,6 +7115,17 @@
         "pricing": {
           "prompt": "0.00000004",
           "completion": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "chatml"
         }
       },
       {
@@ -3587,16 +7136,17 @@
         "pricing": {
           "prompt": "0.00000012",
           "completion": "0.00000039"
-        }
-      },
-      {
-        "id": "qwen/qwen-2.5-vl-7b-instruct",
-        "name": "Qwen: Qwen2.5-VL 7B Instruct",
-        "description": "Qwen2.5 VL 7B is a multimodal LLM from the Qwen Team with the following key enhancements:\n\n- SoTA understanding of images of various resolution & ratio: Qwen2.5-VL achieves state-of-the-art performance on visual understanding benchmarks, including MathVista, DocVQA, RealWorldQA, MTVQA, etc.\n\n- Understanding videos of 20min+: Qwen2.5-VL can understand videos over 20 minutes for high-quality video-based question answering, dialog, content creation, etc.\n\n- Agent that can operate your mobiles, robots, etc.: with the abilities of complex reasoning and decision making, Qwen2.5-VL can be integrated with devices like mobile phones, robots, etc., for automatic operation based on visual environment and text instructions.\n\n- Multilingual Support: to serve global users, besides English and Chinese, Qwen2.5-VL now supports the understanding of texts in different languages inside images, including most European languages, Japanese, Korean, Arabic, Vietnamese, etc.\n\nFor more details, see this [blog post](https://qwenlm.github.io/blog/qwen2-vl/) and [GitHub repo](https://github.com/QwenLM/Qwen2-VL).\n\nUsage of this model is subject to [Tongyi Qianwen LICENSE AGREEMENT](https://huggingface.co/Qwen/Qwen1.5-110B-Chat/blob/main/LICENSE).",
-        "contextLength": 32768,
-        "pricing": {
-          "prompt": "0.00000020000000000000002",
-          "completion": "0.00000020000000000000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "chatml"
         }
       }
     ]
@@ -3614,6 +7164,17 @@
         "pricing": {
           "prompt": "0.000001",
           "completion": "0.000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3624,6 +7185,17 @@
         "pricing": {
           "prompt": "0.00000085",
           "completion": "0.00000125"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3641,6 +7213,17 @@
         "pricing": {
           "prompt": "0.000003",
           "completion": "0.000003"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": null
         }
       },
       {
@@ -3651,6 +7234,17 @@
         "pricing": {
           "prompt": "0.00000065",
           "completion": "0.00000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -3661,6 +7255,17 @@
         "pricing": {
           "prompt": "0.00000085",
           "completion": "0.00000085"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -3671,6 +7276,17 @@
         "pricing": {
           "prompt": "0.00000004",
           "completion": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       },
       {
@@ -3681,6 +7297,17 @@
         "pricing": {
           "prompt": "0.00000148",
           "completion": "0.00000148"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama3",
+          "instruct_type": "llama3"
         }
       }
     ]
@@ -3698,6 +7325,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3709,6 +7347,17 @@
           "prompt": "0.0000001",
           "completion": "0.0000003",
           "input_cache_read": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3726,6 +7375,17 @@
         "pricing": {
           "prompt": "0.00000085",
           "completion": "0.0000034"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3743,6 +7403,17 @@
         "pricing": {
           "prompt": "0.00000014",
           "completion": "0.00000057"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3760,6 +7431,17 @@
         "pricing": {
           "prompt": "0.0000003",
           "completion": "0.0000005"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3770,6 +7452,17 @@
         "pricing": {
           "prompt": "0.00000055",
           "completion": "0.0000008"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -3780,6 +7473,17 @@
         "pricing": {
           "prompt": "0.0000004",
           "completion": "0.0000004"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Mistral",
+          "instruct_type": "mistral"
         }
       },
       {
@@ -3790,6 +7494,17 @@
         "pricing": {
           "prompt": "0.00000017",
           "completion": "0.00000043"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen",
+          "instruct_type": "chatml"
         }
       }
     ]
@@ -3808,6 +7523,17 @@
           "prompt": "0.0000003",
           "completion": "0.0000011",
           "input_cache_read": "0.00000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "DeepSeek",
+          "instruct_type": null
         }
       }
     ]
@@ -3825,6 +7551,17 @@
         "pricing": {
           "prompt": "0.00000045",
           "completion": "0.00000065"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Llama2",
+          "instruct_type": "alpaca"
         }
       }
     ]
@@ -3843,6 +7580,17 @@
           "prompt": "0.00000015",
           "completion": "0.0000006",
           "input_cache_read": "0.000000015"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3860,6 +7608,17 @@
         "pricing": {
           "prompt": "0.0000006",
           "completion": "0.000006"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -3879,6 +7638,18 @@
           "completion": "0.000006",
           "web_search": "0.005",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3891,6 +7662,18 @@
           "completion": "0.000006",
           "web_search": "0.005",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3903,6 +7686,18 @@
           "completion": "0.0000005",
           "web_search": "0.005",
           "input_cache_read": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3915,6 +7710,18 @@
           "completion": "0.0000005",
           "web_search": "0.005",
           "input_cache_read": "0.00000005"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3927,6 +7734,17 @@
           "completion": "0.0000015",
           "web_search": "0.005",
           "input_cache_read": "0.00000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3939,6 +7757,18 @@
           "completion": "0.000015",
           "web_search": "0.005",
           "input_cache_read": "0.00000075"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3951,6 +7781,17 @@
           "completion": "0.0000005",
           "web_search": "0.005",
           "input_cache_read": "0.000000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3963,6 +7804,17 @@
           "completion": "0.000015",
           "web_search": "0.005",
           "input_cache_read": "0.00000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3975,6 +7827,17 @@
           "completion": "0.0000005",
           "web_search": "0.005",
           "input_cache_read": "0.000000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       },
       {
@@ -3987,6 +7850,17 @@
           "completion": "0.000015",
           "web_search": "0.005",
           "input_cache_read": "0.00000075"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Grok",
+          "instruct_type": null
         }
       }
     ]
@@ -4005,6 +7879,20 @@
           "prompt": "0.0000004",
           "completion": "0.000002",
           "input_cache_read": "0.00000008"
+        },
+        "architecture": {
+          "modality": "text+image+audio+video->text",
+          "input_modalities": [
+            "text",
+            "audio",
+            "image",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4016,6 +7904,17 @@
           "prompt": "0.000001",
           "completion": "0.000003",
           "input_cache_read": "0.0000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4027,6 +7926,17 @@
           "prompt": "0.00000009",
           "completion": "0.00000029",
           "input_cache_read": "0.000000045"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
@@ -4045,16 +7955,39 @@
           "prompt": "0.0000012",
           "completion": "0.000004",
           "input_cache_read": "0.00000024"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-        "contextLength": 80000,
+        "contextLength": 202752,
         "pricing": {
-          "prompt": "0.00000072",
-          "completion": "0.0000023"
+          "prompt": "0.0000008",
+          "completion": "0.00000256",
+          "input_cache_read": "0.00000016"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4066,6 +7999,17 @@
           "prompt": "0.00000006",
           "completion": "0.0000004",
           "input_cache_read": "0.0000000100000002"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4077,6 +8021,17 @@
           "prompt": "0.00000039",
           "completion": "0.00000175",
           "input_cache_read": "0.000000195"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4087,6 +8042,19 @@
         "pricing": {
           "prompt": "0.0000003",
           "completion": "0.0000009"
+        },
+        "architecture": {
+          "modality": "text+image+video->text",
+          "input_modalities": [
+            "image",
+            "text",
+            "video"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4097,6 +8065,17 @@
         "pricing": {
           "prompt": "0.00000039",
           "completion": "0.0000019"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4108,6 +8087,18 @@
           "prompt": "0.0000006",
           "completion": "0.0000018",
           "input_cache_read": "0.00000011"
+        },
+        "architecture": {
+          "modality": "text+image->text",
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4119,6 +8110,17 @@
           "prompt": "0.0000006",
           "completion": "0.0000022",
           "input_cache_read": "0.00000011"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4129,6 +8131,17 @@
         "pricing": {
           "prompt": "0",
           "completion": "0"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4140,6 +8153,17 @@
           "prompt": "0.00000013",
           "completion": "0.00000085",
           "input_cache_read": "0.000000025"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       },
       {
@@ -4150,6 +8174,17 @@
         "pricing": {
           "prompt": "0.0000001",
           "completion": "0.0000001"
+        },
+        "architecture": {
+          "modality": "text->text",
+          "input_modalities": [
+            "text"
+          ],
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other",
+          "instruct_type": null
         }
       }
     ]
