@@ -2,6 +2,32 @@
 
 > 本文档由自动化脚本抓取并分类生成。价格基于 OpenRouter 的 1M Tokens 计费标准。
 
+## 🏢 Alibaba (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tongyi DeepResearch 30B A3B** | 📝 语言模型 | `alibaba/tongyi-deepresearch-30b-a3b` | 131.072K | 输入 $0.09/1M, 输出 $0.45/1M | 统一DeepResearch是统一实验室开发的代理大语言模型，总参数300亿个，每个token只激活30亿个。它针对长期、深度信息搜索任务进行了优化，并在 Humanity's Last Exam、BrowserComp、BrowserComp-ZH、WebWalkerQA、GAIA、xbench-DeepSearch 和 FRAMES 等基准测试中提供最先进的性能。与之前的模型相比，这使得它在复杂的代理搜索、推理和多步骤问题解决方面表现出色。  该模型包括一个全自动合成数据管道，用于可扩展的预训练、微调和强化学习。它使用对不同代理数据的大规模持续预训练来增强推理并保持新鲜感。它还具有端到端同策略 RL 和定制的组相对策略优化，包括令牌级梯度和用于稳定训练的负样本过滤。该模型支持 ReAct 进行核心能力检查，并支持基于 IterResearch 的“Heavy”模式，通过测试时间扩展实现最大性能。它非常适合高级研究代理、工具使用和繁重的推理工作流程。 |
+
+## 🏢 Amazon (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Amazon: Nova 2 Lite** | 👁️ 视觉多模态 | `amazon/nova-2-lite-v1` | 1000K | 输入 $0.3/1M, 输出 $2.5/1M | Nova 2 Lite 是一种快速、经济高效的推理模型，适用于日常工作负载，可以处理文本、图像和视频以生成文本。   Nova 2 Lite 在处理文档、从视频中提取信息、生成代码、提供准确的答案以及自动化多步骤代理工作流程方面展现了出色的功能。 |
+| **Amazon: Nova Premier 1.0** | 👁️ 视觉多模态 | `amazon/nova-premier-v1` | 1000K | 输入 $2.5/1M, 输出 $12.5/1M | Amazon Nova Premier 是 Amazon 多模式模型中最有能力完成复杂推理任务的模型，也是提炼自定义模型的最佳老师。 |
+| **Amazon: Nova Lite 1.0** | 👁️ 视觉多模态 | `amazon/nova-lite-v1` | 300K | 输入 $0.06/1M, 输出 $0.24/1M | Amazon Nova Lite 1.0 是 Amazon 的一种非常低成本的多模式模型，专注于快速处理图像、视频和文本输入以生成文本输出。 Amazon Nova Lite 可以高精度处理实时客户交互、文档分析和可视化问答任务。  通过 300K 令牌的输入上下文，它可以在单个输入中分析多个图像或长达 30 分钟的视频。 |
+| **Amazon: Nova Micro 1.0** | 📝 语言模型 | `amazon/nova-micro-v1` | 128K | 输入 $0.04/1M, 输出 $0.14/1M | Amazon Nova Micro 1.0 是纯文本模型，能够以极低的成本提供 Amazon Nova 系列模型中最低的延迟响应。 Amazon Nova Micro 的上下文长度为 128K 令牌，并针对速度和成本进行了优化，擅长执行文本摘要、翻译、内容分类、交互式聊天和头脑风暴等任务。它具有简单的数学推理和编码能力。 |
+| **Amazon: Nova Pro 1.0** | 👁️ 视觉多模态 | `amazon/nova-pro-v1` | 300K | 输入 $0.8/1M, 输出 $3.2/1M | Amazon Nova Pro 1.0 是 Amazon 的一款功能强大的多模式模型，专注于为各种任务提供准确性、速度和成本的组合。截至 2024 年 12 月，它在视觉问答 (TextVQA) 和视频理解 (VATEX) 等关键基准测试中实现了最先进的性能。  Amazon Nova Pro 在处理视觉和文本信息以及分析财务文档方面表现出强大的能力。  **注意**：目前不支持视频输入。 |
+
 ## 🏢 Anthropic (13 个模型)
 **原生 API 地址**: `https://api.anthropic.com/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
@@ -54,6 +80,49 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Anthropic: Claude Sonnet 4.6** | 👁️ 视觉多模态 | `anthropic/claude-sonnet-4.6` | 1000K | 输入 $3/1M, 输出 $15/1M | Sonnet 4.6 是 Anthropic 迄今为止最强大的 Sonnet 级模型，在编码、代理和专业工作方面具有前沿性能。它擅长迭代开发、复杂的代码库导航、带内存的端到端项目管理、精美的文档创建以及自信地使用计算机进行 Web QA 和工作流程自动化。 |
 | **Anthropic: Claude Opus 4.6** | 👁️ 视觉多模态 | `anthropic/claude-opus-4.6` | 1000K | 输入 $5/1M, 输出 $25/1M | Opus 4.6 是 Anthropic 最强大的编码和长期运行专业任务模型。它是为跨整个工作流程而不是单个提示操作的代理而构建的，这使得它对于大型代码库、复杂的重构和随着时间的推移而展开的多步骤调试特别有效。与前几代模型相比，该模型显示出更深入的背景理解、更强的问题分解以及在艰巨的工程任务上更高的可靠性。  除了编码之外，Opus 4.6 还擅长持续的知识工作。它一次性生成接近生产就绪的文档、计划和分析，并在很长的输出和扩展会话中保持一致性。这使得它成为需要持久性、判断力和后续行动的任务的强大默认值，例如技术设计、迁移规划和端到端项目执行。  对于从早期 Opus 版本升级的用户，请参阅我们的[官方迁移指南](https://openrouter.ai/docs/guides/guides/model-migrations/claude-4-6-opus) |
+
+## 🏢 Arcee-ai (7 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Arcee AI: Trinity Large Preview (free)** | 📝 语言模型 | `arcee-ai/trinity-large-preview:free` | 131K | 免费 | Trinity-Large-Preview 是 Arcee 的前沿规模开放权重语言模型，构建为 400B 参数稀疏专家混合，每个令牌有 13B 活动参数，使用 256 个专家路由中的 4 个。   它在创意写作、讲故事、角色扮演、聊天场景和实时语音帮助方面表现出色，比一般的推理模型通常更好。但我们也推出了一些较新的代理性能。它经过训练，可以在 OpenCode、Cline 和 Kilo Code 等代理工具中很好地导航，并处理复杂的工具链和长且充满约束的提示。   该架构本身支持长达 512k 令牌的超长上下文窗口，预览 API 目前在 128k 上下文中使用 8 位量化进行实际部署。 Trinity-Large-Preview 体现了 Arcee 效率第一的设计理念，提供了面向生产的前沿模型，具有开放权重和适合现实世界应用和实验的许可许可。 |
+| **Arcee AI: Trinity Mini (free)** | 📝 语言模型 | `arcee-ai/trinity-mini:free` | 131.072K | 免费 | Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。 |
+| **Arcee AI: Trinity Mini** | 📝 语言模型 | `arcee-ai/trinity-mini` | 131.072K | 输入 $0.04/1M, 输出 $0.15/1M | Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。 |
+| **Arcee AI: Spotlight** | 👁️ 视觉多模态 | `arcee-ai/spotlight` | 131.072K | 输入 $0.18/1M, 输出 $0.18/1M | Spotlight 是一个源自 Qwen2.5-VL 的 70 亿参数视觉语言模型，并由 Arcee AI 进行微调，用于执行严格的图像文本基础任务。它提供了一个 32k-token 上下文窗口，可实现丰富的多模式对话，将冗长的文档与一张或多张图像结合在一起。培训强调在消费级 GPU 上进行快速推理，同时保持强大的字幕、视觉问答和图表分析的准确性。因此，Spotlight 可以巧妙地融入代理工作流程中，其中需要即时解释屏幕截图、图表或 UI 模型。早期基准测试表明，它在流行的 VQA 和 POPE 对齐测试中匹配或超过了更大的 VLM，例如 LLaVA-1.6 13B。 |
+| **Arcee AI: Maestro Reasoning** | 📝 语言模型 | `arcee-ai/maestro-reasoning` | 131.072K | 输入 $0.9/1M, 输出 $3.3/1M | Maestro Reasoning 是 Arcee 的旗舰分析模型：Qwen2.5-32B 的 32B 参数衍生模型，通过 DPO 和思想链 RL 进行调整，实现逐步逻辑。与早期的 7B 预览版相比，生产版 32B 将上下文窗口扩大到 128k 令牌，并将 MATH 和 GSM-8K 的通过率提高了一倍，同时还提高了代码完成的准确性。其指令风格鼓励结构化的“思想→答案”痕迹，可以根据用户偏好进行解析或隐藏。这种透明度与金融或医疗保健等以审计为重点的行业相得益彰，在这些行业中，了解推理路径很重要。在 Arcee Conductor 中，会自动选择 Maestro 来执行小型 SLM 反弹的复杂、多约束查询。 |
+| **Arcee AI: Virtuoso Large** | 📝 语言模型 | `arcee-ai/virtuoso-large` | 131.072K | 输入 $0.75/1M, 输出 $1.2/1M | Virtuoso‑Large 是 Arcee 的顶级通用 LLM，参数为 72B，旨在解决跨领域推理、创意写作和企业 QA 问题。与许多 70B 同行不同，它保留了从 Qwen2.5 继承的 128k 上下文，使其可以批量摄取书籍、代码库或财务文件。训练混合 DeepSeekR1 蒸馏、多周期监督微调和最终 DPO/RLHF 对齐阶段，在 BIG-Bench-Hard、GSM-8K 和长上下文 Needle-In-Haystack 测试中产生强大的性能。当其他 SLM 标记为低置信度时，企业使用 Virtuoso‑Large 作为 Conductor 管道中的“后备”大脑。尽管其规模很大，但积极的 KV 缓存优化将 8×H100 节点上的第一个令牌延迟保持在低秒范围内，使其成为实用的生产级动力源。 |
+| **Arcee AI: Coder Large** | 📝 语言模型 | `arcee-ai/coder-large` | 32.768K | 输入 $0.5/1M, 输出 $0.8/1M | Coder‑Large 是 Qwen2.5‑Instruct 的 32B 参数后代，已在许可的 GitHub、CodeSearchNet 和综合错误修复语料库上接受了进一步培训。它支持 32k 上下文窗口，可在一次调用中实现多文件重构或长差异审查，并理解 30 多种编程语言，特别关注 TypeScript、Go 和 Terraform。内部基准测试显示，由于奖励可编译输出的强化通道，HumanEval 和具有竞争力的 BugFix 分数比 CodeLlama-34B-Python 提高了 5-8 分。默认情况下，该模型会随代码块一起发出结构化解释，使其适用于教育工具以及生产副驾驶场景。从成本角度来看，Together AI 的价格远低于专有的现有产品，因此团队可以在不失控支出的情况下扩展交互式编码。 |
+
+## 🏢 Baidu (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Baidu: ERNIE 4.5 21B A3B Thinking** | 📝 语言模型 | `baidu/ernie-4.5-21b-a3b-thinking` | 131.072K | 输入 $0.07/1M, 输出 $0.28/1M | ERNIE-4.5-21B-A3B-Thinking 是百度升级后的轻量级 MoE 模型，经过改进，可提高推理深度和质量，在逻辑谜题、数学、科学、编码、文本生成和专家级学术基准测试中实现顶级性能。 |
+| **Baidu: ERNIE 4.5 21B A3B** | 📝 语言模型 | `baidu/ernie-4.5-21b-a3b` | 120K | 输入 $0.07/1M, 输出 $0.28/1M | 复杂的基于文本的专家混合 (MoE) 模型，具有 21B 个总参数，每个令牌激活 3B 个参数，通过异构 MoE 结构和模态隔离路由提供卓越的多模态理解和生成。该模型支持广泛的 131K 令牌上下文长度，通过多专家并行协作和量化实现高效推理，而包括 SFT、DPO 和 UPO 在内的先进后训练技术可通过专门的路由和平衡损失来确保跨不同应用程序的优化性能，以实现卓越的任务处理。 |
+| **Baidu: ERNIE 4.5 VL 28B A3B** | 👁️ 视觉多模态 | `baidu/ernie-4.5-vl-28b-a3b` | 30K | 输入 $0.14/1M, 输出 $0.56/1M | 强大的多模式专家混合聊天模型，具有 28B 总参数，每个令牌激活 3B，通过其创新的异构 MoE 结构和模态隔离路由提供卓越的文本和视觉理解。该模型采用用于高吞吐量训练和推理的可扩展高效基础设施构建，利用先进的训练后技术（包括 SFT、DPO 和 UPO）来优化性能，同时支持令人印象深刻的 131K 上下文长度和 RLVR 对齐，以实现卓越的跨模式推理和生成功能。 |
+| **Baidu: ERNIE 4.5 VL 424B A47B ** | 👁️ 视觉多模态 | `baidu/ernie-4.5-vl-424b-a47b` | 123K | 输入 $0.42/1M, 输出 $1.25/1M | ERNIE-4.5-VL-424B-A47B 是百度 ERNIE 4.5 系列的多模式专家混合 (MoE) 模型，具有 424B 总参数，每个代币有 47B 活跃参数。它使用异构 MoE 架构和模态隔离路由对文本和图像数据进行联合训练，以实现高保真跨模态推理、图像理解和长上下文生成（最多 131k 个标记）。该模型通过 SFT、DPO、UPO 和 RLVR 等技术进行微调，支持“思考”和非思考推理模式。它专为英语和中文视觉语言任务而设计，针对高效缩放进行了优化，并且可以在 4 位/8 位量化下运行。 |
+| **Baidu: ERNIE 4.5 300B A47B ** | 📝 语言模型 | `baidu/ernie-4.5-300b-a47b` | 123K | 输入 $0.28/1M, 输出 $1.1/1M | ERNIE-4.5-300B-A47B 是百度开发的 300B 参数 Mixture-of-Experts (MoE) 语言模型，属于 ERNIE 4.5 系列的一部分。它每个令牌激活 47B 个参数，并支持中英文文本生成。它针对高吞吐量推理和高效扩展进行了优化，采用异构 MoE 结构，具有先进的路由和量化策略，包括 FP8 和 2 位格式。该版本针对仅语言任务进行了微调，并支持推理、工具参数以及高达 131k 标记的扩展上下文长度。适用于具有高推理和吞吐量要求的通用 LLM 应用。 |
+
+## 🏢 Bytedance (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **ByteDance: UI-TARS 7B ** | 👁️ 视觉多模态 | `bytedance/ui-tars-1.5-7b` | 128K | 输入 $0.1/1M, 输出 $0.2/1M | UI-TARS-1.5 是一种多模式视觉语言代理，针对基于 GUI 的环境进行了优化，包括桌面界面、Web 浏览器、移动系统和游戏。它由字节跳动构建，建立在 UI-TARS 框架之上，具有基于强化学习的推理，可跨虚拟界面实现稳健的行动规划和执行。  该模型在一系列交互和基础基准测试中取得了最先进的结果，包括 OSwor​​ld、WebVoyager、AndroidWorld 和 ScreenSpot。它还在各种 Poki 游戏中展示了完美的任务完成能力，并且在 Minecraft 代理任务中优于之前的模型。 UI-TARS-1.5 支持推理过程中的思维分解，并显示出跨变体的强大扩展性，1.5 版本明显超过了早期 72B 和 7B 检查点的性能。 |
 
 ## 🏢 Cohere (6 个模型)
 **原生 API 地址**: `https://api.cohere.ai/v1`  
@@ -175,6 +244,17 @@
 | **Google: Gemma 2 9B** | 📝 语言模型 | `google/gemma-2-9b-it` | 8.192K | 输入 $0.03/1M, 输出 $0.09/1M | Google 的 Gemma 2 9B 是一种先进的开源语言模型，为同类规模的效率和性能树立了新标准。  它专为各种任务而设计，使开发人员和研究人员能够构建创新的应用程序，同时保持可访问性、安全性和成本效益。  有关更多详细信息，请参阅[发布公告](https://blog.google/technology/developers/google-gemma-2/)。 Gemma 的使用须遵守 Google 的 [Gemma 使用条款](https://ai.google.dev/gemma/terms)。 |
 | **Google: Text Embedding 004** | 🔢 向量/Embedding | `google/text-embedding-004` | 2.048K | 输入 $0.02/1M, 输出 $0/1M | Google Gemini 文本嵌入模型。 |
 
+## 🏢 Jina (1 个模型)
+**原生 API 地址**: `https://api.jina.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `EMBEDDING`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Jina: Embeddings v3** | 🔢 向量/Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
+
 ## 🏢 Meta-llama (14 个模型)
 **原生 API 地址**: `Unknown`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
@@ -292,6 +372,37 @@
 | **MoonshotAI: Kimi K2 Thinking** | 📝 语言模型 | `moonshotai/kimi-k2-thinking` | 131.072K | 输入 $0.47/1M, 输出 $2/1M | Kimi K2 Thinking 是 Moonshot AI 迄今为止最先进的开放推理模型，将 K2 系列扩展到代理、长视野推理。它建立在 Kimi K2 中引入的万亿参数专家混合 (MoE) 架构之上，每次前向传递激活 320 亿个参数，并支持 256 k-token 上下文窗口。该模型针对持续的逐步思考、动态工具调用以及跨越数百个回合的复杂推理工作流程进行了优化。它将逐步推理与工具使用交织在一起，实现自主研究、编码和写作，可以持续进行数百个连续操作而不会出现偏差。  它在 HLE、BrowseComp、SWE-Multilingual 和 LiveCodeBench 上设定了新的开源基准，同时通过 200-300 次工具调用保持稳定的多代理行为。它建立在具有 MuonClip 优化的大规模 MoE 架构之上，将强大的推理深度与高推理效率相结合，适用于要求苛刻的代理和分析任务。 |
 | **MoonshotAI: Kimi K2 0905** | 📝 语言模型 | `moonshotai/kimi-k2-0905` | 131.072K | 输入 $0.4/1M, 输出 $2/1M | Kimi K2 0905 是 [Kimi K2 0711](moonshotai/kimi-k2) 的 9 月更新。它是由 Moonshot AI 开发的大规模专家混合 (MoE) 语言模型，具有 1 万亿个总参数，每个前向传递 320 亿个活跃值。它支持最多 256k 个 token 的长上下文推理，较之前的 128k 有所扩展。  此更新以更高的准确性和更好的跨支架泛化改进了代理编码，并通过针对 Web、3D 和相关任务的更美观和功能性的输出增强了前端编码。 Kimi K2 针对代理功能进行了优化，包括高级工具使用、推理和代码合成。它在编码（LiveCodeBench、SWE-bench）、推理（ZebraLogic、GPQA）和工具使用（Tau2、AceBench）基准测试方面表现出色。该模型采用新颖的堆栈进行训练，其中包含 MuonClip 优化器，以实现稳定的大规模 MoE 训练。 |
 | **MoonshotAI: Kimi K2 0711** | 📝 语言模型 | `moonshotai/kimi-k2` | 131.072K | 输入 $0.57/1M, 输出 $2.3/1M | Kimi K2 Instruct 是 Moonshot AI 开发的大规模专家混合 (MoE) 语言模型，具有 1 万亿个总参数，每个前向传递有 320 亿个活跃值。它针对代理功能进行了优化，包括高级工具使用、推理和代码合成。 Kimi K2 在广泛的基准测试中表现出色，特别是在编码（LiveCodeBench、SWE-bench）、推理（ZebraLogic、GPQA）和工具使用（Tau2、AceBench）任务方面。它支持高达 128K 令牌的长上下文推理，并采用新颖的训练堆栈进行设计，其中包括用于稳定的大规模 MoE 训练的 MuonClip 优化器。 |
+
+## 🏢 Nvidia (11 个模型)
+**原生 API 地址**: `https://integrate.api.nvidia.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 Llama 3.1 系列
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **NVIDIA: Llama 3.1 Nemotron Ultra 253B v1** | 📝 语言模型 | `nvidia/llama-3.1-nemotron-ultra-253b-v1` | 131.072K | 输入 $0.6/1M, 输出 $1.8/1M | Llama-3.1-Nemotron-Ultra-253B-v1 是一种大型语言模型 (LLM)，针对高级推理、人机交互聊天、检索增强生成 (RAG) 和工具调用任务进行了优化。它源自 Meta 的 Llama-3.1-405B-Instruct，已使用神经架构搜索 (NAS) 进行了显着定制，从而提高了效率、减少了内存使用并改善了推理延迟。该模型支持高达 128K 令牌的上下文长度，并且可以在 8 个 NVIDIA H100 节点上高效运行。  注意：系统提示中必须包含“详细思考”才能启用推理。请参阅[使用建议](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1#quick-start-and-usage-recommendations)了解更多信息。 |
+| **NVIDIA: Llama 3.1 Nemotron 70B Instruct** | 📝 语言模型 | `nvidia/llama-3.1-nemotron-70b-instruct` | 131.072K | 输入 $1.2/1M, 输出 $1.2/1M | NVIDIA 的 Llama 3.1 Nemotron 70B 是一种语言模型，旨在生成精确且有用的响应。利用 [Llama 3.1 70B](/models/meta-llama/llama-3.1-70b-instruct) 架构和人类反馈强化学习 (RLHF)，它在自动对齐基准方面表现出色。该模型专为需要高精度帮助和响应生成的应用程序量身定制，适合跨多个域的不同用户查询。  该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。 |
+
+### 📂 Llama 3.3 系列
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **NVIDIA: Llama 3.3 Nemotron Super 49B V1.5** | 📝 语言模型 | `nvidia/llama-3.3-nemotron-super-49b-v1.5` | 131.072K | 输入 $0.1/1M, 输出 $0.4/1M | Llama-3.3-Nemotron-Super-49B-v1.5 是一个 49B 参数、以英语为中心的推理/聊天模型，源自 Meta 的 Llama-3.3-70B-Instruct，具有 128K 上下文。它通过数学、代码、科学和多轮聊天的 SFT 对代理工作流程（RAG、工具调用）进行后训练，然后是多个 RL 阶段；用于对齐的奖励感知偏好优化 (RPO)、用于逐步推理的带有可验证奖励的 RL (RLVR) 以及用于细化工具使用行为的迭代 DPO。蒸馏驱动的神经架构搜索（“Puzzle”）取代了一些注意力块并改变了 FFN 宽度，以缩小内存占用并提高吞吐量，从而实现单 GPU (H100/H200) 部署，同时保持指令跟踪和 CoT 质量。  在内部评估中（NeMo-Skills，最多 16 次运行，temp = 0.6，top_p = 0.95），模型报告强大的推理/编码结果，例如 MATH500 pass@1 = 97.4、AIME-2024 = 87.5、AIME-2025 = 82.71、GPQA = 71.97、LiveCodeBench (24.10–25.02) = 73.58，MMLU-Pro (CoT) = 79.53。该模型的目标是通过 Transformers/vLLM 支持和明确的“推理开/关”模式（默认聊天优先，禁用时建议贪婪）实现实际推理效率（高令牌/秒、减少 VRAM）。适用于构建代理、助手和长上下文检索系统，在这些系统中平衡准确性与成本和可靠的工具使用很重要。 |
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **NVIDIA: Nemotron 3 Super (free)** | 📝 语言模型 | `nvidia/nemotron-3-super-120b-a12b:free` | 262.144K | 免费 | NVIDIA Nemotron 3 Super 是一种 120B 参数开放式混合 MoE 模型，只需激活 12B 参数即可在复杂的多代理应用程序中实现最大计算效率和准确性。它建立在具有多代币预测 (MTP) 的混合 Mamba-Transformer Mixture-of Experts 架构之上，与领先的开放模型相比，其代币生成量提高了 50% 以上。   该模型具有 1M 令牌上下文窗口，用于长期代理一致性、跨文档推理和多步骤任务规划。潜在 MoE 能够以一名专家的推理成本呼叫 4 名专家，从而提高智能性和泛化性。跨 10 多个环境的多环境 RL 训练可在 AIME 2025、TerminalBench 和 SWE-Bench Verified 等基准测试中提供领先的准确性。   Nemotron 3 Super 在 NVIDIA 开放许可证下完全开放权重、数据集和配方，允许在从工作站到云端的任何地方轻松定制和安全部署。 |
+| **NVIDIA: Nemotron 3 Super** | 📝 语言模型 | `nvidia/nemotron-3-super-120b-a12b` | 262.144K | 输入 $0.1/1M, 输出 $0.5/1M | NVIDIA Nemotron 3 Super 是一种 120B 参数开放式混合 MoE 模型，只需激活 12B 参数即可在复杂的多代理应用程序中实现最大计算效率和准确性。它建立在具有多代币预测 (MTP) 的混合 Mamba-Transformer Mixture-of Experts 架构之上，与领先的开放模型相比，其代币生成量提高了 50% 以上。   该模型具有 1M 令牌上下文窗口，用于长期代理一致性、跨文档推理和多步骤任务规划。潜在 MoE 能够以一名专家的推理成本呼叫 4 名专家，从而提高智能性和泛化性。跨 10 多个环境的多环境 RL 训练可在 AIME 2025、TerminalBench 和 SWE-Bench Verified 等基准测试中提供领先的准确性。   Nemotron 3 Super 在 NVIDIA 开放许可证下完全开放权重、数据集和配方，允许在从工作站到云端的任何地方轻松定制和安全部署。 |
+| **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | 📝 语言模型 | `nvidia/nemotron-3-nano-30b-a3b:free` | 256K | 免费 | NVIDIA Nemotron 3 Nano 30B A3B 是一种小语言 MoE 模型，具有最高的计算效率和准确性，可供开发人员构建专门的代理 AI 系统。  该模型完全开放，具有开放权重、数据集和配方，因此开发人员可以轻松 在其基础设施上定制、优化和部署模型，以实现最大程度的隐私保护和 安全。 |
+| **NVIDIA: Nemotron 3 Nano 30B A3B** | 📝 语言模型 | `nvidia/nemotron-3-nano-30b-a3b` | 262.144K | 输入 $0.05/1M, 输出 $0.2/1M | NVIDIA Nemotron 3 Nano 30B A3B 是一种小语言 MoE 模型，具有最高的计算效率和准确性，可供开发人员构建专门的代理 AI 系统。  该模型完全开放，具有开放权重、数据集和配方，因此开发人员可以轻松 在其基础设施上定制、优化和部署模型，以实现最大程度的隐私保护和 安全。 |
+| **NVIDIA: Nemotron Nano 12B 2 VL (free)** | 👁️ 视觉多模态 | `nvidia/nemotron-nano-12b-v2-vl:free` | 128K | 免费 | NVIDIA Nemotron Nano 2 VL 是一个拥有 120 亿参数的开放式多模态推理模型，专为视频理解和文档智能而设计。它引入了混合 Transformer-Mamba 架构，将 Transformer 级精度与 Mamba 的内存高效序列建模相结合，从而显着提高吞吐量并降低延迟。  该模型支持文本和多图像文档的输入，生成自然语言输出。它接受了 NVIDIA 策划的高质量合成数据集的训练，这些数据集针对光学字符识别、图表推理和多模式理解进行了优化。  Nemotron Nano 2 VL 在 OCRBench v2 上取得了领先的结果，并且在 MMMU、MathVista、AI2D、OCRBench、OCR-Reasoning、ChartQA、DocVQA 和 Video-MME 上的平均得分约为 74，超越了之前的开放 VL 基线。借助高效视频采样 (EVS)，它可以处理长视频，同时降低推理成本。  开放权重、训练数据和微调方案是在 NVIDIA 开放许可证下发布的，并支持跨 NeMo、NIM 和主要推理运行时的部署。 |
+| **NVIDIA: Nemotron Nano 12B 2 VL** | 👁️ 视觉多模态 | `nvidia/nemotron-nano-12b-v2-vl` | 131.072K | 输入 $0.2/1M, 输出 $0.6/1M | NVIDIA Nemotron Nano 2 VL 是一个拥有 120 亿参数的开放式多模态推理模型，专为视频理解和文档智能而设计。它引入了混合 Transformer-Mamba 架构，将 Transformer 级精度与 Mamba 的内存高效序列建模相结合，从而显着提高吞吐量并降低延迟。  该模型支持文本和多图像文档的输入，生成自然语言输出。它接受了 NVIDIA 策划的高质量合成数据集的训练，这些数据集针对光学字符识别、图表推理和多模式理解进行了优化。  Nemotron Nano 2 VL 在 OCRBench v2 上取得了领先的结果，并且在 MMMU、MathVista、AI2D、OCRBench、OCR-Reasoning、ChartQA、DocVQA 和 Video-MME 上的平均得分约为 74，超越了之前的开放 VL 基线。借助高效视频采样 (EVS)，它可以处理长视频，同时降低推理成本。  开放权重、训练数据和微调方案是在 NVIDIA 开放许可证下发布的，并支持跨 NeMo、NIM 和主要推理运行时的部署。 |
+| **NVIDIA: Nemotron Nano 9B V2 (free)** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2:free` | 128K | 免费 | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
+| **NVIDIA: Nemotron Nano 9B V2** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2` | 131.072K | 输入 $0.04/1M, 输出 $0.16/1M | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
 
 ## 🏢 Openai (65 个模型)
 **原生 API 地址**: `https://api.openai.com/v1`  
@@ -529,7 +640,95 @@
 | **StepFun: Step 3.5 Flash (free)** | 📝 语言模型 | `stepfun/step-3.5-flash:free` | 256K | 免费 | Step 3.5 Flash是StepFun最强大的开源基础模型。它建立在稀疏专家混合 (MoE) 架构之上，每个令牌有选择地仅激活 196B 参数中的 11B。这是一种推理模型，即使在长上下文中也具有令人难以置信的速度效率。 |
 | **StepFun: Step 3.5 Flash** | 📝 语言模型 | `stepfun/step-3.5-flash` | 256K | 输入 $0.1/1M, 输出 $0.3/1M | Step 3.5 Flash是StepFun最强大的开源基础模型。它建立在稀疏专家混合 (MoE) 架构之上，每个令牌有选择地仅激活 196B 参数中的 11B。这是一种推理模型，即使在长上下文中也具有令人难以置信的速度效率。 |
 
-## 🏢 OpenRouter (125 个模型)
+## 🏢 Tencent (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Tencent: Hunyuan A13B Instruct** | 📝 语言模型 | `tencent/hunyuan-a13b-instruct` | 131.072K | 输入 $0.14/1M, 输出 $0.57/1M | Hunyuan-A13B是腾讯开发的13B主动参数Mixture-of-Experts (MoE)语言模型，总参数数为80B，支持Chain-of-Thought推理。它在数学、科学、编码和多轮推理任务方面提供具有竞争力的基准性能，同时通过分组查询注意 (GQA) 和量化支持（FP8、GPTQ 等）保持高推理效率。 |
+
+## 🏢 Upstage (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Upstage: Solar Pro 3** | 📝 语言模型 | `upstage/solar-pro-3` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | Solar Pro 3 是 Upstage 强大的专家混合 (MoE) 语言模型。凭借 102B 总参数和每次前向传递 12B 活动参数，它可在保持计算效率的同时提供卓越的性能。针对韩语进行了优化，并支持英语和日语。 |
+
+## 🏢 Voyageai (2 个模型)
+**原生 API 地址**: `https://api.voyageai.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Voyage AI: Voyage 3** | 📝 语言模型 | `voyageai/voyage-3` | 32K | 输入 $0.12/1M, 输出 $0/1M | 最先进的通用嵌入模型。 |
+| **Voyage AI: Voyage 3 Lite** | 📝 语言模型 | `voyageai/voyage-3-lite` | 32K | 输入 $0.04/1M, 输出 $0/1M | 快速且经济高效的通用嵌入模型。 |
+
+## 🏢 X-ai (10 个模型)
+**原生 API 地址**: `https://api.x.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **xAI: Grok 4.20 Multi-Agent Beta** | 👁️ 视觉多模态 | `x-ai/grok-4.20-multi-agent-beta` | 2000K | 输入 $2/1M, 输出 $6/1M | Grok 4.20 Multi-Agent Beta 是 xAI Grok 4.20 的变体，专为基于代理的协作工作流程而设计。多个代理并行运行，以进行深入研究、协调工具使用并综合复杂任务中的信息。  推理努力行为： - 低/中：4 个代理 - 高/超高：16 名特工 |
+| **xAI: Grok 4.20 Beta** | 👁️ 视觉多模态 | `x-ai/grok-4.20-beta` | 2000K | 输入 $2/1M, 输出 $6/1M | Grok 4.20 Beta 是 xAI 的最新旗舰型号，具有业界领先的速度和代理工具调用功能。它将市场上最低的幻觉率与严格的及时遵守结合起来，提供始终如一的精确和真实的反应。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
+| **xAI: Grok 4.1 Fast** | 👁️ 视觉多模态 | `x-ai/grok-4.1-fast` | 2000K | 输入 $0.2/1M, 输出 $0.5/1M | Grok 4.1 Fast 是 xAI 最好的代理工具调用模型，在客户支持和深入研究等实际用例中表现出色。 2M上下文窗口。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
+| **xAI: Grok 4 Fast** | 👁️ 视觉多模态 | `x-ai/grok-4-fast` | 2000K | 输入 $0.2/1M, 输出 $0.5/1M | Grok 4 Fast 是 xAI 最新的多模式模型，具有 SOTA 成本效率和 2M 令牌上下文窗口。它有两种风格：非推理和推理。在 xAI 的[新闻文章](http://x.ai/news/grok-4-fast) 上了解有关该模型的更多信息。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
+| **xAI: Grok Code Fast 1** | 📝 语言模型 | `x-ai/grok-code-fast-1` | 256K | 输入 $0.2/1M, 输出 $1.5/1M | Grok Code Fast 1 是一种快速且经济的推理模型，擅长代理编码。通过响应中可见的推理痕迹，开发人员可以引导 Grok Code 实现高质量的工作流程。 |
+| **xAI: Grok 4** | 👁️ 视觉多模态 | `x-ai/grok-4` | 256K | 输入 $3/1M, 输出 $15/1M | Grok 4 是 xAI 最新的推理模型，具有 256k 上下文窗口。它支持并行工具调用、结构化输出以及图像和文本输入。请注意，推理不会公开，无法禁用推理，并且无法指定推理工作。一旦给定请求中的总代币数量超过 128k 代币，定价就会增加。有关更多详细信息，请参阅 [xAI 文档](https://docs.x.ai/docs/models/grok-4-0709) |
+| **xAI: Grok 3 Mini** | 📝 语言模型 | `x-ai/grok-3-mini` | 131.072K | 输入 $0.3/1M, 输出 $0.5/1M | 一个轻量级模型，在响应之前进行思考。快速、智能，非常适合不需要深厚领域知识的基于逻辑的任务。原始思维痕迹是可以触及的。 |
+| **xAI: Grok 3** | 📝 语言模型 | `x-ai/grok-3` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。 |
+| **xAI: Grok 3 Mini Beta** | 📝 语言模型 | `x-ai/grok-3-mini-beta` | 131.072K | 输入 $0.3/1M, 输出 $0.5/1M | Grok 3 Mini 是一款轻量级、体积更小的思维模型。与立即生成答案的传统模型不同，Grok 3 Mini 在做出响应之前会进行思考。它非常适合不需要广泛领域知识的推理繁重任务，并且在数学特定和定量用例中表现出色，例如解决具有挑战性的难题或数学问题。  透明的“思维”痕迹触手可及。默认为低推理，可以通过设置“推理：{努力：“高”}”来提升  注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
+| **xAI: Grok 3 Beta** | 📝 语言模型 | `x-ai/grok-3-beta` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。  在 GPQA、LCB 和 MMLU-Pro 等结构化任务和基准测试中表现出色，甚至在高级思维方面也优于 Grok 3 Mini。   注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
+
+## 🏢 Xiaomi (3 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Xiaomi: MiMo-V2-Omni** | 🌌 全模态 (图/文/音/视) | `xiaomi/mimo-v2-omni` | 262.144K | 输入 $0.4/1M, 输出 $2/1M | MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。 |
+| **Xiaomi: MiMo-V2-Pro** | 📝 语言模型 | `xiaomi/mimo-v2-pro` | 1048.576K | 输入 $1/1M, 输出 $3/1M | MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。 |
+| **Xiaomi: MiMo-V2-Flash** | 📝 语言模型 | `xiaomi/mimo-v2-flash` | 262.144K | 输入 $0.09/1M, 输出 $0.29/1M | MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。  用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。 |
+
+## 🏢 Z-ai (11 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他型号/迭代
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Z.ai: GLM 5 Turbo** | 📝 语言模型 | `z-ai/glm-5-turbo` | 202.752K | 输入 $1.2/1M, 输出 $4/1M | GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。 |
+| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 202.752K | 输入 $0.8/1M, 输出 $2.56/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
+| **Z.ai: GLM 4.7 Flash** | 📝 语言模型 | `z-ai/glm-4.7-flash` | 202.752K | 输入 $0.06/1M, 输出 $0.4/1M | 作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。 |
+| **Z.ai: GLM 4.7** | 📝 语言模型 | `z-ai/glm-4.7` | 202.752K | 输入 $0.39/1M, 输出 $1.75/1M | GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。 |
+| **Z.ai: GLM 4.6V** | 👁️ 视觉多模态 | `z-ai/glm-4.6v` | 131.072K | 输入 $0.3/1M, 输出 $0.9/1M | GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。 |
+| **Z.ai: GLM 4.6** | 📝 语言模型 | `z-ai/glm-4.6` | 204.8K | 输入 $0.39/1M, 输出 $1.9/1M | 与GLM-4.5相比，这一代带来了几项关键改进：  更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。 卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。 高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。 更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。 文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。 |
+| **Z.ai: GLM 4.5V** | 👁️ 视觉多模态 | `z-ai/glm-4.5v` | 65.536K | 输入 $0.6/1M, 输出 $1.8/1M | GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5** | 📝 语言模型 | `z-ai/glm-4.5` | 131.072K | 输入 $0.6/1M, 输出 $2.2/1M | GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5 Air (free)** | 📝 语言模型 | `z-ai/glm-4.5-air:free` | 131.072K | 免费 | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5 Air** | 📝 语言模型 | `z-ai/glm-4.5-air` | 131.072K | 输入 $0.13/1M, 输出 $0.85/1M | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4 32B ** | 📝 语言模型 | `z-ai/glm-4-32b` | 128K | 输入 $0.1/1M, 输出 $0.1/1M | GLM 4 32B 是一种经济高效的基础语言模型。  它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。  它是由 thudm 模型背后的同一实验室制造的。 |
+
+## 🏢 OpenRouter (66 个模型)
 **原生 API 地址**: `https://openrouter.ai/api/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
 **提供能力**: `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
@@ -555,12 +754,6 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **AlfredPros: CodeLLaMa 7B Instruct Solidity** | 📝 语言模型 | `alfredpros/codellama-7b-instruct-solidity` | 4.096K | 输入 $0.8/1M, 输出 $1.2/1M | 经过微调的 70 亿个参数代码 LLaMA - 使用 PEFT 库提供的 4 位 QLoRA 微调指令模型生成 Solidity 智能合约。 |
 
-### 📂 Alibaba
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tongyi DeepResearch 30B A3B** | 📝 语言模型 | `alibaba/tongyi-deepresearch-30b-a3b` | 131.072K | 输入 $0.09/1M, 输出 $0.45/1M | 统一DeepResearch是统一实验室开发的代理大语言模型，总参数300亿个，每个token只激活30亿个。它针对长期、深度信息搜索任务进行了优化，并在 Humanity's Last Exam、BrowserComp、BrowserComp-ZH、WebWalkerQA、GAIA、xbench-DeepSearch 和 FRAMES 等基准测试中提供最先进的性能。与之前的模型相比，这使得它在复杂的代理搜索、推理和多步骤问题解决方面表现出色。  该模型包括一个全自动合成数据管道，用于可扩展的预训练、微调和强化学习。它使用对不同代理数据的大规模持续预训练来增强推理并保持新鲜感。它还具有端到端同策略 RL 和定制的组相对策略优化，包括令牌级梯度和用于稳定训练的负样本过滤。该模型支持 ReAct 进行核心能力检查，并支持基于 IterResearch 的“Heavy”模式，通过测试时间扩展实现最大性能。它非常适合高级研究代理、工具使用和繁重的推理工作流程。 |
-
 ### 📂 Allenai
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
@@ -576,49 +769,11 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Goliath 120B** | 📝 语言模型 | `alpindale/goliath-120b` | 6.144K | 输入 $3.75/1M, 输出 $7.5/1M | 通过将两个经过微调的 Llama 70B 模型组合成一个 120B 模型而创建的大型法学硕士。结合了 Xwin 和 Euryale。  致谢 - [@chargoddard](https://huggingface.co/chargoddard) 用于开发用于合并模型的框架 - [mergekit](https://github.com/cg123/mergekit)。 - [@Undi95](https://huggingface.co/Undi95) 帮助提高合并比率。  ＃合并 |
 
-### 📂 Amazon
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Amazon: Nova 2 Lite** | 👁️ 视觉多模态 | `amazon/nova-2-lite-v1` | 1000K | 输入 $0.3/1M, 输出 $2.5/1M | Nova 2 Lite 是一种快速、经济高效的推理模型，适用于日常工作负载，可以处理文本、图像和视频以生成文本。   Nova 2 Lite 在处理文档、从视频中提取信息、生成代码、提供准确的答案以及自动化多步骤代理工作流程方面展现了出色的功能。 |
-| **Amazon: Nova Premier 1.0** | 👁️ 视觉多模态 | `amazon/nova-premier-v1` | 1000K | 输入 $2.5/1M, 输出 $12.5/1M | Amazon Nova Premier 是 Amazon 多模式模型中最有能力完成复杂推理任务的模型，也是提炼自定义模型的最佳老师。 |
-| **Amazon: Nova Lite 1.0** | 👁️ 视觉多模态 | `amazon/nova-lite-v1` | 300K | 输入 $0.06/1M, 输出 $0.24/1M | Amazon Nova Lite 1.0 是 Amazon 的一种非常低成本的多模式模型，专注于快速处理图像、视频和文本输入以生成文本输出。 Amazon Nova Lite 可以高精度处理实时客户交互、文档分析和可视化问答任务。  通过 300K 令牌的输入上下文，它可以在单个输入中分析多个图像或长达 30 分钟的视频。 |
-| **Amazon: Nova Micro 1.0** | 📝 语言模型 | `amazon/nova-micro-v1` | 128K | 输入 $0.04/1M, 输出 $0.14/1M | Amazon Nova Micro 1.0 是纯文本模型，能够以极低的成本提供 Amazon Nova 系列模型中最低的延迟响应。 Amazon Nova Micro 的上下文长度为 128K 令牌，并针对速度和成本进行了优化，擅长执行文本摘要、翻译、内容分类、交互式聊天和头脑风暴等任务。它具有简单的数学推理和编码能力。 |
-| **Amazon: Nova Pro 1.0** | 👁️ 视觉多模态 | `amazon/nova-pro-v1` | 300K | 输入 $0.8/1M, 输出 $3.2/1M | Amazon Nova Pro 1.0 是 Amazon 的一款功能强大的多模式模型，专注于为各种任务提供准确性、速度和成本的组合。截至 2024 年 12 月，它在视觉问答 (TextVQA) 和视频理解 (VATEX) 等关键基准测试中实现了最先进的性能。  Amazon Nova Pro 在处理视觉和文本信息以及分析财务文档方面表现出强大的能力。  **注意**：目前不支持视频输入。 |
-
 ### 📂 Anthracite-org
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Magnum v4 72B** | 📝 语言模型 | `anthracite-org/magnum-v4-72b` | 16.384K | 输入 $3/1M, 输出 $5/1M | 这是一系列模型，旨在复制 Claude 3 模型的散文质量，特别是 Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) 和 Opus(https://openrouter.ai/anthropic/claude-3-opus)。  该模型在 [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct) 的基础上进行了微调。 |
-
-### 📂 Arcee-ai
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Arcee AI: Trinity Large Preview (free)** | 📝 语言模型 | `arcee-ai/trinity-large-preview:free` | 131K | 免费 | Trinity-Large-Preview 是 Arcee 的前沿规模开放权重语言模型，构建为 400B 参数稀疏专家混合，每个令牌有 13B 活动参数，使用 256 个专家路由中的 4 个。   它在创意写作、讲故事、角色扮演、聊天场景和实时语音帮助方面表现出色，比一般的推理模型通常更好。但我们也推出了一些较新的代理性能。它经过训练，可以在 OpenCode、Cline 和 Kilo Code 等代理工具中很好地导航，并处理复杂的工具链和长且充满约束的提示。   该架构本身支持长达 512k 令牌的超长上下文窗口，预览 API 目前在 128k 上下文中使用 8 位量化进行实际部署。 Trinity-Large-Preview 体现了 Arcee 效率第一的设计理念，提供了面向生产的前沿模型，具有开放权重和适合现实世界应用和实验的许可许可。 |
-| **Arcee AI: Trinity Mini (free)** | 📝 语言模型 | `arcee-ai/trinity-mini:free` | 131.072K | 免费 | Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。 |
-| **Arcee AI: Trinity Mini** | 📝 语言模型 | `arcee-ai/trinity-mini` | 131.072K | 输入 $0.04/1M, 输出 $0.15/1M | Trinity Mini 是一个 26B 参数（3B 活跃）稀疏专家混合语言模型，具有 128 位专家，每个令牌有 8 个活跃专家。专为在长上下文 (131k) 上进行高效推理而设计，具有强大的函数调用和多步骤代理工作流程。 |
-| **Arcee AI: Spotlight** | 👁️ 视觉多模态 | `arcee-ai/spotlight` | 131.072K | 输入 $0.18/1M, 输出 $0.18/1M | Spotlight 是一个源自 Qwen2.5-VL 的 70 亿参数视觉语言模型，并由 Arcee AI 进行微调，用于执行严格的图像文本基础任务。它提供了一个 32k-token 上下文窗口，可实现丰富的多模式对话，将冗长的文档与一张或多张图像结合在一起。培训强调在消费级 GPU 上进行快速推理，同时保持强大的字幕、视觉问答和图表分析的准确性。因此，Spotlight 可以巧妙地融入代理工作流程中，其中需要即时解释屏幕截图、图表或 UI 模型。早期基准测试表明，它在流行的 VQA 和 POPE 对齐测试中匹配或超过了更大的 VLM，例如 LLaVA-1.6 13B。 |
-| **Arcee AI: Maestro Reasoning** | 📝 语言模型 | `arcee-ai/maestro-reasoning` | 131.072K | 输入 $0.9/1M, 输出 $3.3/1M | Maestro Reasoning 是 Arcee 的旗舰分析模型：Qwen2.5-32B 的 32B 参数衍生模型，通过 DPO 和思想链 RL 进行调整，实现逐步逻辑。与早期的 7B 预览版相比，生产版 32B 将上下文窗口扩大到 128k 令牌，并将 MATH 和 GSM-8K 的通过率提高了一倍，同时还提高了代码完成的准确性。其指令风格鼓励结构化的“思想→答案”痕迹，可以根据用户偏好进行解析或隐藏。这种透明度与金融或医疗保健等以审计为重点的行业相得益彰，在这些行业中，了解推理路径很重要。在 Arcee Conductor 中，会自动选择 Maestro 来执行小型 SLM 反弹的复杂、多约束查询。 |
-| **Arcee AI: Virtuoso Large** | 📝 语言模型 | `arcee-ai/virtuoso-large` | 131.072K | 输入 $0.75/1M, 输出 $1.2/1M | Virtuoso‑Large 是 Arcee 的顶级通用 LLM，参数为 72B，旨在解决跨领域推理、创意写作和企业 QA 问题。与许多 70B 同行不同，它保留了从 Qwen2.5 继承的 128k 上下文，使其可以批量摄取书籍、代码库或财务文件。训练混合 DeepSeekR1 蒸馏、多周期监督微调和最终 DPO/RLHF 对齐阶段，在 BIG-Bench-Hard、GSM-8K 和长上下文 Needle-In-Haystack 测试中产生强大的性能。当其他 SLM 标记为低置信度时，企业使用 Virtuoso‑Large 作为 Conductor 管道中的“后备”大脑。尽管其规模很大，但积极的 KV 缓存优化将 8×H100 节点上的第一个令牌延迟保持在低秒范围内，使其成为实用的生产级动力源。 |
-| **Arcee AI: Coder Large** | 📝 语言模型 | `arcee-ai/coder-large` | 32.768K | 输入 $0.5/1M, 输出 $0.8/1M | Coder‑Large 是 Qwen2.5‑Instruct 的 32B 参数后代，已在许可的 GitHub、CodeSearchNet 和综合错误修复语料库上接受了进一步培训。它支持 32k 上下文窗口，可在一次调用中实现多文件重构或长差异审查，并理解 30 多种编程语言，特别关注 TypeScript、Go 和 Terraform。内部基准测试显示，由于奖励可编译输出的强化通道，HumanEval 和具有竞争力的 BugFix 分数比 CodeLlama-34B-Python 提高了 5-8 分。默认情况下，该模型会随代码块一起发出结构化解释，使其适用于教育工具以及生产副驾驶场景。从成本角度来看，Together AI 的价格远低于专有的现有产品，因此团队可以在不失控支出的情况下扩展交互式编码。 |
-
-### 📂 Baidu
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Baidu: ERNIE 4.5 21B A3B Thinking** | 📝 语言模型 | `baidu/ernie-4.5-21b-a3b-thinking` | 131.072K | 输入 $0.07/1M, 输出 $0.28/1M | ERNIE-4.5-21B-A3B-Thinking 是百度升级后的轻量级 MoE 模型，经过改进，可提高推理深度和质量，在逻辑谜题、数学、科学、编码、文本生成和专家级学术基准测试中实现顶级性能。 |
-| **Baidu: ERNIE 4.5 21B A3B** | 📝 语言模型 | `baidu/ernie-4.5-21b-a3b` | 120K | 输入 $0.07/1M, 输出 $0.28/1M | 复杂的基于文本的专家混合 (MoE) 模型，具有 21B 个总参数，每个令牌激活 3B 个参数，通过异构 MoE 结构和模态隔离路由提供卓越的多模态理解和生成。该模型支持广泛的 131K 令牌上下文长度，通过多专家并行协作和量化实现高效推理，而包括 SFT、DPO 和 UPO 在内的先进后训练技术可通过专门的路由和平衡损失来确保跨不同应用程序的优化性能，以实现卓越的任务处理。 |
-| **Baidu: ERNIE 4.5 VL 28B A3B** | 👁️ 视觉多模态 | `baidu/ernie-4.5-vl-28b-a3b` | 30K | 输入 $0.14/1M, 输出 $0.56/1M | 强大的多模式专家混合聊天模型，具有 28B 总参数，每个令牌激活 3B，通过其创新的异构 MoE 结构和模态隔离路由提供卓越的文本和视觉理解。该模型采用用于高吞吐量训练和推理的可扩展高效基础设施构建，利用先进的训练后技术（包括 SFT、DPO 和 UPO）来优化性能，同时支持令人印象深刻的 131K 上下文长度和 RLVR 对齐，以实现卓越的跨模式推理和生成功能。 |
-| **Baidu: ERNIE 4.5 VL 424B A47B ** | 👁️ 视觉多模态 | `baidu/ernie-4.5-vl-424b-a47b` | 123K | 输入 $0.42/1M, 输出 $1.25/1M | ERNIE-4.5-VL-424B-A47B 是百度 ERNIE 4.5 系列的多模式专家混合 (MoE) 模型，具有 424B 总参数，每个代币有 47B 活跃参数。它使用异构 MoE 架构和模态隔离路由对文本和图像数据进行联合训练，以实现高保真跨模态推理、图像理解和长上下文生成（最多 131k 个标记）。该模型通过 SFT、DPO、UPO 和 RLVR 等技术进行微调，支持“思考”和非思考推理模式。它专为英语和中文视觉语言任务而设计，针对高效缩放进行了优化，并且可以在 4 位/8 位量化下运行。 |
-| **Baidu: ERNIE 4.5 300B A47B ** | 📝 语言模型 | `baidu/ernie-4.5-300b-a47b` | 123K | 输入 $0.28/1M, 输出 $1.1/1M | ERNIE-4.5-300B-A47B 是百度开发的 300B 参数 Mixture-of-Experts (MoE) 语言模型，属于 ERNIE 4.5 系列的一部分。它每个令牌激活 47B 个参数，并支持中英文文本生成。它针对高吞吐量推理和高效扩展进行了优化，采用异构 MoE 结构，具有先进的路由和量化策略，包括 FP8 和 2 位格式。该版本针对仅语言任务进行了微调，并支持推理、工具参数以及高达 131k 标记的扩展上下文长度。适用于具有高推理和吞吐量要求的通用 LLM 应用。 |
-
-### 📂 Bytedance
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **ByteDance: UI-TARS 7B ** | 👁️ 视觉多模态 | `bytedance/ui-tars-1.5-7b` | 128K | 输入 $0.1/1M, 输出 $0.2/1M | UI-TARS-1.5 是一种多模式视觉语言代理，针对基于 GUI 的环境进行了优化，包括桌面界面、Web 浏览器、移动系统和游戏。它由字节跳动构建，建立在 UI-TARS 框架之上，具有基于强化学习的推理，可跨虚拟界面实现稳健的行动规划和执行。  该模型在一系列交互和基础基准测试中取得了最先进的结果，包括 OSwor​​ld、WebVoyager、AndroidWorld 和 ScreenSpot。它还在各种 Poki 游戏中展示了完美的任务完成能力，并且在 Minecraft 代理任务中优于之前的模型。 UI-TARS-1.5 支持推理过程中的思维分解，并显示出跨变体的强大扩展性，1.5 版本明显超过了早期 72B 和 7B 检查点的性能。 |
 
 ### 📂 Bytedance-seed
 
@@ -679,12 +834,6 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Inflection: Inflection 3 Productivity** | 📝 语言模型 | `inflection/inflection-3-productivity` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 生产力针对以下说明进行了优化。它更适合需要 JSON 输出或精确遵守所提供指南的任务。它可以访问最近的新闻。  对于与 Pi 类似的情商，请参阅 [Inflect 3 Pi](/inflection/inflection-3-pi)  更多详情请参见[Inflection的公告](https://inflection.ai/blog/enterprise)。 |
 | **Inflection: Inflection 3 Pi** | 📝 语言模型 | `inflection/inflection-3-pi` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 Pi 为 Inflection 的 [Pi](https://pi.ai) 聊天机器人提供支持，包括背景故事、情商、生产力和安全性。它可以访问最新新闻，并且在客户支持和角色扮演等场景中表现出色。  Pi 经过训练可以反映您的语气和风格，如果您使用更多表情符号，Pi 也会如此！尝试尝试各种提示和对话方式。 |
-
-### 📂 Jina
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Jina: Embeddings v3** | 🔢 向量/Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
 
 ### 📂 Kwaipilot
 
@@ -751,22 +900,6 @@
 | **Nous: Hermes 3 405B Instruct** | 📝 语言模型 | `nousresearch/hermes-3-llama-3.1-405b` | 131.072K | 输入 $1/1M, 输出 $1/1M | Hermes 3 是一种通用语言模型，与 Hermes 2 相比有许多改进，包括高级代理功能、更好的角色扮演、推理、多轮对话、长上下文连贯性以及全面的改进。  Hermes 3 405B 是 Llama-3.1 405B 基础模型的前沿级全参数微调，专注于将 LLM 与用户对齐，为最终用户提供强大的转向功能和控制能力。  Hermes 3系列在Hermes 2集能力的基础上构建和扩展，包括更强大、更可靠的函数调用和结构化输出能力、通才助理能力以及改进的代码生成技能。  Hermes 3 在一般能力上与 Llama-3.1 Instruct 模型相比，即使不是更胜一筹，也具有竞争力，两者之间的优缺点各不相同。 |
 | **NousResearch: Hermes 2 Pro - Llama-3 8B** | 📝 语言模型 | `nousresearch/hermes-2-pro-llama-3-8b` | 8.192K | 输入 $0.14/1M, 输出 $0.14/1M | Hermes 2 Pro 是 Nous Hermes 2 的升级版、重新训练版，由 OpenHermes 2.5 数据集的更新和清理版本以及新引入的内部开发的函数调用和 JSON 模式数据集组成。 |
 
-### 📂 Nvidia
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **NVIDIA: Nemotron 3 Super (free)** | 📝 语言模型 | `nvidia/nemotron-3-super-120b-a12b:free` | 262.144K | 免费 | NVIDIA Nemotron 3 Super 是一种 120B 参数开放式混合 MoE 模型，只需激活 12B 参数即可在复杂的多代理应用程序中实现最大计算效率和准确性。它建立在具有多代币预测 (MTP) 的混合 Mamba-Transformer Mixture-of Experts 架构之上，与领先的开放模型相比，其代币生成量提高了 50% 以上。   该模型具有 1M 令牌上下文窗口，用于长期代理一致性、跨文档推理和多步骤任务规划。潜在 MoE 能够以一名专家的推理成本呼叫 4 名专家，从而提高智能性和泛化性。跨 10 多个环境的多环境 RL 训练可在 AIME 2025、TerminalBench 和 SWE-Bench Verified 等基准测试中提供领先的准确性。   Nemotron 3 Super 在 NVIDIA 开放许可证下完全开放权重、数据集和配方，允许在从工作站到云端的任何地方轻松定制和安全部署。 |
-| **NVIDIA: Nemotron 3 Super** | 📝 语言模型 | `nvidia/nemotron-3-super-120b-a12b` | 262.144K | 输入 $0.1/1M, 输出 $0.5/1M | NVIDIA Nemotron 3 Super 是一种 120B 参数开放式混合 MoE 模型，只需激活 12B 参数即可在复杂的多代理应用程序中实现最大计算效率和准确性。它建立在具有多代币预测 (MTP) 的混合 Mamba-Transformer Mixture-of Experts 架构之上，与领先的开放模型相比，其代币生成量提高了 50% 以上。   该模型具有 1M 令牌上下文窗口，用于长期代理一致性、跨文档推理和多步骤任务规划。潜在 MoE 能够以一名专家的推理成本呼叫 4 名专家，从而提高智能性和泛化性。跨 10 多个环境的多环境 RL 训练可在 AIME 2025、TerminalBench 和 SWE-Bench Verified 等基准测试中提供领先的准确性。   Nemotron 3 Super 在 NVIDIA 开放许可证下完全开放权重、数据集和配方，允许在从工作站到云端的任何地方轻松定制和安全部署。 |
-| **NVIDIA: Nemotron 3 Nano 30B A3B (free)** | 📝 语言模型 | `nvidia/nemotron-3-nano-30b-a3b:free` | 256K | 免费 | NVIDIA Nemotron 3 Nano 30B A3B 是一种小语言 MoE 模型，具有最高的计算效率和准确性，可供开发人员构建专门的代理 AI 系统。  该模型完全开放，具有开放权重、数据集和配方，因此开发人员可以轻松 在其基础设施上定制、优化和部署模型，以实现最大程度的隐私保护和 安全。 |
-| **NVIDIA: Nemotron 3 Nano 30B A3B** | 📝 语言模型 | `nvidia/nemotron-3-nano-30b-a3b` | 262.144K | 输入 $0.05/1M, 输出 $0.2/1M | NVIDIA Nemotron 3 Nano 30B A3B 是一种小语言 MoE 模型，具有最高的计算效率和准确性，可供开发人员构建专门的代理 AI 系统。  该模型完全开放，具有开放权重、数据集和配方，因此开发人员可以轻松 在其基础设施上定制、优化和部署模型，以实现最大程度的隐私保护和 安全。 |
-| **NVIDIA: Nemotron Nano 12B 2 VL (free)** | 👁️ 视觉多模态 | `nvidia/nemotron-nano-12b-v2-vl:free` | 128K | 免费 | NVIDIA Nemotron Nano 2 VL 是一个拥有 120 亿参数的开放式多模态推理模型，专为视频理解和文档智能而设计。它引入了混合 Transformer-Mamba 架构，将 Transformer 级精度与 Mamba 的内存高效序列建模相结合，从而显着提高吞吐量并降低延迟。  该模型支持文本和多图像文档的输入，生成自然语言输出。它接受了 NVIDIA 策划的高质量合成数据集的训练，这些数据集针对光学字符识别、图表推理和多模式理解进行了优化。  Nemotron Nano 2 VL 在 OCRBench v2 上取得了领先的结果，并且在 MMMU、MathVista、AI2D、OCRBench、OCR-Reasoning、ChartQA、DocVQA 和 Video-MME 上的平均得分约为 74，超越了之前的开放 VL 基线。借助高效视频采样 (EVS)，它可以处理长视频，同时降低推理成本。  开放权重、训练数据和微调方案是在 NVIDIA 开放许可证下发布的，并支持跨 NeMo、NIM 和主要推理运行时的部署。 |
-| **NVIDIA: Nemotron Nano 12B 2 VL** | 👁️ 视觉多模态 | `nvidia/nemotron-nano-12b-v2-vl` | 131.072K | 输入 $0.2/1M, 输出 $0.6/1M | NVIDIA Nemotron Nano 2 VL 是一个拥有 120 亿参数的开放式多模态推理模型，专为视频理解和文档智能而设计。它引入了混合 Transformer-Mamba 架构，将 Transformer 级精度与 Mamba 的内存高效序列建模相结合，从而显着提高吞吐量并降低延迟。  该模型支持文本和多图像文档的输入，生成自然语言输出。它接受了 NVIDIA 策划的高质量合成数据集的训练，这些数据集针对光学字符识别、图表推理和多模式理解进行了优化。  Nemotron Nano 2 VL 在 OCRBench v2 上取得了领先的结果，并且在 MMMU、MathVista、AI2D、OCRBench、OCR-Reasoning、ChartQA、DocVQA 和 Video-MME 上的平均得分约为 74，超越了之前的开放 VL 基线。借助高效视频采样 (EVS)，它可以处理长视频，同时降低推理成本。  开放权重、训练数据和微调方案是在 NVIDIA 开放许可证下发布的，并支持跨 NeMo、NIM 和主要推理运行时的部署。 |
-| **NVIDIA: Llama 3.3 Nemotron Super 49B V1.5** | 📝 语言模型 | `nvidia/llama-3.3-nemotron-super-49b-v1.5` | 131.072K | 输入 $0.1/1M, 输出 $0.4/1M | Llama-3.3-Nemotron-Super-49B-v1.5 是一个 49B 参数、以英语为中心的推理/聊天模型，源自 Meta 的 Llama-3.3-70B-Instruct，具有 128K 上下文。它通过数学、代码、科学和多轮聊天的 SFT 对代理工作流程（RAG、工具调用）进行后训练，然后是多个 RL 阶段；用于对齐的奖励感知偏好优化 (RPO)、用于逐步推理的带有可验证奖励的 RL (RLVR) 以及用于细化工具使用行为的迭代 DPO。蒸馏驱动的神经架构搜索（“Puzzle”）取代了一些注意力块并改变了 FFN 宽度，以缩小内存占用并提高吞吐量，从而实现单 GPU (H100/H200) 部署，同时保持指令跟踪和 CoT 质量。  在内部评估中（NeMo-Skills，最多 16 次运行，temp = 0.6，top_p = 0.95），模型报告强大的推理/编码结果，例如 MATH500 pass@1 = 97.4、AIME-2024 = 87.5、AIME-2025 = 82.71、GPQA = 71.97、LiveCodeBench (24.10–25.02) = 73.58，MMLU-Pro (CoT) = 79.53。该模型的目标是通过 Transformers/vLLM 支持和明确的“推理开/关”模式（默认聊天优先，禁用时建议贪婪）实现实际推理效率（高令牌/秒、减少 VRAM）。适用于构建代理、助手和长上下文检索系统，在这些系统中平衡准确性与成本和可靠的工具使用很重要。 |
-| **NVIDIA: Nemotron Nano 9B V2 (free)** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2:free` | 128K | 免费 | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
-| **NVIDIA: Nemotron Nano 9B V2** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2` | 131.072K | 输入 $0.04/1M, 输出 $0.16/1M | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
-| **NVIDIA: Llama 3.1 Nemotron Ultra 253B v1** | 📝 语言模型 | `nvidia/llama-3.1-nemotron-ultra-253b-v1` | 131.072K | 输入 $0.6/1M, 输出 $1.8/1M | Llama-3.1-Nemotron-Ultra-253B-v1 是一种大型语言模型 (LLM)，针对高级推理、人机交互聊天、检索增强生成 (RAG) 和工具调用任务进行了优化。它源自 Meta 的 Llama-3.1-405B-Instruct，已使用神经架构搜索 (NAS) 进行了显着定制，从而提高了效率、减少了内存使用并改善了推理延迟。该模型支持高达 128K 令牌的上下文长度，并且可以在 8 个 NVIDIA H100 节点上高效运行。  注意：系统提示中必须包含“详细思考”才能启用推理。请参阅[使用建议](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1#quick-start-and-usage-recommendations)了解更多信息。 |
-| **NVIDIA: Llama 3.1 Nemotron 70B Instruct** | 📝 语言模型 | `nvidia/llama-3.1-nemotron-70b-instruct` | 131.072K | 输入 $1.2/1M, 输出 $1.2/1M | NVIDIA 的 Llama 3.1 Nemotron 70B 是一种语言模型，旨在生成精确且有用的响应。利用 [Llama 3.1 70B](/models/meta-llama/llama-3.1-70b-instruct) 架构和人类反馈强化学习 (RLHF)，它在自动对齐基准方面表现出色。该模型专为需要高精度帮助和响应生成的应用程序量身定制，适合跨多个域的不同用户查询。  该模型的使用须遵守 [Meta 的可接受使用政策](https://www.llama.com/llama3/use-policy/)。 |
-
 ### 📂 Openrouter
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
@@ -804,12 +937,6 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Switchpoint Router** | 📝 语言模型 | `switchpoint/router` | 131.072K | 输入 $0.85/1M, 输出 $3.4/1M | Switchpoint AI 的路由器会立即分析您的请求，并将其引导至不断发展的库中的最佳 AI。   随着法学硕士世界的进步，我们的路由器变得更加智能，确保您始终从行业最新模型中受益，而无需改变您的工作流程。  该模型在 OpenRouter 上配置为每个响应简单、统一的速率。它由 [Switchpoint AI](https://www.switchpoint.dev) 的完整路由引擎提供支持。 |
 
-### 📂 Tencent
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Tencent: Hunyuan A13B Instruct** | 📝 语言模型 | `tencent/hunyuan-a13b-instruct` | 131.072K | 输入 $0.14/1M, 输出 $0.57/1M | Hunyuan-A13B是腾讯开发的13B主动参数Mixture-of-Experts (MoE)语言模型，总参数数为80B，支持Chain-of-Thought推理。它在数学、科学、编码和多轮推理任务方面提供具有竞争力的基准性能，同时通过分组查询注意 (GQA) 和量化支持（FP8、GPTQ 等）保持高推理效率。 |
-
 ### 📂 Thedrummer
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
@@ -831,61 +958,9 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **ReMM SLERP 13B** | 📝 语言模型 | `undi95/remm-slerp-l2-13b` | 6.144K | 输入 $0.45/1M, 输出 $0.65/1M | 原始 MythoMax-L2-B13 的重新尝试，但具有更新的型号。 ＃合并 |
 
-### 📂 Upstage
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Upstage: Solar Pro 3** | 📝 语言模型 | `upstage/solar-pro-3` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | Solar Pro 3 是 Upstage 强大的专家混合 (MoE) 语言模型。凭借 102B 总参数和每次前向传递 12B 活动参数，它可在保持计算效率的同时提供卓越的性能。针对韩语进行了优化，并支持英语和日语。 |
-
-### 📂 Voyageai
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Voyage AI: Voyage 3** | 📝 语言模型 | `voyageai/voyage-3` | 32K | 输入 $0.12/1M, 输出 $0/1M | 最先进的通用嵌入模型。 |
-| **Voyage AI: Voyage 3 Lite** | 📝 语言模型 | `voyageai/voyage-3-lite` | 32K | 输入 $0.04/1M, 输出 $0/1M | 快速且经济高效的通用嵌入模型。 |
-
 ### 📂 Writer
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Writer: Palmyra X5** | 📝 语言模型 | `writer/palmyra-x5` | 1040K | 输入 $0.6/1M, 输出 $6/1M | Palmyra X5 是 Writer 最先进的模型，专为在整个企业中构建和扩展 AI 代理而构建。它由新颖的变压器架构和混合注意力机制提供支持，在高达 100 万个令牌的上下文窗口上提供业界领先的速度和效率。这可以实现更快的推理并扩展内存来处理大量企业数据，这对于扩展 AI 代理至关重要。 |
-
-### 📂 X-ai
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **xAI: Grok 4.20 Multi-Agent Beta** | 👁️ 视觉多模态 | `x-ai/grok-4.20-multi-agent-beta` | 2000K | 输入 $2/1M, 输出 $6/1M | Grok 4.20 Multi-Agent Beta 是 xAI Grok 4.20 的变体，专为基于代理的协作工作流程而设计。多个代理并行运行，以进行深入研究、协调工具使用并综合复杂任务中的信息。  推理努力行为： - 低/中：4 个代理 - 高/超高：16 名特工 |
-| **xAI: Grok 4.20 Beta** | 👁️ 视觉多模态 | `x-ai/grok-4.20-beta` | 2000K | 输入 $2/1M, 输出 $6/1M | Grok 4.20 Beta 是 xAI 的最新旗舰型号，具有业界领先的速度和代理工具调用功能。它将市场上最低的幻觉率与严格的及时遵守结合起来，提供始终如一的精确和真实的反应。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
-| **xAI: Grok 4.1 Fast** | 👁️ 视觉多模态 | `x-ai/grok-4.1-fast` | 2000K | 输入 $0.2/1M, 输出 $0.5/1M | Grok 4.1 Fast 是 xAI 最好的代理工具调用模型，在客户支持和深入研究等实际用例中表现出色。 2M上下文窗口。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
-| **xAI: Grok 4 Fast** | 👁️ 视觉多模态 | `x-ai/grok-4-fast` | 2000K | 输入 $0.2/1M, 输出 $0.5/1M | Grok 4 Fast 是 xAI 最新的多模式模型，具有 SOTA 成本效率和 2M 令牌上下文窗口。它有两种风格：非推理和推理。在 xAI 的[新闻文章](http://x.ai/news/grok-4-fast) 上了解有关该模型的更多信息。  可以使用 API 中的“reasoning”“enabled”参数启用/禁用推理。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#controlling-reasoning-tokens) |
-| **xAI: Grok Code Fast 1** | 📝 语言模型 | `x-ai/grok-code-fast-1` | 256K | 输入 $0.2/1M, 输出 $1.5/1M | Grok Code Fast 1 是一种快速且经济的推理模型，擅长代理编码。通过响应中可见的推理痕迹，开发人员可以引导 Grok Code 实现高质量的工作流程。 |
-| **xAI: Grok 4** | 👁️ 视觉多模态 | `x-ai/grok-4` | 256K | 输入 $3/1M, 输出 $15/1M | Grok 4 是 xAI 最新的推理模型，具有 256k 上下文窗口。它支持并行工具调用、结构化输出以及图像和文本输入。请注意，推理不会公开，无法禁用推理，并且无法指定推理工作。一旦给定请求中的总代币数量超过 128k 代币，定价就会增加。有关更多详细信息，请参阅 [xAI 文档](https://docs.x.ai/docs/models/grok-4-0709) |
-| **xAI: Grok 3 Mini** | 📝 语言模型 | `x-ai/grok-3-mini` | 131.072K | 输入 $0.3/1M, 输出 $0.5/1M | 一个轻量级模型，在响应之前进行思考。快速、智能，非常适合不需要深厚领域知识的基于逻辑的任务。原始思维痕迹是可以触及的。 |
-| **xAI: Grok 3** | 📝 语言模型 | `x-ai/grok-3` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。 |
-| **xAI: Grok 3 Mini Beta** | 📝 语言模型 | `x-ai/grok-3-mini-beta` | 131.072K | 输入 $0.3/1M, 输出 $0.5/1M | Grok 3 Mini 是一款轻量级、体积更小的思维模型。与立即生成答案的传统模型不同，Grok 3 Mini 在做出响应之前会进行思考。它非常适合不需要广泛领域知识的推理繁重任务，并且在数学特定和定量用例中表现出色，例如解决具有挑战性的难题或数学问题。  透明的“思维”痕迹触手可及。默认为低推理，可以通过设置“推理：{努力：“高”}”来提升  注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
-| **xAI: Grok 3 Beta** | 📝 语言模型 | `x-ai/grok-3-beta` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。  在 GPQA、LCB 和 MMLU-Pro 等结构化任务和基准测试中表现出色，甚至在高级思维方面也优于 Grok 3 Mini。   注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
-
-### 📂 Xiaomi
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Xiaomi: MiMo-V2-Omni** | 🌌 全模态 (图/文/音/视) | `xiaomi/mimo-v2-omni` | 262.144K | 输入 $0.4/1M, 输出 $2/1M | MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。 |
-| **Xiaomi: MiMo-V2-Pro** | 📝 语言模型 | `xiaomi/mimo-v2-pro` | 1048.576K | 输入 $1/1M, 输出 $3/1M | MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。 |
-| **Xiaomi: MiMo-V2-Flash** | 📝 语言模型 | `xiaomi/mimo-v2-flash` | 262.144K | 输入 $0.09/1M, 输出 $0.29/1M | MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。  用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。 |
-
-### 📂 Z-ai
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Z.ai: GLM 5 Turbo** | 📝 语言模型 | `z-ai/glm-5-turbo` | 202.752K | 输入 $1.2/1M, 输出 $4/1M | GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。 |
-| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 202.752K | 输入 $0.8/1M, 输出 $2.56/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
-| **Z.ai: GLM 4.7 Flash** | 📝 语言模型 | `z-ai/glm-4.7-flash` | 202.752K | 输入 $0.06/1M, 输出 $0.4/1M | 作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。 |
-| **Z.ai: GLM 4.7** | 📝 语言模型 | `z-ai/glm-4.7` | 202.752K | 输入 $0.39/1M, 输出 $1.75/1M | GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。 |
-| **Z.ai: GLM 4.6V** | 👁️ 视觉多模态 | `z-ai/glm-4.6v` | 131.072K | 输入 $0.3/1M, 输出 $0.9/1M | GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。 |
-| **Z.ai: GLM 4.6** | 📝 语言模型 | `z-ai/glm-4.6` | 204.8K | 输入 $0.39/1M, 输出 $1.9/1M | 与GLM-4.5相比，这一代带来了几项关键改进：  更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。 卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。 高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。 更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。 文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。 |
-| **Z.ai: GLM 4.5V** | 👁️ 视觉多模态 | `z-ai/glm-4.5v` | 65.536K | 输入 $0.6/1M, 输出 $1.8/1M | GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5** | 📝 语言模型 | `z-ai/glm-4.5` | 131.072K | 输入 $0.6/1M, 输出 $2.2/1M | GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5 Air (free)** | 📝 语言模型 | `z-ai/glm-4.5-air:free` | 131.072K | 免费 | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5 Air** | 📝 语言模型 | `z-ai/glm-4.5-air` | 131.072K | 输入 $0.13/1M, 输出 $0.85/1M | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4 32B ** | 📝 语言模型 | `z-ai/glm-4-32b` | 128K | 输入 $0.1/1M, 输出 $0.1/1M | GLM 4 32B 是一种经济高效的基础语言模型。  它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。  它是由 thudm 模型背后的同一实验室制造的。 |
 

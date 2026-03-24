@@ -4,10 +4,13 @@ const path = require('path');
 const INPUT = path.join(__dirname, 'model_providers_zh.json');
 const OUTPUT = path.join(__dirname, 'model_providers_grouped.json');
 
-// Refined list of Top-Tier Official Providers
+// Refined list of Top-Tier Official Providers (Companies with verifiable official APIs)
 const TOP_TIER_PROVIDERS = [
   'openai', 'anthropic', 'google', 'meta-llama', 'mistralai', 'deepseek', 
-  'qwen', 'zhipuai', 'moonshotai', 'minimax', 'stepfun', 'yi', 'cohere', 'perplexity'
+  'qwen', 'zhipuai', 'z-ai', 'moonshotai', 'minimax', 'stepfun', 'yi', 
+  'cohere', 'perplexity', 'amazon', 'baidu', 'alibaba', 'bytedance', 
+  'tencent', 'xiaomi', 'x-ai', 'nvidia', 'arcee-ai', 'fireworks', 
+  'together', 'groq', 'voyageai', 'jina', 'upstage'
 ];
 
 function getFamily(modelName) {
