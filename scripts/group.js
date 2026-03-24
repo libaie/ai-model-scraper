@@ -4,12 +4,15 @@ const path = require('path');
 const INPUT = path.join(__dirname, 'model_providers_zh.json');
 const OUTPUT = path.join(__dirname, 'model_providers_grouped.json');
 
-// List of known official providers (with native APIs)
+// List of known official providers (with native APIs or major corporate backings)
 const OFFICIAL_PROVIDERS = [
   'openai', 'anthropic', 'google', 'mistralai', 'deepseek', 'qwen', 
   'cohere', 'perplexity', 'nvidia', 'x-ai', 'moonshotai', 'minimax', 
   'zhipuai', 'yi', 'stepfun', 'baichuan', 'groq', 'together', 
-  'voyageai', 'jina', 'meta-llama', 'amazon', 'alibaba', 'baidu', 'bytedance', 'tencent'
+  'voyageai', 'jina', 'meta-llama', 'amazon', 'alibaba', 'baidu', 
+  'bytedance', 'tencent', 'xiaomi', 'z-ai', 'lingyi', '01-ai', 
+  'upstage', 'phind', 'liquid', 'inflection', 'fireworks', 'lepton', 
+  'deepinfra', 'mancer', 'nebius', 'novita', 'ollama', 'cloudflare'
 ];
 
 function getFamily(modelName) {

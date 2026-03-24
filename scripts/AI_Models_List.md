@@ -242,6 +242,18 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Google: Text Embedding 004** | 🔢 向量/Embedding | `google/text-embedding-004` | 2.048K | 输入 $0.02/1M, 输出 $0/1M | Google Gemini 文本嵌入模型。 |
 
+## 🏢 Inflection (2 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 Inflection 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Inflection: Inflection 3 Productivity** | 📝 语言模型 | `inflection/inflection-3-productivity` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 生产力针对以下说明进行了优化。它更适合需要 JSON 输出或精确遵守所提供指南的任务。它可以访问最近的新闻。  对于与 Pi 类似的情商，请参阅 [Inflect 3 Pi](/inflection/inflection-3-pi)  更多详情请参见[Inflection的公告](https://inflection.ai/blog/enterprise)。 |
+| **Inflection: Inflection 3 Pi** | 📝 语言模型 | `inflection/inflection-3-pi` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 Pi 为 Inflection 的 [Pi](https://pi.ai) 聊天机器人提供支持，包括背景故事、情商、生产力和安全性。它可以访问最新新闻，并且在客户支持和角色扮演等场景中表现出色。  Pi 经过训练可以反映您的语气和风格，如果您使用更多表情符号，Pi 也会如此！尝试尝试各种提示和对话方式。 |
+
 ## 🏢 Jina (1 个模型)
 **原生 API 地址**: `https://api.jina.ai/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
@@ -252,6 +264,32 @@
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Jina: Embeddings v3** | 🔢 向量/Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
+
+## 🏢 Liquid (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 其他独立模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **LiquidAI: LFM2-24B-A2B** | 📝 语言模型 | `liquid/lfm-2-24b-a2b` | 32.768K | 输入 $0.03/1M, 输出 $0.12/1M | LFM2-24B-A2B 是 LFM2 混合架构系列中最大的型号，专为高效的设备上部署而设计。它构建为 24B 参数专家混合模型，每个代币仅包含 2B 个活动参数，可提供高质量的生成，同时保持较低的推理成本。该型号配备 32 GB RAM，因此可以在消费类笔记本电脑和台式机上运行，​​而不会牺牲性能。 |
+| **LiquidAI: LFM2.5-1.2B-Thinking (free)** | 📝 语言模型 | `liquid/lfm-2.5-1.2b-thinking:free` | 32.768K | 免费 | LFM2.5-1.2B-Thinking 是一种轻量级的以推理为中心的模型，针对代理任务、数据提取和 RAG 进行了优化，同时仍然可以在边缘设备上舒适地运行。它支持长上下文（最多 32K 个令牌），旨在在小型 1.2B 模型中提供更高质量的“思考”响应。 |
+| **LiquidAI: LFM2.5-1.2B-Instruct (free)** | 📝 语言模型 | `liquid/lfm-2.5-1.2b-instruct:free` | 32.768K | 免费 | LFM2.5-1.2B-Instruct 是一种紧凑的高性能指令调整模型，专为快速设备上 AI 而构建。它以 1.2B 参数占用空间提供强大的聊天质量，并具有高效的边缘推理和广泛的运行时支持。 |
+| **LiquidAI: LFM2-8B-A1B** | 📝 语言模型 | `liquid/lfm2-8b-a1b` | 32.768K | 输入 $0.01/1M, 输出 $0.02/1M | LFM2-8B-A1B 是 Liquid AI LFM2 系列中的高效设备上专家混合 (MoE) 模型，专为在边缘硬件上进行快速、高质量的推理而构建。它使用 8.3B 总参数，每个令牌仅约 1.5B 活动，提供强大的性能，同时保持较低的计算和内存使用率，使其成为手机、平板电脑和笔记本电脑的理想选择。 |
+| **LiquidAI: LFM2-2.6B** | 📝 语言模型 | `liquid/lfm-2.2-6b` | 32.768K | 输入 $0.01/1M, 输出 $0.02/1M | LFM2是Liquid AI开发的新一代混合模型，专为边缘AI和设备上部署而设计。它在质量、速度和内存效率方面树立了新标准。 |
+
+## 🏢 Mancer (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 Weaver 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Mancer: Weaver (alpha)** | 📝 语言模型 | `mancer/weaver` | 8K | 输入 $0.75/1M, 输出 $1/1M | 试图重现克劳德式的冗长，但不要指望有相同水平的连贯性或记忆力。适用于角色扮演/叙事场景。 |
 
 ## 🏢 Meta-llama (14 个模型)
 **原生 API 地址**: `Unknown`  
@@ -689,6 +727,17 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Tencent: Hunyuan A13B Instruct** | 📝 语言模型 | `tencent/hunyuan-a13b-instruct` | 131.072K | 输入 $0.14/1M, 输出 $0.57/1M | Hunyuan-A13B是腾讯开发的13B主动参数Mixture-of-Experts (MoE)语言模型，总参数数为80B，支持Chain-of-Thought推理。它在数学、科学、编码和多轮推理任务方面提供具有竞争力的基准性能，同时通过分组查询注意 (GQA) 和量化支持（FP8、GPTQ 等）保持高推理效率。 |
 
+## 🏢 Upstage (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 Solar 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Upstage: Solar Pro 3** | 📝 语言模型 | `upstage/solar-pro-3` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | Solar Pro 3 是 Upstage 强大的专家混合 (MoE) 语言模型。凭借 102B 总参数和每次前向传递 12B 活动参数，它可在保持计算效率的同时提供卓越的性能。针对韩语进行了优化，并支持英语和日语。 |
+
 ## 🏢 Voyageai (2 个模型)
 **原生 API 地址**: `https://api.voyageai.com/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
@@ -721,10 +770,44 @@
 | **xAI: Grok 3 Mini Beta** | 📝 语言模型 | `x-ai/grok-3-mini-beta` | 131.072K | 输入 $0.3/1M, 输出 $0.5/1M | Grok 3 Mini 是一款轻量级、体积更小的思维模型。与立即生成答案的传统模型不同，Grok 3 Mini 在做出响应之前会进行思考。它非常适合不需要广泛领域知识的推理繁重任务，并且在数学特定和定量用例中表现出色，例如解决具有挑战性的难题或数学问题。  透明的“思维”痕迹触手可及。默认为低推理，可以通过设置“推理：{努力：“高”}”来提升  注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
 | **xAI: Grok 3 Beta** | 📝 语言模型 | `x-ai/grok-3-beta` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。  在 GPQA、LCB 和 MMLU-Pro 等结构化任务和基准测试中表现出色，甚至在高级思维方面也优于 Grok 3 Mini。   注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
 
-## 🏢 OpenRouter (88 个模型)
+## 🏢 Xiaomi (3 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `OMNI`, `VLM`
+
+### 📂 Mimo 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Xiaomi: MiMo-V2-Omni** | 🌌 全模态 (图/文/音/视) | `xiaomi/mimo-v2-omni` | 262.144K | 输入 $0.4/1M, 输出 $2/1M | MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。 |
+| **Xiaomi: MiMo-V2-Pro** | 📝 语言模型 | `xiaomi/mimo-v2-pro` | 1048.576K | 输入 $1/1M, 输出 $3/1M | MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。 |
+| **Xiaomi: MiMo-V2-Flash** | 📝 语言模型 | `xiaomi/mimo-v2-flash` | 262.144K | 输入 $0.09/1M, 输出 $0.29/1M | MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。  用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。 |
+
+## 🏢 Z-ai (11 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
+
+### 📂 其他独立模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Z.ai: GLM 5 Turbo** | 📝 语言模型 | `z-ai/glm-5-turbo` | 202.752K | 输入 $1.2/1M, 输出 $4/1M | GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。 |
+| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 202.752K | 输入 $0.8/1M, 输出 $2.56/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
+| **Z.ai: GLM 4.7 Flash** | 📝 语言模型 | `z-ai/glm-4.7-flash` | 202.752K | 输入 $0.06/1M, 输出 $0.4/1M | 作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。 |
+| **Z.ai: GLM 4.7** | 📝 语言模型 | `z-ai/glm-4.7` | 202.752K | 输入 $0.39/1M, 输出 $1.75/1M | GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。 |
+| **Z.ai: GLM 4.6V** | 👁️ 视觉多模态 | `z-ai/glm-4.6v` | 131.072K | 输入 $0.3/1M, 输出 $0.9/1M | GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。 |
+| **Z.ai: GLM 4.6** | 📝 语言模型 | `z-ai/glm-4.6` | 204.8K | 输入 $0.39/1M, 输出 $1.9/1M | 与GLM-4.5相比，这一代带来了几项关键改进：  更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。 卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。 高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。 更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。 文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。 |
+| **Z.ai: GLM 4.5V** | 👁️ 视觉多模态 | `z-ai/glm-4.5v` | 65.536K | 输入 $0.6/1M, 输出 $1.8/1M | GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5** | 📝 语言模型 | `z-ai/glm-4.5` | 131.072K | 输入 $0.6/1M, 输出 $2.2/1M | GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5 Air (free)** | 📝 语言模型 | `z-ai/glm-4.5-air:free` | 131.072K | 免费 | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4.5 Air** | 📝 语言模型 | `z-ai/glm-4.5-air` | 131.072K | 输入 $0.13/1M, 输出 $0.85/1M | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
+| **Z.ai: GLM 4 32B ** | 📝 语言模型 | `z-ai/glm-4-32b` | 128K | 输入 $0.1/1M, 输出 $0.1/1M | GLM 4 32B 是一种经济高效的基础语言模型。  它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。  它是由 thudm 模型背后的同一实验室制造的。 |
+
+## 🏢 OpenRouter (65 个模型)
 **原生 API 地址**: `https://openrouter.ai/api/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `EMBEDDING`, `IMAGE`, `LLM`, `OMNI`, `VLM`
+**提供能力**: `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
 
 ### 📂 Ai21
 
@@ -833,34 +916,11 @@
 | **Inception: Mercury** | 📝 语言模型 | `inception/mercury` | 128K | 输入 $0.25/1M, 输出 $0.75/1M | Mercury 是第一个扩散大型语言模型 (dLLM)。该模型采用突破性的离散扩散方法，运行速度比 GPT-4.1 Nano 和 Claude 3.5 Haiku 等速度优化模型快 5-10 倍，同时与它们的性能相当。 Mercury 的速度使开发人员能够提供响应迅速的用户体验，包括语音代理、搜索界面和聊天机器人。在[博客文章]中阅读更多内容 （https://www.inceptionlabs.ai/blog/introducing-mercury）在这里。 |
 | **Inception: Mercury Coder** | 💻 代码模型 | `inception/mercury-coder` | 128K | 输入 $0.25/1M, 输出 $0.75/1M | Mercury Coder 是第一个扩散大型语言模型 (dLLM)。该模型采用突破性的离散扩散方法，运行速度比 Claude 3.5 Haiku 和 GPT-4o Mini 等速度优化模型快 5-10 倍，同时与它们的性能相匹配。 Mercury Coder 的速度意味着开发人员可以在编码时保持流畅，享受基于聊天的快速迭代和响应式代码完成建议。在 Copilot Arena 上，Mercury Coder 在速度方面排名第一，在质量方面并列第二。请在[此处的博客文章](https://www.inceptionlabs.ai/blog/introducing-mercury) 中阅读更多信息。 |
 
-### 📂 Inflection
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Inflection: Inflection 3 Productivity** | 📝 语言模型 | `inflection/inflection-3-productivity` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 生产力针对以下说明进行了优化。它更适合需要 JSON 输出或精确遵守所提供指南的任务。它可以访问最近的新闻。  对于与 Pi 类似的情商，请参阅 [Inflect 3 Pi](/inflection/inflection-3-pi)  更多详情请参见[Inflection的公告](https://inflection.ai/blog/enterprise)。 |
-| **Inflection: Inflection 3 Pi** | 📝 语言模型 | `inflection/inflection-3-pi` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 Pi 为 Inflection 的 [Pi](https://pi.ai) 聊天机器人提供支持，包括背景故事、情商、生产力和安全性。它可以访问最新新闻，并且在客户支持和角色扮演等场景中表现出色。  Pi 经过训练可以反映您的语气和风格，如果您使用更多表情符号，Pi 也会如此！尝试尝试各种提示和对话方式。 |
-
 ### 📂 Kwaipilot
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Kwaipilot: KAT-Coder-Pro V1** | 💻 代码模型 | `kwaipilot/kat-coder-pro` | 256K | 输入 $0.21/1M, 输出 $0.83/1M | KAT-Coder-Pro V1是KwaiKAT KAT-Coder系列中最先进的代理编码模型。它专为代理编码任务而设计，在现实软件工程场景中表现出色，在 SWE-Bench Verified 基准测试中实现了 73.4% 的解决率。   该模型通过多阶段训练过程，包括中期训练、监督微调（SFT）、强化微调（RFT）和可扩展代理强化学习，针对工具使用能力、多轮交互、指令跟随、泛化和综合能力进行了优化。 |
-
-### 📂 Liquid
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **LiquidAI: LFM2-24B-A2B** | 📝 语言模型 | `liquid/lfm-2-24b-a2b` | 32.768K | 输入 $0.03/1M, 输出 $0.12/1M | LFM2-24B-A2B 是 LFM2 混合架构系列中最大的型号，专为高效的设备上部署而设计。它构建为 24B 参数专家混合模型，每个代币仅包含 2B 个活动参数，可提供高质量的生成，同时保持较低的推理成本。该型号配备 32 GB RAM，因此可以在消费类笔记本电脑和台式机上运行，​​而不会牺牲性能。 |
-| **LiquidAI: LFM2.5-1.2B-Thinking (free)** | 📝 语言模型 | `liquid/lfm-2.5-1.2b-thinking:free` | 32.768K | 免费 | LFM2.5-1.2B-Thinking 是一种轻量级的以推理为中心的模型，针对代理任务、数据提取和 RAG 进行了优化，同时仍然可以在边缘设备上舒适地运行。它支持长上下文（最多 32K 个令牌），旨在在小型 1.2B 模型中提供更高质量的“思考”响应。 |
-| **LiquidAI: LFM2.5-1.2B-Instruct (free)** | 📝 语言模型 | `liquid/lfm-2.5-1.2b-instruct:free` | 32.768K | 免费 | LFM2.5-1.2B-Instruct 是一种紧凑的高性能指令调整模型，专为快速设备上 AI 而构建。它以 1.2B 参数占用空间提供强大的聊天质量，并具有高效的边缘推理和广泛的运行时支持。 |
-| **LiquidAI: LFM2-8B-A1B** | 📝 语言模型 | `liquid/lfm2-8b-a1b` | 32.768K | 输入 $0.01/1M, 输出 $0.02/1M | LFM2-8B-A1B 是 Liquid AI LFM2 系列中的高效设备上专家混合 (MoE) 模型，专为在边缘硬件上进行快速、高质量的推理而构建。它使用 8.3B 总参数，每个令牌仅约 1.5B 活动，提供强大的性能，同时保持较低的计算和内存使用率，使其成为手机、平板电脑和笔记本电脑的理想选择。 |
-| **LiquidAI: LFM2-2.6B** | 📝 语言模型 | `liquid/lfm-2.2-6b` | 32.768K | 输入 $0.01/1M, 输出 $0.02/1M | LFM2是Liquid AI开发的新一代混合模型，专为边缘AI和设备上部署而设计。它在质量、速度和内存效率方面树立了新标准。 |
-
-### 📂 Mancer
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Mancer: Weaver (alpha)** | 📝 语言模型 | `mancer/weaver` | 8K | 输入 $0.75/1M, 输出 $1/1M | 试图重现克劳德式的冗长，但不要指望有相同水平的连贯性或记忆力。适用于角色扮演/叙事场景。 |
 
 ### 📂 Meituan
 
@@ -963,39 +1023,9 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **ReMM SLERP 13B** | 📝 语言模型 | `undi95/remm-slerp-l2-13b` | 6.144K | 输入 $0.45/1M, 输出 $0.65/1M | 原始 MythoMax-L2-B13 的重新尝试，但具有更新的型号。 ＃合并 |
 
-### 📂 Upstage
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Upstage: Solar Pro 3** | 📝 语言模型 | `upstage/solar-pro-3` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | Solar Pro 3 是 Upstage 强大的专家混合 (MoE) 语言模型。凭借 102B 总参数和每次前向传递 12B 活动参数，它可在保持计算效率的同时提供卓越的性能。针对韩语进行了优化，并支持英语和日语。 |
-
 ### 📂 Writer
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Writer: Palmyra X5** | 📝 语言模型 | `writer/palmyra-x5` | 1040K | 输入 $0.6/1M, 输出 $6/1M | Palmyra X5 是 Writer 最先进的模型，专为在整个企业中构建和扩展 AI 代理而构建。它由新颖的变压器架构和混合注意力机制提供支持，在高达 100 万个令牌的上下文窗口上提供业界领先的速度和效率。这可以实现更快的推理并扩展内存来处理大量企业数据，这对于扩展 AI 代理至关重要。 |
-
-### 📂 Xiaomi
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Xiaomi: MiMo-V2-Omni** | 🌌 全模态 (图/文/音/视) | `xiaomi/mimo-v2-omni` | 262.144K | 输入 $0.4/1M, 输出 $2/1M | MiMo-V2-Omni 是一种前沿全模态模型，可在统一架构中本地处理图像、视频和音频输入。它将强大的多模态感知与代理能力（视觉基础、多步骤规划、工具使用和代码执行）相结合，使其非常适合跨模态的复杂现实任务。 256K 上下文窗口。 |
-| **Xiaomi: MiMo-V2-Pro** | 📝 语言模型 | `xiaomi/mimo-v2-pro` | 1048.576K | 输入 $1/1M, 输出 $3/1M | MiMo-V2-Pro是小米的旗舰基础型号，总参数超过1T，上下文长度超过1M，针对代理场景进行深度优化。对OpenClaw等通用代理框架适应性强。它在标准 PinchBench 和 ClawBench 基准测试中名列全球顶级，感知性能接近 Opus 4.6。 MiMo-V2-Pro 旨在充当代理系统的大脑，协调复杂的工作流程，驱动生产工程任务并可靠地交付结果。 |
-| **Xiaomi: MiMo-V2-Flash** | 📝 语言模型 | `xiaomi/mimo-v2-flash` | 262.144K | 输入 $0.09/1M, 输出 $0.29/1M | MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。  用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。 |
-
-### 📂 Z-ai
-
-| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Z.ai: GLM 5 Turbo** | 📝 语言模型 | `z-ai/glm-5-turbo` | 202.752K | 输入 $1.2/1M, 输出 $4/1M | GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。 |
-| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 202.752K | 输入 $0.8/1M, 输出 $2.56/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
-| **Z.ai: GLM 4.7 Flash** | 📝 语言模型 | `z-ai/glm-4.7-flash` | 202.752K | 输入 $0.06/1M, 输出 $0.4/1M | 作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。 |
-| **Z.ai: GLM 4.7** | 📝 语言模型 | `z-ai/glm-4.7` | 202.752K | 输入 $0.39/1M, 输出 $1.75/1M | GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。 |
-| **Z.ai: GLM 4.6V** | 👁️ 视觉多模态 | `z-ai/glm-4.6v` | 131.072K | 输入 $0.3/1M, 输出 $0.9/1M | GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。 |
-| **Z.ai: GLM 4.6** | 📝 语言模型 | `z-ai/glm-4.6` | 204.8K | 输入 $0.39/1M, 输出 $1.9/1M | 与GLM-4.5相比，这一代带来了几项关键改进：  更长的上下文窗口：上下文窗口已从 128K 令牌扩展到 200K 令牌，使模型能够处理更复杂的代理任务。 卓越的编码性能：该模型在代码基准测试中获得了更高的分数，并在 Claude Code、Cline、Roo Code 和 Kilo Code 等应用程序中展示了更好的实际性能，包括在生成视觉精美的前端页面方面的改进。 高级推理：GLM-4.6在推理性能上有明显提升，支持推理过程中的工具使用，整体能力更强。 更强大的代理：GLM-4.6在工具使用和基于搜索的代理方面表现出更强的性能，并且在代理框架内更有效地集成。 文笔精致：在风格和可读性上更符合人类喜好，在角色扮演场景中表现更自然。 |
-| **Z.ai: GLM 4.5V** | 👁️ 视觉多模态 | `z-ai/glm-4.5v` | 65.536K | 输入 $0.6/1M, 输出 $1.8/1M | GLM-4.5V 是用于多模式代理应用的视觉语言基础模型。它建立在具有 106B 参数和 12B 激活参数的专家混合 (MoE) 架构之上，在视频理解、图像问答、OCR 和文档解析方面取得了最先进的结果，在前端 Web 编码、接地和空间推理方面取得了巨大进展。它提供了一种混合推理模式：用于深度推理的“思维模式”和用于快速响应的“非思维模式”。推理行为可以通过“reasoning”“enabled”布尔值进行切换。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5** | 📝 语言模型 | `z-ai/glm-4.5` | 131.072K | 输入 $0.6/1M, 输出 $2.2/1M | GLM-4.5 是我们最新的旗舰基础模型，专为基于代理的应用程序而构建。它利用专家混合 (MoE) 架构并支持高达 128k 令牌的上下文长度。 GLM-4.5 在推理、代码生成和代理对齐方面提供了显着增强的功能。它支持具有两种选项的混合推理模式，一种是专为复杂推理和工具使用而设计的“思维模式”，另一种是针对即时响应而优化的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5 Air (free)** | 📝 语言模型 | `z-ai/glm-4.5-air:free` | 131.072K | 免费 | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4.5 Air** | 📝 语言模型 | `z-ai/glm-4.5-air` | 131.072K | 输入 $0.13/1M, 输出 $0.85/1M | GLM-4.5-Air 是我们最新旗舰型号系列的轻量级变体，也是专门为以代理为中心的应用程序而设计的。与 GLM-4.5 一样，它采用混合专家（MoE）架构，但参数大小更紧凑。 GLM-4.5-Air还支持混合推理模式，提供用于高级推理和工具使用的“思维模式”，以及用于实时交互的“非思维模式”。用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config) |
-| **Z.ai: GLM 4 32B ** | 📝 语言模型 | `z-ai/glm-4-32b` | 128K | 输入 $0.1/1M, 输出 $0.1/1M | GLM 4 32B 是一种经济高效的基础语言模型。  它可以高效执行复杂任务，在工具使用、在线搜索、代码相关智能任务等方面能力显着增强。  它是由 thudm 模型背后的同一实验室制造的。 |
 
