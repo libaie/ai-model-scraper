@@ -3,6 +3,9 @@
 > 本文档由自动化脚本抓取并分类生成。价格基于 OpenRouter 的 1M Tokens 计费标准。
 
 ## 🏢 Ai21 (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Jamba 家族模型
 
@@ -11,6 +14,9 @@
 | **AI21: Jamba Large 1.7** | 📝 语言模型 | `ai21/jamba-large-1.7` | 256K | 输入 $2/1M, 输出 $8/1M | Jamba Large 1.7 是 Jamba 开放式系列中的最新型号，在接地、指令遵循和整体效率方面提供了改进。它建立在具有 256K 上下文窗口的混合 SSM-Transformer 架构之上，可提供比以前版本更准确、基于上下文的响应和更好的可操纵性。 |
 
 ## 🏢 Aion-labs (4 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 其他独立模型
 
@@ -22,6 +28,9 @@
 | **AionLabs: Aion-RP 1.0 (8B)** | 📝 语言模型 | `aion-labs/aion-rp-llama-3.1-8b` | 32.768K | 输入 $0.8/1M, 输出 $1.6/1M | Aion-RP-Llama-3.1-8B 在 RPBench-Auto 基准测试的角色评估部分排名最高，RPBench-Auto 是 Arena-Hard-Auto 的角色扮演特定变体，法学硕士在其中评估彼此的反应。它是一个经过微调的基本模型，而不是一个指导模型，旨在产生更自然和多样化的写作。 |
 
 ## 🏢 Alfredpros (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Llama 7 系列
 
@@ -30,6 +39,9 @@
 | **AlfredPros: CodeLLaMa 7B Instruct Solidity** | 📝 语言模型 | `alfredpros/codellama-7b-instruct-solidity` | 4.096K | 输入 $0.8/1M, 输出 $1.2/1M | 经过微调的 70 亿个参数代码 LLaMA - 使用 PEFT 库提供的 4 位 QLoRA 微调指令模型生成 Solidity 智能合约。 |
 
 ## 🏢 Alibaba (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Tongyi 家族模型
 
@@ -38,6 +50,9 @@
 | **Tongyi DeepResearch 30B A3B** | 📝 语言模型 | `alibaba/tongyi-deepresearch-30b-a3b` | 131.072K | 输入 $0.09/1M, 输出 $0.45/1M | 统一DeepResearch是统一实验室开发的代理大语言模型，总参数300亿个，每个token只激活30亿个。它针对长期、深度信息搜索任务进行了优化，并在 Humanity's Last Exam、BrowserComp、BrowserComp-ZH、WebWalkerQA、GAIA、xbench-DeepSearch 和 FRAMES 等基准测试中提供最先进的性能。与之前的模型相比，这使得它在复杂的代理搜索、推理和多步骤问题解决方面表现出色。  该模型包括一个全自动合成数据管道，用于可扩展的预训练、微调和强化学习。它使用对不同代理数据的大规模持续预训练来增强推理并保持新鲜感。它还具有端到端同策略 RL 和定制的组相对策略优化，包括令牌级梯度和用于稳定训练的负样本过滤。该模型支持 ReAct 进行核心能力检查，并支持基于 IterResearch 的“Heavy”模式，通过测试时间扩展实现最大性能。它非常适合高级研究代理、工具使用和繁重的推理工作流程。 |
 
 ## 🏢 Allenai (4 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Olmo 家族模型
 
@@ -49,6 +64,9 @@
 | **AllenAI: Olmo 2 32B Instruct** | 📝 语言模型 | `allenai/olmo-2-0325-32b-instruct` | 128K | 输入 $0.05/1M, 输出 $0.2/1M | OLMo-2 32B Instruct 是 OLMo-2 32B 2025 年 3 月基本模型的监督指令微调变体。它在 GSM8K、MATH、IFEval 和一般 NLP 评估等不同基准的复杂推理和指令跟踪任务中表现出色。 OLMo-2 32B 由 AI2 开发，是一项开放的、以研究为导向的计划的一部分，主要在英语数据集上进行训练，以促进对开源语言模型的理解和开发。 |
 
 ## 🏢 Alpindale (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Goliath 家族模型
 
@@ -57,6 +75,9 @@
 | **Goliath 120B** | 📝 语言模型 | `alpindale/goliath-120b` | 6.144K | 输入 $3.75/1M, 输出 $7.5/1M | 通过将两个经过微调的 Llama 70B 模型组合成一个 120B 模型而创建的大型法学硕士。结合了 Xwin 和 Euryale。  致谢 - [@chargoddard](https://huggingface.co/chargoddard) 用于开发用于合并模型的框架 - [mergekit](https://github.com/cg123/mergekit)。 - [@Undi95](https://huggingface.co/Undi95) 帮助提高合并比率。  ＃合并 |
 
 ## 🏢 Amazon (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Nova 家族模型
 
@@ -69,6 +90,9 @@
 | **Amazon: Nova Pro 1.0** | 👁️ 视觉多模态 | `amazon/nova-pro-v1` | 300K | 输入 $0.8/1M, 输出 $3.2/1M | Amazon Nova Pro 1.0 是 Amazon 的一款功能强大的多模式模型，专注于为各种任务提供准确性、速度和成本的组合。截至 2024 年 12 月，它在视觉问答 (TextVQA) 和视频理解 (VATEX) 等关键基准测试中实现了最先进的性能。  Amazon Nova Pro 在处理视觉和文本信息以及分析财务文档方面表现出强大的能力。  **注意**：目前不支持视频输入。 |
 
 ## 🏢 Anthracite-org (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Magnum 家族模型
 
@@ -77,6 +101,9 @@
 | **Magnum v4 72B** | 📝 语言模型 | `anthracite-org/magnum-v4-72b` | 16.384K | 输入 $3/1M, 输出 $5/1M | 这是一系列模型，旨在复制 Claude 3 模型的散文质量，特别是 Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) 和 Opus(https://openrouter.ai/anthropic/claude-3-opus)。  该模型在 [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct) 的基础上进行了微调。 |
 
 ## 🏢 Anthropic (13 个模型)
+**原生 API 地址**: `https://api.anthropic.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `VLM`
 
 ### 📂 Claude 3 系列
 
@@ -127,6 +154,9 @@
 | **Anthropic: Claude Opus 4.6** | 👁️ 视觉多模态 | `anthropic/claude-opus-4.6` | 1000K | 输入 $5/1M, 输出 $25/1M | Opus 4.6 是 Anthropic 最强大的编码和长期运行专业任务模型。它是为跨整个工作流程而不是单个提示操作的代理而构建的，这使得它对于大型代码库、复杂的重构和随着时间的推移而展开的多步骤调试特别有效。与前几代模型相比，该模型显示出更深入的背景理解、更强的问题分解以及在艰巨的工程任务上更高的可靠性。  除了编码之外，Opus 4.6 还擅长持续的知识工作。它一次性生成接近生产就绪的文档、计划和分析，并在很长的输出和扩展会话中保持一致性。这使得它成为需要持久性、判断力和后续行动的任务的强大默认值，例如技术设计、迁移规划和端到端项目执行。  对于从早期 Opus 版本升级的用户，请参阅我们的[官方迁移指南](https://openrouter.ai/docs/guides/guides/model-migrations/claude-4-6-opus) |
 
 ## 🏢 Arcee-ai (7 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Arcee 家族模型
 
@@ -141,6 +171,9 @@
 | **Arcee AI: Coder Large** | 💻 代码模型 | `arcee-ai/coder-large` | 32.768K | 输入 $0.5/1M, 输出 $0.8/1M | Coder‑Large 是 Qwen2.5‑Instruct 的 32B 参数后代，已在许可的 GitHub、CodeSearchNet 和综合错误修复语料库上接受了进一步培训。它支持 32k 上下文窗口，可在一次调用中实现多文件重构或长差异审查，并理解 30 多种编程语言，特别关注 TypeScript、Go 和 Terraform。内部基准测试显示，由于奖励可编译输出的强化通道，HumanEval 和具有竞争力的 BugFix 分数比 CodeLlama-34B-Python 提高了 5-8 分。默认情况下，该模型会随代码块一起发出结构化解释，使其适用于教育工具以及生产副驾驶场景。从成本角度来看，Together AI 的价格远低于专有的现有产品，因此团队可以在不失控支出的情况下扩展交互式编码。 |
 
 ## 🏢 Baidu (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Ernie 家族模型
 
@@ -153,6 +186,9 @@
 | **Baidu: ERNIE 4.5 300B A47B ** | 📝 语言模型 | `baidu/ernie-4.5-300b-a47b` | 123K | 输入 $0.28/1M, 输出 $1.1/1M | ERNIE-4.5-300B-A47B 是百度开发的 300B 参数 Mixture-of-Experts (MoE) 语言模型，属于 ERNIE 4.5 系列的一部分。它每个令牌激活 47B 个参数，并支持中英文文本生成。它针对高吞吐量推理和高效扩展进行了优化，采用异构 MoE 结构，具有先进的路由和量化策略，包括 FP8 和 2 位格式。该版本针对仅语言任务进行了微调，并支持推理、工具参数以及高达 131k 标记的扩展上下文长度。适用于具有高推理和吞吐量要求的通用 LLM 应用。 |
 
 ## 🏢 Bytedance (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `VLM`
 
 ### 📂 其他独立模型
 
@@ -161,6 +197,9 @@
 | **ByteDance: UI-TARS 7B ** | 👁️ 视觉多模态 | `bytedance/ui-tars-1.5-7b` | 128K | 输入 $0.1/1M, 输出 $0.2/1M | UI-TARS-1.5 是一种多模式视觉语言代理，针对基于 GUI 的环境进行了优化，包括桌面界面、Web 浏览器、移动系统和游戏。它由字节跳动构建，建立在 UI-TARS 框架之上，具有基于强化学习的推理，可跨虚拟界面实现稳健的行动规划和执行。  该模型在一系列交互和基础基准测试中取得了最先进的结果，包括 OSwor​​ld、WebVoyager、AndroidWorld 和 ScreenSpot。它还在各种 Poki 游戏中展示了完美的任务完成能力，并且在 Minecraft 代理任务中优于之前的模型。 UI-TARS-1.5 支持推理过程中的思维分解，并显示出跨变体的强大扩展性，1.5 版本明显超过了早期 72B 和 7B 检查点的性能。 |
 
 ## 🏢 Bytedance-seed (4 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `VLM`
 
 ### 📂 Bytedance 家族模型
 
@@ -172,6 +211,9 @@
 | **ByteDance Seed: Seed 1.6** | 👁️ 视觉多模态 | `bytedance-seed/seed-1.6` | 262.144K | 输入 $0.25/1M, 输出 $2/1M | Seed 1.6是字节跳动Seed团队发布的通用模型。它结合了多模式功能和自适应深度思维以及 256K 上下文窗口。 |
 
 ## 🏢 Cognitivecomputations (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 其他独立模型
 
@@ -179,7 +221,10 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Venice: Uncensored (free)** | 📝 语言模型 | `cognitivecomputations/dolphin-mistral-24b-venice-edition:free` | 32.768K | 免费 | Venice Uncensored Dolphin Mistral 24B Venice Edition 是 Mistral-Small-24B-Instruct-2501 的微调变体，由 dphn.ai 与 Venice.ai 合作开发。该模型被设计为“未经审查”的指令调整法学硕士，保留用户对对齐、系统提示和行为的控制。 Venice Uncensored 针对高级和不受限制的用例，强调可操纵性和透明行为，消除了主流助理模型中常见的默认安全和对齐层。 |
 
-## 🏢 Cohere (4 个模型)
+## 🏢 Cohere (6 个模型)
+**原生 API 地址**: `https://api.cohere.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `EMBEDDING`, `LLM`
 
 ### 📂 Command 家族模型
 
@@ -187,10 +232,20 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Cohere: Command A** | 📝 语言模型 | `cohere/command-a` | 256K | 输入 $2.5/1M, 输出 $10/1M | Command A 是一个开放权重 111B 参数模型，具有 256k 上下文窗口，专注于在代理、多语言和编码用例中提供出色的性能。 与其他领先的专有和开放权重模型相比，Command A 以最低的硬件成本提供最高的性能，在关键业务代理和多语言任务方面表现出色。 |
 | **Cohere: Command R7B (12-2024)** | 📝 语言模型 | `cohere/command-r7b-12-2024` | 128K | 输入 $0.04/1M, 输出 $0.15/1M | Command R7B (12-2024) 是 Command R+ 模型的小型快速更新，于 2024 年 12 月交付。它擅长 RAG、工具使用、代理以及需要复杂推理和多个步骤的类似任务。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
-| **Cohere: Command R (08-2024)** | 📝 语言模型 | `cohere/command-r-08-2024` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | command-r-08-2024 是 [Command R](/models/cohere/command-r) 的更新，改进了多语言检索增强生成 (RAG) 和工具使用的性能。更广泛地说，它在数学、代码和推理方面表现更好，并且与之前版本的较大 Command R+ 模型具有竞争力。  请阅读[此处](https://docs.cohere.com/changelog/command-gets-refreshed) 发布帖子。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
 | **Cohere: Command R+ (08-2024)** | 📝 语言模型 | `cohere/command-r-plus-08-2024` | 128K | 输入 $2.5/1M, 输出 $10/1M | command-r-plus-08-2024 是 [Command R+](/models/cohere/command-r-plus) 的更新，与之前的 Command R+ 版本相比，吞吐量提高了大约 50%，延迟降低了 25%，同时保持硬件占用空间相同。  请阅读[此处](https://docs.cohere.com/changelog/command-gets-refreshed) 发布帖子。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
+| **Cohere: Command R (08-2024)** | 📝 语言模型 | `cohere/command-r-08-2024` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | command-r-08-2024 是 [Command R](/models/cohere/command-r) 的更新，改进了多语言检索增强生成 (RAG) 和工具使用的性能。更广泛地说，它在数学、代码和推理方面表现更好，并且与之前版本的较大 Command R+ 模型具有竞争力。  请阅读[此处](https://docs.cohere.com/changelog/command-gets-refreshed) 发布帖子。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
+
+### 📂 Embed 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Cohere: Embed English v3.0** | 🔢 向量/Embedding | `cohere/embed-english-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 业界领先的英文文本嵌入模型。 |
+| **Cohere: Embed Multilingual v3.0** | 🔢 向量/Embedding | `cohere/embed-multilingual-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 支持 100 多种语言的多语言文本嵌入模型。 |
 
 ## 🏢 Deepcogito (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Deep 家族模型
 
@@ -199,6 +254,9 @@
 | **Deep Cogito: Cogito v2.1 671B** | 📝 语言模型 | `deepcogito/cogito-v2.1-671b` | 128K | 输入 $1.25/1M, 输出 $1.25/1M | Cogito v2.1 671B MoE 代表了全球最强的开放模型之一，其性能可与前沿封闭模型和开放模型相媲美。该模型使用自我游戏和强化学习进行训练，以在多个类别（指令遵循、编码、较长查询和创意写作）上达到最先进的性能。这个先进的系统展示了通过政策改进在可扩展超级智能方面取得的重大进展。 |
 
 ## 🏢 Deepseek (11 个模型)
+**原生 API 地址**: `https://api.deepseek.com`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 DeepSeek V3 系列
 
@@ -242,6 +300,9 @@
 | **DeepSeek: R1** | 📝 语言模型 | `deepseek/deepseek-r1` | 64K | 输入 $0.7/1M, 输出 $2.5/1M | DeepSeek R1 在这里：性能与 [OpenAI o1](/openai/o1) 相当，但开源且具有完全开放的推理令牌。它的大小为 671B 参数，其中推理过程中有 37B 处于活动状态。  完全开源模型和[技术报告](https://api-docs.deepseek.com/news/news250120)。  麻省理工学院许可：自由蒸馏和商业化！ |
 
 ## 🏢 Eleutherai (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Llemma 家族模型
 
@@ -250,6 +311,9 @@
 | **EleutherAI: Llemma 7b** | 📝 语言模型 | `eleutherai/llemma_7b` | 4.096K | 输入 $0.8/1M, 输出 $1.2/1M | Llemma 7B 是数学语言模型。它使用 Code Llama 7B 权重进行初始化，并在 Proof-Pile-2 上进行 200B 代币的训练。 Llemma 模型在思想链数学推理和使用数学计算工具（例如 Python 和形式定理证明器）方面特别强大。 |
 
 ## 🏢 Essentialai (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Rnj 家族模型
 
@@ -257,7 +321,10 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **EssentialAI: Rnj 1 Instruct** | 📝 语言模型 | `essentialai/rnj-1-instruct` | 32.768K | 输入 $0.15/1M, 输出 $0.15/1M | Rnj-1 是由 Essential AI 开发的 8B 参数、密集、开放权重模型系列，并从头开始训练，重点关注编程、数学和科学推理。该模型展示了跨多种编程语言、工具使用工作流程和代理执行环境（例如 mini-SWE-agent）的强大性能。 |
 
-## 🏢 Google (27 个模型)
+## 🏢 Google (28 个模型)
+**原生 API 地址**: `https://generativelanguage.googleapis.com/v1beta`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `AUDIO`, `EMBEDDING`, `IMAGE`, `LLM`, `OMNI`, `VLM`
 
 ### 📂 Gemini 2.0 系列
 
@@ -316,7 +383,16 @@
 | **Google: Gemma 3 27B (free)** | 👁️ 视觉多模态 | `google/gemma-3-27b-it:free` | 131.072K | 免费 | Gemma 3 引入了多模态，支持视觉语言输入和文本输出。它可处理多达 128k 个标记的上下文窗口，理解 140 多种语言，并提供改进的数学、推理和聊天功能，包括结构化输出和函数调用。 Gemma 3 27B 是 Google 最新的开源型号，是 [Gemma 2] 的后继者(google/gemma-2-27b-it) |
 | **Google: Gemma 3 27B** | 👁️ 视觉多模态 | `google/gemma-3-27b-it` | 131.072K | 输入 $0.08/1M, 输出 $0.16/1M | Gemma 3 引入了多模态，支持视觉语言输入和文本输出。它可处理多达 128k 个标记的上下文窗口，理解 140 多种语言，并提供改进的数学、推理和聊天功能，包括结构化输出和函数调用。 Gemma 3 27B 是 Google 最新的开源型号，是 [Gemma 2] 的后继者(google/gemma-2-27b-it) |
 
+### 📂 Text 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Google: Text Embedding 004** | 🔢 向量/Embedding | `google/text-embedding-004` | 2.048K | 输入 $0.02/1M, 输出 $0/1M | Google Gemini 文本嵌入模型。 |
+
 ## 🏢 Gryphe (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Mythomax 家族模型
 
@@ -325,6 +401,9 @@
 | **MythoMax 13B** | 📝 语言模型 | `gryphe/mythomax-l2-13b` | 4.096K | 输入 $0.06/1M, 输出 $0.06/1M | Llama 2 13B 中表现最好、最受欢迎的曲子之一，具有丰富的描述和角色扮演。 ＃合并 |
 
 ## 🏢 Ibm-granite (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 其他独立模型
 
@@ -333,6 +412,9 @@
 | **IBM: Granite 4.0 Micro** | 📝 语言模型 | `ibm-granite/granite-4.0-h-micro` | 131K | 输入 $0.02/1M, 输出 $0.11/1M | Granite-4.0-H-Micro 是 Granite 4 系列模型的 3B 参数。这些模型是 IBM 发布的一系列模型中的最新模型。它们针对长上下文工具调用进行了微调。 |
 
 ## 🏢 Inception (3 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Mercury 家族模型
 
@@ -343,15 +425,32 @@
 | **Inception: Mercury Coder** | 💻 代码模型 | `inception/mercury-coder` | 128K | 输入 $0.25/1M, 输出 $0.75/1M | Mercury Coder 是第一个扩散大型语言模型 (dLLM)。该模型采用突破性的离散扩散方法，运行速度比 Claude 3.5 Haiku 和 GPT-4o Mini 等速度优化模型快 5-10 倍，同时与它们的性能相匹配。 Mercury Coder 的速度意味着开发人员可以在编码时保持流畅，享受基于聊天的快速迭代和响应式代码完成建议。在 Copilot Arena 上，Mercury Coder 在速度方面排名第一，在质量方面并列第二。请在[此处的博客文章](https://www.inceptionlabs.ai/blog/introducing-mercury) 中阅读更多信息。 |
 
 ## 🏢 Inflection (2 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Inflection 家族模型
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Inflection: Inflection 3 Pi** | 📝 语言模型 | `inflection/inflection-3-pi` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 Pi 为 Inflection 的 [Pi](https://pi.ai) 聊天机器人提供支持，包括背景故事、情商、生产力和安全性。它可以访问最新新闻，并且在客户支持和角色扮演等场景中表现出色。  Pi 经过训练可以反映您的语气和风格，如果您使用更多表情符号，Pi 也会如此！尝试尝试各种提示和对话方式。 |
 | **Inflection: Inflection 3 Productivity** | 📝 语言模型 | `inflection/inflection-3-productivity` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 生产力针对以下说明进行了优化。它更适合需要 JSON 输出或精确遵守所提供指南的任务。它可以访问最近的新闻。  对于与 Pi 类似的情商，请参阅 [Inflect 3 Pi](/inflection/inflection-3-pi)  更多详情请参见[Inflection的公告](https://inflection.ai/blog/enterprise)。 |
+| **Inflection: Inflection 3 Pi** | 📝 语言模型 | `inflection/inflection-3-pi` | 8K | 输入 $2.5/1M, 输出 $10/1M | Inflection 3 Pi 为 Inflection 的 [Pi](https://pi.ai) 聊天机器人提供支持，包括背景故事、情商、生产力和安全性。它可以访问最新新闻，并且在客户支持和角色扮演等场景中表现出色。  Pi 经过训练可以反映您的语气和风格，如果您使用更多表情符号，Pi 也会如此！尝试尝试各种提示和对话方式。 |
+
+## 🏢 Jina (1 个模型)
+**原生 API 地址**: `https://api.jina.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `EMBEDDING`
+
+### 📂 Embeddings 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Jina: Embeddings v3** | 🔢 向量/Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
 
 ## 🏢 Kwaipilot (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Kat 家族模型
 
@@ -360,6 +459,9 @@
 | **Kwaipilot: KAT-Coder-Pro V1** | 💻 代码模型 | `kwaipilot/kat-coder-pro` | 256K | 输入 $0.21/1M, 输出 $0.83/1M | KAT-Coder-Pro V1是KwaiKAT KAT-Coder系列中最先进的代理编码模型。它专为代理编码任务而设计，在现实软件工程场景中表现出色，在 SWE-Bench Verified 基准测试中实现了 73.4% 的解决率。   该模型通过多阶段训练过程，包括中期训练、监督微调（SFT）、强化微调（RFT）和可扩展代理强化学习，针对工具使用能力、多轮交互、指令跟随、泛化和综合能力进行了优化。 |
 
 ## 🏢 Liquid (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 其他独立模型
 
@@ -372,6 +474,9 @@
 | **LiquidAI: LFM2-2.6B** | 📝 语言模型 | `liquid/lfm-2.2-6b` | 32.768K | 输入 $0.01/1M, 输出 $0.02/1M | LFM2是Liquid AI开发的新一代混合模型，专为边缘AI和设备上部署而设计。它在质量、速度和内存效率方面树立了新标准。 |
 
 ## 🏢 Mancer (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Weaver 家族模型
 
@@ -380,6 +485,9 @@
 | **Mancer: Weaver (alpha)** | 📝 语言模型 | `mancer/weaver` | 8K | 输入 $0.75/1M, 输出 $1/1M | 试图重现克劳德式的冗长，但不要指望有相同水平的连贯性或记忆力。适用于角色扮演/叙事场景。 |
 
 ## 🏢 Meituan (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Longcat 家族模型
 
@@ -388,13 +496,16 @@
 | **Meituan: LongCat Flash Chat** | 📝 语言模型 | `meituan/longcat-flash-chat` | 131.072K | 输入 $0.2/1M, 输出 $0.8/1M | LongCat-Flash-Chat 是一个大规模专家混合 (MoE) 模型，总参数为 560B，其中每个输入动态激活 18.6B–31.3B（平均约 27B）。它引入了快捷连接的 MoE 设计，以减少通信开销并实现高吞吐量，同时通过超参数传输、确定性计算和多阶段优化等高级扩展策略保持训练稳定性。  此版本 LongCat-Flash-Chat 是一个针对对话和代理任务进行优化的非思维基础模型。它支持高达 128K 令牌的长上下文窗口，并在推理、编码、指令跟踪和领域基准方面显示出有竞争力的性能，在工具使用和复杂的多步骤交互方面具有特殊的优势。 |
 
 ## 🏢 Meta-llama (14 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Llama 3 系列
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Meta: Llama 3 70B Instruct** | 📝 语言模型 | `meta-llama/llama-3-70b-instruct` | 8.192K | 输入 $0.51/1M, 输出 $0.74/1M | Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。  与人类评估中领先的闭源模型相比，它表现出了强大的性能。  要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。 |
 | **Meta: Llama 3 8B Instruct** | 📝 语言模型 | `meta-llama/llama-3-8b-instruct` | 8.192K | 输入 $0.03/1M, 输出 $0.04/1M | Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 8B 指令调整版本针对高质量对话用例进行了优化。  与人类评估中领先的闭源模型相比，它表现出了强大的性能。  要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。 |
+| **Meta: Llama 3 70B Instruct** | 📝 语言模型 | `meta-llama/llama-3-70b-instruct` | 8.192K | 输入 $0.51/1M, 输出 $0.74/1M | Meta 的最新型号 (Llama 3) 推出了多种尺寸和口味。这个 70B 指令调整版本针对高质量对话用例进行了优化。  与人类评估中领先的闭源模型相比，它表现出了强大的性能。  要了解有关模型发布的更多信息，请[单击此处](https://ai.meta.com/blog/meta-llama-3/)。该模型的使用须遵守[Meta 的可接受使用政策](https://llama.meta.com/llama3/use-policy/)。 |
 
 ### 📂 Llama 3.1 系列
 
@@ -434,6 +545,9 @@
 | **Llama Guard 3 8B** | 📝 语言模型 | `meta-llama/llama-guard-3-8b` | 131.072K | 输入 $0.02/1M, 输出 $0.06/1M | Llama Guard 3 是 Llama-3.1-8B 预训练模型，针对内容安全分类进行了微调。与以前的版本类似，它可用于对 LLM 输入（提示分类）和 LLM 响应（响应分类）中的内容进行分类。它充当法学硕士 - 它在输出中生成文本，指示给定的提示或响应是安全还是不安全，如果不安全，它还会列出违反的内容类别。  Llama Guard 3 旨在防范 MLCommons 标准化危险分类法，并旨在支持 Llama 3.1 功能。具体来说，它提供 8 种语言的内容审核，并经过优化以支持搜索和代码解释器工具调用的安全性。 |
 
 ## 🏢 Microsoft (2 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Phi 家族模型
 
@@ -448,6 +562,9 @@
 | **WizardLM-2 8x22B** | 📝 语言模型 | `microsoft/wizardlm-2-8x22b` | 65.535K | 输入 $0.62/1M, 输出 $0.62/1M | WizardLM-2 8x22B 是 Microsoft AI 最先进的 Wizard 模型。与领先的专有模型相比，它表现出极具竞争力的性能，并且始终优于所有现有的最先进的开源模型。  它是 [Mixtral 8x22B](/models/mistralai/mixtral-8x22b) 的指令微调。  要了解有关模型发布的更多信息，请[单击此处](https://wizardlm.github.io/WizardLM2/)。  #萌 |
 
 ## 🏢 Minimax (8 个模型)
+**原生 API 地址**: `https://api.minimax.chat/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Minimax 家族模型
 
@@ -462,7 +579,10 @@
 | **MiniMax: MiniMax M1** | 📝 语言模型 | `minimax/minimax-m1` | 1000K | 输入 $0.4/1M, 输出 $2.2/1M | MiniMax-M1是一种大规模、开放权重推理模型，专为扩展上下文和高效推理而设计。它利用混合专家混合 (MoE) 架构与定制的“闪电注意力”机制相结合，使其能够处理长序列（最多 100 万个代币），同时保持具有竞争力的 FLOP 效率。该变体具有 4560 亿个总参数和每个令牌 45.9B 的活跃参数，针对复杂的多步骤推理任务进行了优化。  M1 通过自定义强化学习管道 (CISPO) 进行训练，在长上下文理解、软件工程、代理工具使用和数学推理方面表现出色。 FullStackBench、SWE-bench、MATH、GPQA 和 TAU-Bench 的基准测试显示出强大的性能，通常优于 DeepSeek R1 和 Qwen3-235B 等其他开放模型。 |
 | **MiniMax: MiniMax-01** | 👁️ 视觉多模态 | `minimax/minimax-01` | 1000.192K | 输入 $0.2/1M, 输出 $1.1/1M | MiniMax-01 结合了用于文本生成的 MiniMax-Text-01 和用于图像理解的 MiniMax-VL-01。它拥有 4560 亿个参数，每次推理激活 459 亿个参数，并且可以处理多达 400 万个令牌的上下文。  文本模型采用混合架构，结合了 Lightning Attention、Softmax Attention 和 Mixture-of-Experts (MoE)。图像模型采用“ViT-MLP-LLM”框架，并在文本模型之上进行训练。  要了解有关该版本的更多信息，请参阅：https://www.minimaxi.com/en/news/minimax-01-series-2 |
 
-## 🏢 Mistralai (26 个模型)
+## 🏢 Mistralai (27 个模型)
+**原生 API 地址**: `https://api.mistral.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `AUDIO`, `EMBEDDING`, `LLM`, `VLM`
 
 ### 📂 Mistral Large 系列
 
@@ -511,6 +631,7 @@
 | **Mistral: Devstral Small 1.1** | 📝 语言模型 | `mistralai/devstral-small` | 131.072K | 输入 $0.1/1M, 输出 $0.3/1M | Devstral Small 1.1 是一个用于软件工程代理的 24B 参数开放权重语言模型，由 Mistral AI 与 All Hands AI 合作开发。它从 Mistral Small 3.1 进行了微调，并在 Apache 2.0 许可证下发布，具有 128k 令牌上下文窗口，并支持 Mistral 风格的函数调用和 XML 输出格式。  Devstral Small 1.1 专为代理编码工作流程而设计，针对代码库探索、多文件编辑以及集成到 OpenHands 和 Cline 等自主开发代理中等任务进行了优化。它在 SWE-Bench Verified 上达到了 53.6%，超过了该基准测试中的所有其他开放模型，同时保持足够轻量，可以在单个 4090 GPU 或 Apple 硅机器上运行。该模型使用具有 131k 词汇量的 Tekken 分词器，可通过 vLLM、Transformers、Ollama、LM Studio 和其他 OpenAI 兼容运行时进行部署。 |
 | **Mistral: Saba** | 📝 语言模型 | `mistralai/mistral-saba` | 32.768K | 输入 $0.2/1M, 输出 $0.6/1M | Mistral Saba 是专为中东和南亚设计的 24B 参数语言模型，可提供准确且与上下文相关的响应，同时保持高效性能。它根据精选的区域数据集进行训练，支持多种印度语言，包括泰米尔语和马拉雅拉姆语以及阿拉伯语。这使其成为一系列区域和多语言应用程序的多功能选择。在[此处]（https://mistral.ai/en/news/mistral-saba）博客文章中了解更多信息 |
 | **Mistral: Mistral 7B Instruct v0.1** | 📝 语言模型 | `mistralai/mistral-7b-instruct-v0.1` | 2.824K | 输入 $0.11/1M, 输出 $0.19/1M | 7.3B 参数模型在所有基准测试中均优于 Llama 2 13B，并针对速度和上下文长度进行了优化。 |
+| **Mistral: Mistral Embed** | 🔢 向量/Embedding | `mistralai/mistral-embed` | 8.192K | 输入 $0.1/1M, 输出 $0/1M | Mistral 最先进的文本嵌入模型。 |
 
 ### 📂 Mixtral (MoE) 系列
 
@@ -526,6 +647,9 @@
 | **Mistral: Pixtral Large 2411** | 👁️ 视觉多模态 | `mistralai/pixtral-large-2411` | 131.072K | 输入 $2/1M, 输出 $6/1M | Pixtral Large 是一个 124B 参数、开放权重、多模态模型，建立在 [Mistral Large 2](/mistralai/mistral-large-2411) 之上。该模型能够理解文档、图表和自然图像。  该模型可根据米斯特拉尔研究许可证 (MRL) 用于研究和教育用途，并根据米斯特拉尔商业许可证用于商业目的的实验、测试和生产。 |
 
 ## 🏢 Moonshotai (4 个模型)
+**原生 API 地址**: `https://api.moonshot.cn/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Kimi 家族模型
 
@@ -537,6 +661,9 @@
 | **MoonshotAI: Kimi K2 0711** | 📝 语言模型 | `moonshotai/kimi-k2` | 131.072K | 输入 $0.57/1M, 输出 $2.3/1M | Kimi K2 Instruct 是 Moonshot AI 开发的大规模专家混合 (MoE) 语言模型，具有 1 万亿个总参数，每个前向传递有 320 亿个活跃值。它针对代理功能进行了优化，包括高级工具使用、推理和代码合成。 Kimi K2 在广泛的基准测试中表现出色，特别是在编码（LiveCodeBench、SWE-bench）、推理（ZebraLogic、GPQA）和工具使用（Tau2、AceBench）任务方面。它支持高达 128K 令牌的长上下文推理，并采用新颖的训练堆栈进行设计，其中包括用于稳定的大规模 MoE 训练的 MuonClip 优化器。 |
 
 ## 🏢 Morph (2 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Morph 家族模型
 
@@ -546,6 +673,9 @@
 | **Morph: Morph V3 Fast** | 📝 语言模型 | `morph/morph-v3-fast` | 81.92K | 输入 $0.8/1M, 输出 $1.2/1M | Morph 最快的代码编辑应用模型。约 10,500 个令牌/秒，快速代码转换的准确度为 96%。  该模型要求提示采用以下格式：  <指令>{指令}</指令> <code>{initial_code}</code> <更新>{edit_snippet}</更新>  Morph 启用了零数据保留。在他们的[文档](https://docs.morphllm.com/quickstart)中了解有关此模型的更多信息 |
 
 ## 🏢 Nex-agi (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 DeepSeek V3.1 系列
 
@@ -553,7 +683,21 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Nex AGI: DeepSeek V3.1 Nex N1** | 📝 语言模型 | `nex-agi/deepseek-v3.1-nex-n1` | 131.072K | 输入 $0.14/1M, 输出 $0.5/1M | DeepSeek V3.1 Nex-N1 是 Nex-N1 系列的旗舰版本 - 一个经过训练的模型，旨在突出代理自主性、工具使用和现实世界的生产力。   Nex-N1 在所有评估场景中都表现出具有竞争力的性能，在实际编码和 HTML 生成任务中显示出特别强劲的结果。 |
 
+## 🏢 Nomic (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `EMBEDDING`
+
+### 📂 Embed 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Nomic: Embed Text v1.5** | 🔢 向量/Embedding | `nomic/nomic-embed-text-v1.5` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 高性能、完全可审核的开放嵌入模型。 |
+
 ## 🏢 Nousresearch (6 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Hermes 家族模型
 
@@ -572,6 +716,9 @@
 | **Nous: Hermes 3 405B Instruct** | 📝 语言模型 | `nousresearch/hermes-3-llama-3.1-405b` | 131.072K | 输入 $1/1M, 输出 $1/1M | Hermes 3 是一种通用语言模型，与 Hermes 2 相比有许多改进，包括高级代理功能、更好的角色扮演、推理、多轮对话、长上下文连贯性以及全面的改进。  Hermes 3 405B 是 Llama-3.1 405B 基础模型的前沿级全参数微调，专注于将 LLM 与用户对齐，为最终用户提供强大的转向功能和控制能力。  Hermes 3系列在Hermes 2集能力的基础上构建和扩展，包括更强大、更可靠的函数调用和结构化输出能力、通才助理能力以及改进的代码生成技能。  Hermes 3 在一般能力上与 Llama-3.1 Instruct 模型相比，即使不是更胜一筹，也具有竞争力，两者之间的优缺点各不相同。 |
 
 ## 🏢 Nvidia (11 个模型)
+**原生 API 地址**: `https://integrate.api.nvidia.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Llama 3.1 系列
 
@@ -599,7 +746,10 @@
 | **NVIDIA: Nemotron Nano 9B V2 (free)** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2:free` | 128K | 免费 | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
 | **NVIDIA: Nemotron Nano 9B V2** | 📝 语言模型 | `nvidia/nemotron-nano-9b-v2` | 131.072K | 输入 $0.04/1M, 输出 $0.16/1M | NVIDIA-Nemotron-Nano-9B-v2 是 NVIDIA 从头开始​​训练的大型语言模型 (LLM)，被设计为推理和非推理任务的统一模型。它通过首先生成推理跟踪然后得出最终响应来响应用户查询和任务。   模型的推理能力可以通过系统提示来控制。如果用户希望模型在没有中间推理痕迹的情况下提供最终答案，则可以将其配置为这样做。 |
 
-## 🏢 Openai (62 个模型)
+## 🏢 Openai (65 个模型)
+**原生 API 地址**: `https://api.openai.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `AUDIO`, `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
 
 ### 📂 Gpt 家族模型
 
@@ -728,7 +878,18 @@
 | **OpenAI: o4 Mini High** | 👁️ 视觉多模态 | `openai/o4-mini-high` | 200K | 输入 $1.1/1M, 输出 $4.4/1M | OpenAI o4-mini-high 与 [o4-mini](/openai/o4-mini) 模型相同，reasoning_effort 设置为 high。   OpenAI o4-mini 是 o 系列中的紧凑推理模型，针对快速、经济高效的性能进行了优化，同时保留了强大的多模式和代理功能。它支持工具使用，并在 AIME（Python 为 99.5%）和 SWE-bench 等基准测试中展示了具有竞争力的推理和编码性能，优于其前身 o3-mini，甚至在某些领域接近 o3。  尽管尺寸较小，o4-mini 在 STEM 任务、视觉问题解决（例如 MathVista、MMMU）和代码编辑方面表现出高精度。它特别适合延迟或成本至关重要的高吞吐量场景。得益于其高效的架构和完善的强化学习训练，o4-mini 可以链接工具、生成结构化输出并以最小的延迟（通常在一分钟内）解决多步骤任务。 |
 | **OpenAI: o4 Mini** | 👁️ 视觉多模态 | `openai/o4-mini` | 200K | 输入 $1.1/1M, 输出 $4.4/1M | OpenAI o4-mini 是 o 系列中的紧凑推理模型，针对快速、经济高效的性能进行了优化，同时保留了强大的多模式和代理功能。它支持工具使用，并在 AIME（Python 为 99.5%）和 SWE-bench 等基准测试中展示了具有竞争力的推理和编码性能，优于其前身 o3-mini，甚至在某些领域接近 o3。  尽管尺寸较小，o4-mini 在 STEM 任务、视觉问题解决（例如 MathVista、MMMU）和代码编辑方面表现出高精度。它特别适合延迟或成本至关重要的高吞吐量场景。得益于其高效的架构和完善的强化学习训练，o4-mini 可以链接工具、生成结构化输出并以最小的延迟（通常在一分钟内）解决多步骤任务。 |
 
+### 📂 Text 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **OpenAI: Text Embedding 3 Small** | 🔢 向量/Embedding | `openai/text-embedding-3-small` | 8.191K | 输入 $0.02/1M, 输出 $0/1M | 高效且经济高效的嵌入模型。 |
+| **OpenAI: Text Embedding 3 Large** | 🔢 向量/Embedding | `openai/text-embedding-3-large` | 8.191K | 输入 $0.13/1M, 输出 $0/1M | 适用于高级任务的高性能嵌入模型。 |
+| **OpenAI: Text Embedding Ada 002** | 🔢 向量/Embedding | `openai/text-embedding-ada-002` | 8.191K | 输入 $0.1/1M, 输出 $0/1M | 上一代 OpenAI 嵌入模型。 |
+
 ## 🏢 Openrouter (3 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `IMAGE`, `LLM`, `VLM`
 
 ### 📂 Auto 家族模型
 
@@ -749,6 +910,9 @@
 | **Free Models Router** | 👁️ 视觉多模态 | `openrouter/free` | 200K | 免费 | 获得自由推理的最简单方法。 openrouter/free 是一个从 OpenRouter 上可用的模型中随机选择免费模型的路由器。路由器智能地过滤支持您请求所需功能的模型，例如图像理解、工具调用、结构化输出等。 |
 
 ## 🏢 Perplexity (5 个模型)
+**原生 API 地址**: `https://api.perplexity.ai`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Sonar 家族模型
 
@@ -761,6 +925,9 @@
 | **Perplexity: Sonar** | 👁️ 视觉多模态 | `perplexity/sonar` | 127.072K | 输入 $1/1M, 输出 $1/1M | 声纳重量轻、价格实惠、速度快且易于使用——现在具有引用和定制来源的能力。它专为寻求集成针对速度而优化的轻量级问答功能的公司而设计。 |
 
 ## 🏢 Prime-intellect (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Prime 家族模型
 
@@ -769,6 +936,9 @@
 | **Prime Intellect: INTELLECT-3** | 📝 语言模型 | `prime-intellect/intellect-3` | 131.072K | 输入 $0.2/1M, 输出 $1.1/1M | INTELLECT-3 是一个 106B 参数混合专家模型（12B 主动），使用监督微调 (SFT) 和大规模强化学习 (RL) 从 GLM-4.5-Air-Base 进行后训练。它在数学、代码、科学和一般推理方面提供了最先进的性能，始终优于许多更大的前沿模型。它专为强大的多步骤问题解决而设计，凭借其 MoE 架构，在结构化任务上保持高精度，同时保持推理效率。 |
 
 ## 🏢 Qwen (49 个模型)
+**原生 API 地址**: `https://dashscope.aliyuncs.com/compatible-mode/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Qwen 2.5 系列
 
@@ -845,6 +1015,9 @@
 | **Qwen: QwQ 32B** | 📝 语言模型 | `qwen/qwq-32b` | 131.072K | 输入 $0.15/1M, 输出 $0.58/1M | QwQ是Qwen系列的推理模型。与传统的指令调整模型相比，具有思考和推理能力的QwQ可以在下游任务，特别是难题上取得显着增强的性能。 QwQ-32B是中型推理模型，能够与DeepSeek-R1、o1-mini等最先进的推理模型相媲美。 |
 
 ## 🏢 Relace (2 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Relace 家族模型
 
@@ -854,6 +1027,9 @@
 | **Relace: Relace Apply 3** | 📝 语言模型 | `relace/relace-apply-3` | 256K | 输入 $0.85/1M, 输出 $1.25/1M | Relace Apply 3 是一种专门的代码修补 LLM，可将 AI 建议的编辑直接合并到您的源文件中。它可以平均每秒 10,000 个令牌的速度将 GPT-4o、Claude 和其他人的更新应用到您的文件中。  该模型要求提示采用以下格式：  <指令>{指令}</指令> <code>{initial_code}</code> <更新>{edit_snippet}</更新>  为 Relace 启用了零数据保留。在他们的[文档](https://docs.relace.ai/api-reference/instant-apply/apply)中了解有关此模型的更多信息 |
 
 ## 🏢 Sao10k (5 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Llama 3 系列
 
@@ -876,6 +1052,9 @@
 | **Sao10K: Llama 3.3 Euryale 70B** | 📝 语言模型 | `sao10k/l3.3-euryale-70b` | 131.072K | 输入 $0.65/1M, 输出 $0.75/1M | Euryale L3.3 70B 是 [Sao10k](https://ko-fi.com/sao10k) 专注于创意角色扮演的模型。它是 [Euryale L3 70B v2.2](/models/sao10k/l3-euryale-70b) 的后继者。 |
 
 ## 🏢 Stepfun (2 个模型)
+**原生 API 地址**: `https://api.stepfun.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Step 家族模型
 
@@ -885,6 +1064,9 @@
 | **StepFun: Step 3.5 Flash** | 📝 语言模型 | `stepfun/step-3.5-flash` | 256K | 输入 $0.1/1M, 输出 $0.3/1M | Step 3.5 Flash是StepFun最强大的开源基础模型。它建立在稀疏专家混合 (MoE) 架构之上，每个令牌有选择地仅激活 196B 参数中的 11B。这是一种推理模型，即使在长上下文中也具有令人难以置信的速度效率。 |
 
 ## 🏢 Switchpoint (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Switchpoint 家族模型
 
@@ -893,6 +1075,9 @@
 | **Switchpoint Router** | 📝 语言模型 | `switchpoint/router` | 131.072K | 输入 $0.85/1M, 输出 $3.4/1M | Switchpoint AI 的路由器会立即分析您的请求，并将其引导至不断发展的库中的最佳 AI。   随着法学硕士世界的进步，我们的路由器变得更加智能，确保您始终从行业最新模型中受益，而无需改变您的工作流程。  该模型在 OpenRouter 上配置为每个响应简单、统一的速率。它由 [Switchpoint AI](https://www.switchpoint.dev) 的完整路由引擎提供支持。 |
 
 ## 🏢 Tencent (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Hunyuan 家族模型
 
@@ -901,6 +1086,9 @@
 | **Tencent: Hunyuan A13B Instruct** | 📝 语言模型 | `tencent/hunyuan-a13b-instruct` | 131.072K | 输入 $0.14/1M, 输出 $0.57/1M | Hunyuan-A13B是腾讯开发的13B主动参数Mixture-of-Experts (MoE)语言模型，总参数数为80B，支持Chain-of-Thought推理。它在数学、科学、编码和多轮推理任务方面提供具有竞争力的基准性能，同时通过分组查询注意 (GQA) 和量化支持（FP8、GPTQ 等）保持高推理效率。 |
 
 ## 🏢 Thedrummer (4 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Cydonia 家族模型
 
@@ -927,6 +1115,9 @@
 | **TheDrummer: UnslopNemo 12B** | 📝 语言模型 | `thedrummer/unslopnemo-12b` | 32.768K | 输入 $0.4/1M, 输出 $0.4/1M | UnslopNemo v4.1 是 Rocinante 创建者的最新补充，专为冒险写作和角色扮演场景而设计。 |
 
 ## 🏢 Tngtech (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 DeepSeek R1 系列
 
@@ -935,6 +1126,9 @@
 | **TNG: DeepSeek R1T2 Chimera** | 📝 语言模型 | `tngtech/deepseek-r1t2-chimera` | 163.84K | 输入 $0.3/1M, 输出 $1.1/1M | DeepSeek-TNG-R1T2-Chimera 是 TNG Tech 的第二代 Chimera 模型。它是一个 671 个 B 参数专家混合文本生成模型，由 DeepSeek-AI 的 R1-0528、R1 和 V3-0324 检查点与专家集合并组装而成。三元设计可产生强大的推理性能，同时在 vLLM 下运行速度比原始 R1 快约 20%，比 R1-0528 快 2 倍以上，从而实现有利的成本与智能权衡。检查点在标准使用中支持多达 60 k 令牌的上下文（测试为 ~130 k），并保持一致的 <think> 令牌行为，使其适合长上下文分析、对话和其他开放式生成任务。 |
 
 ## 🏢 Undi95 (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Remm 家族模型
 
@@ -943,6 +1137,9 @@
 | **ReMM SLERP 13B** | 📝 语言模型 | `undi95/remm-slerp-l2-13b` | 6.144K | 输入 $0.45/1M, 输出 $0.65/1M | 原始 MythoMax-L2-B13 的重新尝试，但具有更新的型号。 ＃合并 |
 
 ## 🏢 Upstage (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Solar 家族模型
 
@@ -950,7 +1147,22 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Upstage: Solar Pro 3** | 📝 语言模型 | `upstage/solar-pro-3` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | Solar Pro 3 是 Upstage 强大的专家混合 (MoE) 语言模型。凭借 102B 总参数和每次前向传递 12B 活动参数，它可在保持计算效率的同时提供卓越的性能。针对韩语进行了优化，并支持英语和日语。 |
 
+## 🏢 Voyageai (2 个模型)
+**原生 API 地址**: `https://api.voyageai.com/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
+
+### 📂 Voyage 家族模型
+
+| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Voyage AI: Voyage 3** | 📝 语言模型 | `voyageai/voyage-3` | 32K | 输入 $0.12/1M, 输出 $0/1M | 最先进的通用嵌入模型。 |
+| **Voyage AI: Voyage 3 Lite** | 📝 语言模型 | `voyageai/voyage-3-lite` | 32K | 输入 $0.04/1M, 输出 $0/1M | 快速且经济高效的通用嵌入模型。 |
+
 ## 🏢 Writer (1 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`
 
 ### 📂 Palmyra 家族模型
 
@@ -959,6 +1171,9 @@
 | **Writer: Palmyra X5** | 📝 语言模型 | `writer/palmyra-x5` | 1040K | 输入 $0.6/1M, 输出 $6/1M | Palmyra X5 是 Writer 最先进的模型，专为在整个企业中构建和扩展 AI 代理而构建。它由新颖的变压器架构和混合注意力机制提供支持，在高达 100 万个令牌的上下文窗口上提供业界领先的速度和效率。这可以实现更快的推理并扩展内存来处理大量企业数据，这对于扩展 AI 代理至关重要。 |
 
 ## 🏢 X-ai (10 个模型)
+**原生 API 地址**: `https://api.x.ai/v1`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 其他独立模型
 
@@ -976,6 +1191,9 @@
 | **xAI: Grok 3 Beta** | 📝 语言模型 | `x-ai/grok-3-beta` | 131.072K | 输入 $3/1M, 输出 $15/1M | Grok 3 是 xAI 的最新型号。这是他们的旗舰模型，擅长数据提取、编码和文本摘要等企业用例。拥有金融、医疗保健、法律和科学方面深厚的领域知识。  在 GPQA、LCB 和 MMLU-Pro 等结构化任务和基准测试中表现出色，甚至在高级思维方面也优于 Grok 3 Mini。   注意：该模型有两个 xAI 端点。默认情况下，使用此模型时，我们将始终将您路由到基本端点。如果您想要快速端点，您可以添加“provider：{sort：吞吐量}”，以按吞吐量排序。 |
 
 ## 🏢 Xiaomi (3 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `OMNI`, `VLM`
 
 ### 📂 Mimo 家族模型
 
@@ -986,6 +1204,9 @@
 | **Xiaomi: MiMo-V2-Flash** | 📝 语言模型 | `xiaomi/mimo-v2-flash` | 262.144K | 输入 $0.09/1M, 输出 $0.29/1M | MiMo-V2-Flash是小米开发的开源基础语言模型。它是一个混合专家模型，总参数为309B，主动参数为15B，采用混合注意力架构。 MiMo-V2-Flash支持混合思维切换和256K上下文窗口，擅长推理、编码和代理场景。在 SWE-bench Verified 和 SWE-bench Multilingual 上，MiMo-V2-Flash 名列全球排名第一的开源模型，提供与 Claude Sonnet 4.5 相当的性能，而成本仅为其约 3.5%。  用户可以使用“reasoning”“enabled”布尔值控制推理行为。 [在我们的文档中了解更多信息](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)。 |
 
 ## 🏢 Z-ai (11 个模型)
+**原生 API 地址**: `Unknown`  
+**OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 其他独立模型
 

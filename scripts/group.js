@@ -189,7 +189,8 @@ function run() {
       name: provider.name,
       type: providerTypes,
       logoUrl: provider.logoUrl,
-      apiUrl: provider.apiUrl,
+      openrouterApiUrl: provider.openrouterApiUrl,
+      nativeApiUrl: provider.nativeApiUrl,
       totalModels: provider.models.length,
       families: families
     };

@@ -45,6 +45,29 @@ const DOMAIN_MAP = {
   'jina': 'jina.ai'
 };
 
+const API_BASE_MAP = {
+  'openai': 'https://api.openai.com/v1',
+  'anthropic': 'https://api.anthropic.com/v1',
+  'google': 'https://generativelanguage.googleapis.com/v1beta',
+  'mistralai': 'https://api.mistral.ai/v1',
+  'deepseek': 'https://api.deepseek.com',
+  'qwen': 'https://dashscope.aliyuncs.com/compatible-mode/v1',
+  'cohere': 'https://api.cohere.ai/v1',
+  'perplexity': 'https://api.perplexity.ai',
+  'nvidia': 'https://integrate.api.nvidia.com/v1',
+  'x-ai': 'https://api.x.ai/v1',
+  'moonshotai': 'https://api.moonshot.cn/v1',
+  'minimax': 'https://api.minimax.chat/v1',
+  'zhipuai': 'https://open.bigmodel.cn/api/paas/v4',
+  'yi': 'https://api.lingyiwanwu.com/v1',
+  'stepfun': 'https://api.stepfun.com/v1',
+  'baichuan': 'https://api.baichuan-ai.com/v1',
+  'groq': 'https://api.groq.com/openai/v1',
+  'together': 'https://api.together.xyz/v1',
+  'voyageai': 'https://api.voyageai.com/v1',
+  'jina': 'https://api.jina.ai/v1'
+};
+
 async function fetchModels() {
   console.log('Fetching model data from OpenRouter...');
   
@@ -66,7 +89,8 @@ async function fetchModels() {
         providersMap.set(providerName, {
           name: providerName,
           logoUrl: `https://www.google.com/s2/favicons?sz=128&domain=${domain}`, 
-          apiUrl: 'https://openrouter.ai/api/v1/chat/completions',
+          openrouterApiUrl: 'https://openrouter.ai/api/v1/chat/completions',
+          nativeApiUrl: API_BASE_MAP[providerId] || 'Unknown',
           models: []
         });
       }
