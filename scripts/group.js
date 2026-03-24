@@ -124,6 +124,43 @@ function getProviderTypes(providerModels) {
   return Array.from(types).sort();
 }
 
+function getModelTypes(arch, name) {
+  const lowerName = name.toLowerCase();
+  const types = new Set();
+  
+  // Name heuristics for embeddings
+  if (lowerName.includes('embedding') || lowerName.includes('embed')) {
+    types.add('embeddings');
+    types.add('vector');
+    return Array.from(types); 
+  }
+  
+  // Name heuristics for image generation
+  if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) {
+    types.add('imageGen');
+    types.add('text'); // accepts text prompt
+  }
+
+  let inputs = [];
+  let outputs = [];
+  if (arch) {
+    inputs = arch.input_modalities || [];
+    outputs = arch.output_modalities || [];
+  }
+
+  // Output modalities
+  if (outputs.includes('text') || outputs.length === 0) types.add('text');
+  if (outputs.includes('image')) types.add('imageGen');
+  
+  // Input modalities & vision heuristics
+  if (inputs.includes('text') || inputs.length === 0) types.add('text');
+  if (inputs.includes('image') || lowerName.includes('vision') || lowerName.includes('-vl') || lowerName.includes('omni') || lowerName.includes('multimodal')) types.add('image');
+  if (inputs.includes('audio') || lowerName.includes('audio') || lowerName.includes('whisper')) types.add('audio');
+  if (inputs.includes('video')) types.add('video');
+
+  return Array.from(types).sort();
+}
+
 function run() {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
   
@@ -133,7 +170,8 @@ function run() {
     provider.models.forEach(model => {
       let cleanName = model.name.replace(new RegExp('^' + provider.name + '\\s*:\\s*', 'i'), '');
       const familyName = getFamily(cleanName);
-      model.tag = getModalityTag(model.architecture, cleanName); // Added Tag
+      model.tag = getModalityTag(model.architecture, cleanName); // For display
+      model.type = getModelTypes(model.architecture, cleanName); // Added granular type array
       
       if (!familiesMap.has(familyName)) {
         familiesMap.set(familyName, {
