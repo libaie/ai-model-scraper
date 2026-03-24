@@ -8708,7 +8708,7 @@
     "totalModels": 65,
     "families": [
       {
-        "familyName": "Ai21",
+        "familyName": "其他供应商与第三方模型",
         "models": [
           {
             "id": "ai21/jamba-large-1.7",
@@ -8734,12 +8734,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Aion-labs",
-        "models": [
+          },
           {
             "id": "aion-labs/aion-2.0",
             "name": "AionLabs: Aion-2.0",
@@ -8840,12 +8835,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Alfredpros",
-        "models": [
+          },
           {
             "id": "alfredpros/codellama-7b-instruct-solidity",
             "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
@@ -8870,12 +8860,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Allenai",
-        "models": [
+          },
           {
             "id": "allenai/olmo-3.1-32b-instruct",
             "name": "AllenAI: Olmo 3.1 32B Instruct",
@@ -8975,12 +8960,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Alpindale",
-        "models": [
+          },
           {
             "id": "alpindale/goliath-120b",
             "name": "Goliath 120B",
@@ -9005,12 +8985,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Anthracite-org",
-        "models": [
+          },
           {
             "id": "anthracite-org/magnum-v4-72b",
             "name": "Magnum v4 72B",
@@ -9035,12 +9010,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Arcee-ai",
-        "models": [
+          },
           {
             "id": "arcee-ai/trinity-large-preview:free",
             "name": "Arcee AI: Trinity Large Preview (free)",
@@ -9221,12 +9191,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Bytedance-seed",
-        "models": [
+          },
           {
             "id": "bytedance-seed/seed-2.0-lite",
             "name": "ByteDance Seed: Seed-2.0-Lite",
@@ -9342,12 +9307,7 @@
               "text",
               "video"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Cognitivecomputations",
-        "models": [
+          },
           {
             "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
             "name": "Venice: Uncensored (free)",
@@ -9372,12 +9332,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Deepcogito",
-        "models": [
+          },
           {
             "id": "deepcogito/cogito-v2.1-671b",
             "name": "Deep Cogito: Cogito v2.1 671B",
@@ -9402,12 +9357,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Eleutherai",
-        "models": [
+          },
           {
             "id": "eleutherai/llemma_7b",
             "name": "EleutherAI: Llemma 7b",
@@ -9432,12 +9382,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Essentialai",
-        "models": [
+          },
           {
             "id": "essentialai/rnj-1-instruct",
             "name": "EssentialAI: Rnj 1 Instruct",
@@ -9462,12 +9407,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Gryphe",
-        "models": [
+          },
           {
             "id": "gryphe/mythomax-l2-13b",
             "name": "MythoMax 13B",
@@ -9492,12 +9432,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Ibm-granite",
-        "models": [
+          },
           {
             "id": "ibm-granite/granite-4.0-h-micro",
             "name": "IBM: Granite 4.0 Micro",
@@ -9522,12 +9457,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Inception",
-        "models": [
+          },
           {
             "id": "inception/mercury-2",
             "name": "Inception: Mercury 2",
@@ -9605,12 +9535,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Kwaipilot",
-        "models": [
+          },
           {
             "id": "kwaipilot/kat-coder-pro",
             "name": "Kwaipilot: KAT-Coder-Pro V1",
@@ -9636,12 +9561,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Meituan",
-        "models": [
+          },
           {
             "id": "meituan/longcat-flash-chat",
             "name": "Meituan: LongCat Flash Chat",
@@ -9667,12 +9587,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Microsoft",
-        "models": [
+          },
           {
             "id": "microsoft/phi-4",
             "name": "Microsoft: Phi 4",
@@ -9722,12 +9637,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Morph",
-        "models": [
+          },
           {
             "id": "morph/morph-v3-large",
             "name": "Morph: Morph V3 Large",
@@ -9777,12 +9687,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Nex-agi",
-        "models": [
+          },
           {
             "id": "nex-agi/deepseek-v3.1-nex-n1",
             "name": "Nex AGI: DeepSeek V3.1 Nex N1",
@@ -9807,12 +9712,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Nomic",
-        "models": [
+          },
           {
             "id": "nomic/nomic-embed-text-v1.5",
             "name": "Nomic: Embed Text v1.5",
@@ -9835,12 +9735,7 @@
               "embeddings",
               "vector"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Nousresearch",
-        "models": [
+          },
           {
             "id": "nousresearch/hermes-4-70b",
             "name": "Nous: Hermes 4 70B",
@@ -9990,12 +9885,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Openrouter",
-        "models": [
+          },
           {
             "id": "openrouter/free",
             "name": "Free Models Router",
@@ -10081,12 +9971,7 @@
               "text",
               "video"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Prime-intellect",
-        "models": [
+          },
           {
             "id": "prime-intellect/intellect-3",
             "name": "Prime Intellect: INTELLECT-3",
@@ -10111,12 +9996,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Relace",
-        "models": [
+          },
           {
             "id": "relace/relace-search",
             "name": "Relace: Relace Search",
@@ -10166,12 +10046,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Sao10k",
-        "models": [
+          },
           {
             "id": "sao10k/l3.1-70b-hanami-x1",
             "name": "Sao10K: Llama 3.1 70B Hanami x1",
@@ -10296,12 +10171,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Switchpoint",
-        "models": [
+          },
           {
             "id": "switchpoint/router",
             "name": "Switchpoint Router",
@@ -10326,12 +10196,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Thedrummer",
-        "models": [
+          },
           {
             "id": "thedrummer/cydonia-24b-v4.1",
             "name": "TheDrummer: Cydonia 24B V4.1",
@@ -10431,12 +10296,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Tngtech",
-        "models": [
+          },
           {
             "id": "tngtech/deepseek-r1t2-chimera",
             "name": "TNG: DeepSeek R1T2 Chimera",
@@ -10462,12 +10322,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Undi95",
-        "models": [
+          },
           {
             "id": "undi95/remm-slerp-l2-13b",
             "name": "ReMM SLERP 13B",
@@ -10492,12 +10347,7 @@
             "type": [
               "text"
             ]
-          }
-        ]
-      },
-      {
-        "familyName": "Writer",
-        "models": [
+          },
           {
             "id": "writer/palmyra-x5",
             "name": "Writer: Palmyra X5",

@@ -200,9 +200,9 @@ function run() {
     p.models.forEach(model => {
       let cleanName = model.name.replace(new RegExp('^' + p.name + '\\s*:\\s*', 'i'), '');
       
-      // Decision: for Non-official, family = original provider name
-      // For official, family = calculated from model name
-      const familyName = isOfficial ? getFamily(cleanName) : p.name;
+      // Decision: for Non-official, family = One single unified family under OpenRouter
+      // For official, family = calculated from model name series
+      const familyName = isOfficial ? getFamily(cleanName) : '其他供应商与第三方模型';
       
       model.tag = getModalityTag(model.architecture, cleanName);
       model.type = getModelTypes(model.architecture, cleanName);
