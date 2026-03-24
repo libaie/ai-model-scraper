@@ -107,6 +107,23 @@ function getModalityTag(arch, name) {
   return '📝 语言模型';
 }
 
+function getProviderTypes(providerModels) {
+  const types = new Set();
+  providerModels.forEach(m => {
+    const tag = m.tag || '';
+    if (tag.includes('语言') || tag.includes('代码') || tag.includes('数学')) types.add('LLM');
+    if (tag.includes('视觉') || tag.includes('多模态') || tag.includes('图') || tag.includes('视频') || tag.includes('视')) types.add('VLM');
+    if (tag.includes('图像生成') || tag.includes('🎨')) types.add('IMAGE');
+    if (tag.includes('音频') || tag.includes('🎵')) types.add('AUDIO');
+    if (tag.includes('视频') || tag.includes('🎥')) types.add('VIDEO');
+    if (tag.includes('向量') || tag.includes('Embedding') || tag.includes('🔢')) types.add('EMBEDDING');
+    if (tag.includes('全模态') || tag.includes('🌌')) {
+      types.add('OMNI');
+    }
+  });
+  return Array.from(types).sort();
+}
+
 function run() {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
   
@@ -127,10 +144,12 @@ function run() {
       familiesMap.get(familyName).models.push(model);
     });
     
+    const providerTypes = getProviderTypes(provider.models);
     const families = Array.from(familiesMap.values()).sort((a, b) => a.familyName.localeCompare(b.familyName));
     
     return {
       name: provider.name,
+      type: providerTypes,
       logoUrl: provider.logoUrl,
       apiUrl: provider.apiUrl,
       totalModels: provider.models.length,

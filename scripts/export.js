@@ -32,7 +32,9 @@ let md = '# 最新 AI 模型全景图 (基于 OpenRouter)\n\n';
 md += '> 本文档由自动化脚本抓取并分类生成。价格基于 OpenRouter 的 1M Tokens 计费标准。\n\n';
 
 data.forEach(provider => {
-  md += `## 🏢 ${provider.name} (${provider.totalModels} 个模型)\n\n`;
+  let typesLabel = provider.type && provider.type.length > 0 ? `\`${provider.type.join('`, `')}\`` : '`LLM`';
+  md += `## 🏢 ${provider.name} (${provider.totalModels} 个模型)\n`;
+  md += `**提供能力**: ${typesLabel}\n\n`;
   provider.families.forEach(family => {
     md += `### 📂 ${family.familyName}\n\n`;
     md += `| 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |\n`;
@@ -74,7 +76,9 @@ let opml = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 
 data.forEach(provider => {
-  opml += `      <outline text="${escapeXml('🏢 ' + provider.name)}">\n`;
+  let typesLabel = provider.type && provider.type.length > 0 ? provider.type.join(', ') : 'LLM';
+  let providerNote = `模型数量: ${provider.totalModels}\n提供能力: ${typesLabel}`;
+  opml += `      <outline text="${escapeXml('🏢 ' + provider.name)}" _note="${escapeXml(providerNote)}">\n`;
   provider.families.forEach(family => {
     opml += `        <outline text="${escapeXml('📂 ' + family.familyName)}">\n`;
     family.models.forEach(model => {
