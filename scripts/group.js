@@ -56,7 +56,7 @@ function getFamily(modelName) {
 
 function getModalityTag(arch, name) {
   const lowerName = name.toLowerCase();
-  if (lowerName.includes('embedding') || lowerName.includes('embed')) return '🔢 向量/Embedding';
+  if (lowerName.includes('embedding') || lowerName.includes('embed')) return '🔢 Embedding';
   if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) return '🎨 图像生成';
   if (lowerName.includes('whisper')) return '🎵 音频处理';
   if (arch) {
@@ -74,7 +74,7 @@ function getModelTypes(arch, name) {
   const lowerName = name.toLowerCase();
   const types = new Set();
   if (lowerName.includes('embedding') || lowerName.includes('embed')) {
-    types.add('embeddings'); types.add('vector'); return Array.from(types); 
+    types.add('embeddings'); return Array.from(types); 
   }
   if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) {
     types.add('imageGen'); types.add('text');
@@ -97,7 +97,7 @@ function getProviderTypes(providerModels) {
     if (tag.includes('视觉') || tag.includes('全模态')) types.add('VLM');
     if (tag.includes('图像生成')) types.add('IMAGE');
     if (tag.includes('音频')) types.add('AUDIO');
-    if (tag.includes('向量')) types.add('EMBEDDING');
+    if (tag.includes('Embedding')) types.add('EMBEDDING');
   });
   return Array.from(types).sort();
 }

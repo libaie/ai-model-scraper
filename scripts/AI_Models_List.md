@@ -94,8 +94,8 @@
 | **Cohere: Command R7B (12-2024)** | 📝 语言模型 | `cohere/command-r7b-12-2024` | 128K | 输入 $0.04/1M, 输出 $0.15/1M | Command R7B (12-2024) 是 Command R+ 模型的小型快速更新，于 2024 年 12 月交付。它擅长 RAG、工具使用、代理以及需要复杂推理和多个步骤的类似任务。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
 | **Cohere: Command R+ (08-2024)** | 📝 语言模型 | `cohere/command-r-plus-08-2024` | 128K | 输入 $2.5/1M, 输出 $10/1M | command-r-plus-08-2024 是 [Command R+](/models/cohere/command-r-plus) 的更新，与之前的 Command R+ 版本相比，吞吐量提高了大约 50%，延迟降低了 25%，同时保持硬件占用空间相同。  请阅读[此处](https://docs.cohere.com/changelog/command-gets-refreshed) 发布帖子。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
 | **Cohere: Command R (08-2024)** | 📝 语言模型 | `cohere/command-r-08-2024` | 128K | 输入 $0.15/1M, 输出 $0.6/1M | command-r-08-2024 是 [Command R](/models/cohere/command-r) 的更新，改进了多语言检索增强生成 (RAG) 和工具使用的性能。更广泛地说，它在数学、代码和推理方面表现更好，并且与之前版本的较大 Command R+ 模型具有竞争力。  请阅读[此处](https://docs.cohere.com/changelog/command-gets-refreshed) 发布帖子。  使用此模型须遵守 Cohere 的[使用政策](https://docs.cohere.com/docs/usage-policy) 和 [SaaS 协议](https://cohere.com/saas-agreement)。 |
-| **Cohere: Embed English v3.0** | 🔢 向量/Embedding | `cohere/embed-english-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 业界领先的英文文本嵌入模型。 |
-| **Cohere: Embed Multilingual v3.0** | 🔢 向量/Embedding | `cohere/embed-multilingual-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 支持 100 多种语言的多语言文本嵌入模型。 |
+| **Cohere: Embed English v3.0** | 🔢 Embedding | `cohere/embed-english-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 业界领先的英文文本嵌入模型。 |
+| **Cohere: Embed Multilingual v3.0** | 🔢 Embedding | `cohere/embed-multilingual-v3.0` | 512 | 输入 $0.1/1M, 输出 $0/1M | 支持 100 多种语言的多语言文本嵌入模型。 |
 
 ## 🏢 Deepseek (11 个模型)
 **原生 API 地址**: `https://api.deepseek.com`  
@@ -199,7 +199,7 @@
 | **Google: Gemma 3 27B** | 👁️ 视觉多模态 | `google/gemma-3-27b-it` | 131.072K | 输入 $0.08/1M, 输出 $0.16/1M | Gemma 3 引入了多模态，支持视觉语言输入和文本输出。它可处理多达 128k 个标记的上下文窗口，理解 140 多种语言，并提供改进的数学、推理和聊天功能，包括结构化输出和函数调用。 Gemma 3 27B 是 Google 最新的开源型号，是 [Gemma 2] 的后继者(google/gemma-2-27b-it) |
 | **Google: Gemma 2 27B** | 📝 语言模型 | `google/gemma-2-27b-it` | 8.192K | 输入 $0.65/1M, 输出 $0.65/1M | Google 的 Gemma 2 27B 是一个开放模型，采用与创建 [Gemini 模型](/models?q=gemini) 相同的研究和技术而构建。  Gemma 模型非常适合各种文本生成任务，包括问答、摘要和推理。  有关更多详细信息，请参阅[发布公告](https://blog.google/technology/developers/google-gemma-2/)。 Gemma 的使用须遵守 Google 的 [Gemma 使用条款](https://ai.google.dev/gemma/terms)。 |
 | **Google: Gemma 2 9B** | 📝 语言模型 | `google/gemma-2-9b-it` | 8.192K | 输入 $0.03/1M, 输出 $0.09/1M | Google 的 Gemma 2 9B 是一种先进的开源语言模型，为同类规模的效率和性能树立了新标准。  它专为各种任务而设计，使开发人员和研究人员能够构建创新的应用程序，同时保持可访问性、安全性和成本效益。  有关更多详细信息，请参阅[发布公告](https://blog.google/technology/developers/google-gemma-2/)。 Gemma 的使用须遵守 Google 的 [Gemma 使用条款](https://ai.google.dev/gemma/terms)。 |
-| **Google: Text Embedding 004** | 🔢 向量/Embedding | `google/text-embedding-004` | 2.048K | 输入 $0.02/1M, 输出 $0/1M | Google Gemini 文本嵌入模型。 |
+| **Google: Text Embedding 004** | 🔢 Embedding | `google/text-embedding-004` | 2.048K | 输入 $0.02/1M, 输出 $0/1M | Google Gemini 文本嵌入模型。 |
 
 ## 🏢 Jina (1 个模型)
 **原生 API 地址**: `https://api.jina.ai/v1`  
@@ -210,7 +210,7 @@
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Jina: Embeddings v3** | 🔢 向量/Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
+| **Jina: Embeddings v3** | 🔢 Embedding | `jina/jina-embeddings-v3` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 具有特定于任务的 LoRA 适配器的高性能多语言文本嵌入模型。 |
 
 ## 🏢 Minimax (8 个模型)
 **原生 API 地址**: `https://api.minimax.chat/v1`  
@@ -265,7 +265,7 @@
 | **Mistral Large** | 📝 语言模型 | `mistralai/mistral-large` | 128K | 输入 $2/1M, 输出 $6/1M | 这是 Mistral AI 的旗舰型号 Mistral Large 2（版本“mistral-large-2407”）。它是一种专有的可用权重模型，擅长推理、代码、JSON、聊天等。请阅读[此处](https://mistral.ai/news/mistral-large-2407/) 的发布公告。  它支持法语、德语、西班牙语、意大利语、葡萄牙语、阿拉伯语、印地语、俄语、中文、日语和韩语等数十种语言，以及 Python、Java、C、C++、JavaScript 和 Bash 等 80 多种编码语言。其长上下文窗口允许从大型文档中精确调用信息。 |
 | **Mistral: Mixtral 8x7B Instruct** | 📝 语言模型 | `mistralai/mixtral-8x7b-instruct` | 32.768K | 输入 $0.54/1M, 输出 $0.54/1M | Mixtral 8x7B Instruct 是 Mistral AI 开发的预训练生成稀疏专家混合物，用于聊天和指令使用。包含 8 位专家（前馈网络），总共 470 亿个参数。  由 Mistral 微调的指导模型。 #萌 |
 | **Mistral: Mistral 7B Instruct v0.1** | 📝 语言模型 | `mistralai/mistral-7b-instruct-v0.1` | 2.824K | 输入 $0.11/1M, 输出 $0.19/1M | 7.3B 参数模型在所有基准测试中均优于 Llama 2 13B，并针对速度和上下文长度进行了优化。 |
-| **Mistral: Mistral Embed** | 🔢 向量/Embedding | `mistralai/mistral-embed` | 8.192K | 输入 $0.1/1M, 输出 $0/1M | Mistral 最先进的文本嵌入模型。 |
+| **Mistral: Mistral Embed** | 🔢 Embedding | `mistralai/mistral-embed` | 8.192K | 输入 $0.1/1M, 输出 $0/1M | Mistral 最先进的文本嵌入模型。 |
 
 ## 🏢 Moonshotai (4 个模型)
 **原生 API 地址**: `https://api.moonshot.cn/v1`  
@@ -443,9 +443,9 @@
 | **OpenAI: gpt-oss-120b** | 📝 语言模型 | `openai/gpt-oss-120b` | 131.072K | 输入 $0.04/1M, 输出 $0.19/1M | gpt-oss-120b 是 OpenAI 的开放权重、117B 参数专家混合 (MoE) 语言模型，专为高级推理、代理和通用生产用例而设计。它每次前向传递激活 5.1B 参数，并经过优化，可在具有本机 MXFP4 量化的单个 H100 GPU 上运行。该模型支持可配置的推理深度、完整的思想链访问和本机工具使用，包括函数调用、浏览和结构化输出生成。 |
 | **OpenAI: gpt-oss-20b (free)** | 📝 语言模型 | `openai/gpt-oss-20b:free` | 131.072K | 免费 | gpt-oss-20b是OpenAI在Apache 2.0许可下发布的开放权重21B参数模型。它采用专家混合 (MoE) 架构，每个前向传递具有 3.6B 活动参数，针对消费者或单 GPU 硬件上的低延迟推理和可部署性进行了优化。该模型采用 OpenAI 的 Harmony 响应格式进行训练，支持推理级别配置、微调和代理功能，包括函数调用、工具使用和结构化输出。 |
 | **OpenAI: gpt-oss-20b** | 📝 语言模型 | `openai/gpt-oss-20b` | 131.072K | 输入 $0.03/1M, 输出 $0.11/1M | gpt-oss-20b是OpenAI在Apache 2.0许可下发布的开放权重21B参数模型。它采用专家混合 (MoE) 架构，每个前向传递具有 3.6B 活动参数，针对消费者或单 GPU 硬件上的低延迟推理和可部署性进行了优化。该模型采用 OpenAI 的 Harmony 响应格式进行训练，支持推理级别配置、微调和代理功能，包括函数调用、工具使用和结构化输出。 |
-| **OpenAI: Text Embedding 3 Small** | 🔢 向量/Embedding | `openai/text-embedding-3-small` | 8.191K | 输入 $0.02/1M, 输出 $0/1M | 高效且经济高效的嵌入模型。 |
-| **OpenAI: Text Embedding 3 Large** | 🔢 向量/Embedding | `openai/text-embedding-3-large` | 8.191K | 输入 $0.13/1M, 输出 $0/1M | 适用于高级任务的高性能嵌入模型。 |
-| **OpenAI: Text Embedding Ada 002** | 🔢 向量/Embedding | `openai/text-embedding-ada-002` | 8.191K | 输入 $0.1/1M, 输出 $0/1M | 上一代 OpenAI 嵌入模型。 |
+| **OpenAI: Text Embedding 3 Small** | 🔢 Embedding | `openai/text-embedding-3-small` | 8.191K | 输入 $0.02/1M, 输出 $0/1M | 高效且经济高效的嵌入模型。 |
+| **OpenAI: Text Embedding 3 Large** | 🔢 Embedding | `openai/text-embedding-3-large` | 8.191K | 输入 $0.13/1M, 输出 $0/1M | 适用于高级任务的高性能嵌入模型。 |
+| **OpenAI: Text Embedding Ada 002** | 🔢 Embedding | `openai/text-embedding-ada-002` | 8.191K | 输入 $0.1/1M, 输出 $0/1M | 上一代 OpenAI 嵌入模型。 |
 
 ## 🏢 Perplexity (5 个模型)
 **原生 API 地址**: `https://api.perplexity.ai`  
@@ -808,7 +808,7 @@
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Nomic: Embed Text v1.5** | 🔢 向量/Embedding | `nomic/nomic-embed-text-v1.5` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 高性能、完全可审核的开放嵌入模型。 |
+| **Nomic: Embed Text v1.5** | 🔢 Embedding | `nomic/nomic-embed-text-v1.5` | 8.192K | 输入 $0.01/1M, 输出 $0/1M | 高性能、完全可审核的开放嵌入模型。 |
 
 ### 📂 Nousresearch
 

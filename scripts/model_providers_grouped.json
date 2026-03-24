@@ -764,10 +764,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           },
           {
@@ -787,10 +786,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
@@ -2033,10 +2031,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
@@ -2073,10 +2070,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
@@ -3036,10 +3032,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
@@ -5332,10 +5327,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           },
           {
@@ -5355,10 +5349,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           },
           {
@@ -5378,10 +5371,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
@@ -9261,10 +9253,9 @@
                 "embedding"
               ]
             },
-            "tag": "🔢 向量/Embedding",
+            "tag": "🔢 Embedding",
             "type": [
-              "embeddings",
-              "vector"
+              "embeddings"
             ]
           }
         ]
