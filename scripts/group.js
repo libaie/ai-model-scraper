@@ -4,6 +4,14 @@ const path = require('path');
 const INPUT = path.join(__dirname, 'model_providers_zh.json');
 const OUTPUT = path.join(__dirname, 'model_providers_grouped.json');
 
+// List of known official providers (with native APIs)
+const OFFICIAL_PROVIDERS = [
+  'openai', 'anthropic', 'google', 'mistralai', 'deepseek', 'qwen', 
+  'cohere', 'perplexity', 'nvidia', 'x-ai', 'moonshotai', 'minimax', 
+  'zhipuai', 'yi', 'stepfun', 'baichuan', 'groq', 'together', 
+  'voyageai', 'jina', 'meta-llama', 'amazon', 'alibaba', 'baidu', 'bytedance', 'tencent'
+];
+
 function getFamily(modelName) {
   const name = modelName.toLowerCase();
   
@@ -107,23 +115,6 @@ function getModalityTag(arch, name) {
   return '📝 语言模型';
 }
 
-function getProviderTypes(providerModels) {
-  const types = new Set();
-  providerModels.forEach(m => {
-    const tag = m.tag || '';
-    if (tag.includes('语言') || tag.includes('代码') || tag.includes('数学')) types.add('LLM');
-    if (tag.includes('视觉') || tag.includes('多模态') || tag.includes('图') || tag.includes('视频') || tag.includes('视')) types.add('VLM');
-    if (tag.includes('图像生成') || tag.includes('🎨')) types.add('IMAGE');
-    if (tag.includes('音频') || tag.includes('🎵')) types.add('AUDIO');
-    if (tag.includes('视频') || tag.includes('🎥')) types.add('VIDEO');
-    if (tag.includes('向量') || tag.includes('Embedding') || tag.includes('🔢')) types.add('EMBEDDING');
-    if (tag.includes('全模态') || tag.includes('🌌')) {
-      types.add('OMNI');
-    }
-  });
-  return Array.from(types).sort();
-}
-
 function getModelTypes(arch, name) {
   const lowerName = name.toLowerCase();
   const types = new Set();
@@ -161,56 +152,94 @@ function getModelTypes(arch, name) {
   return Array.from(types).sort();
 }
 
+function getProviderTypes(providerModels) {
+  const types = new Set();
+  providerModels.forEach(m => {
+    const tag = m.tag || '';
+    if (tag.includes('语言') || tag.includes('代码') || tag.includes('数学')) types.add('LLM');
+    if (tag.includes('视觉') || tag.includes('多模态') || tag.includes('图') || tag.includes('视频') || tag.includes('视')) types.add('VLM');
+    if (tag.includes('图像生成') || tag.includes('🎨')) types.add('IMAGE');
+    if (tag.includes('音频') || tag.includes('🎵')) types.add('AUDIO');
+    if (tag.includes('视频') || tag.includes('🎥')) types.add('VIDEO');
+    if (tag.includes('向量') || tag.includes('Embedding') || tag.includes('🔢')) types.add('EMBEDDING');
+    if (tag.includes('全模态') || tag.includes('🌌')) {
+      types.add('OMNI');
+    }
+  });
+  return Array.from(types).sort();
+}
+
 function run() {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
   
-  const groupedData = data.map(provider => {
-    const familiesMap = new Map();
+  // New map for grouped providers
+  const finalProvidersMap = new Map();
+
+  data.forEach(p => {
+    const providerId = p.models[0].id.split('/')[0].toLowerCase();
+    const isOfficial = OFFICIAL_PROVIDERS.includes(providerId);
     
-    provider.models.forEach(model => {
-      let cleanName = model.name.replace(new RegExp('^' + provider.name + '\\s*:\\s*', 'i'), '');
-      const familyName = getFamily(cleanName);
-      model.tag = getModalityTag(model.architecture, cleanName); // For display
-      model.type = getModelTypes(model.architecture, cleanName); // Added granular type array
+    let targetProviderName = isOfficial ? p.name : 'OpenRouter';
+    
+    if (!finalProvidersMap.has(targetProviderName)) {
+        finalProvidersMap.set(targetProviderName, {
+            name: targetProviderName,
+            logoUrl: isOfficial ? p.logoUrl : 'https://www.google.com/s2/favicons?sz=128&domain=openrouter.ai',
+            openrouterApiUrl: p.openrouterApiUrl,
+            nativeApiUrl: isOfficial ? p.nativeApiUrl : 'https://openrouter.ai/api/v1',
+            models: [],
+            familiesMap: new Map() // Internal map for families
+        });
+    }
+    
+    const targetP = finalProvidersMap.get(targetProviderName);
+    
+    p.models.forEach(model => {
+      let cleanName = model.name.replace(new RegExp('^' + p.name + '\\s*:\\s*', 'i'), '');
       
-      if (!familiesMap.has(familyName)) {
-        familiesMap.set(familyName, {
+      // Decision: for Non-official, family = original provider name
+      // For official, family = calculated from model name
+      const familyName = isOfficial ? getFamily(cleanName) : p.name;
+      
+      model.tag = getModalityTag(model.architecture, cleanName);
+      model.type = getModelTypes(model.architecture, cleanName);
+      
+      targetP.models.push(model); // Still keep flat list for type counting
+      
+      if (!targetP.familiesMap.has(familyName)) {
+        targetP.familiesMap.set(familyName, {
           familyName: familyName,
           models: []
         });
       }
-      familiesMap.get(familyName).models.push(model);
+      targetP.familiesMap.get(familyName).models.push(model);
     });
-    
-    const providerTypes = getProviderTypes(provider.models);
-    const families = Array.from(familiesMap.values()).sort((a, b) => a.familyName.localeCompare(b.familyName));
+  });
+  
+  // Transform Map back to Array and finalize
+  const result = Array.from(finalProvidersMap.values()).map(p => {
+    const families = Array.from(p.familiesMap.values()).sort((a, b) => a.familyName.localeCompare(b.familyName));
+    const providerTypes = getProviderTypes(p.models);
     
     return {
-      name: provider.name,
-      type: providerTypes,
-      logoUrl: provider.logoUrl,
-      openrouterApiUrl: provider.openrouterApiUrl,
-      nativeApiUrl: provider.nativeApiUrl,
-      totalModels: provider.models.length,
-      families: families
+        name: p.name,
+        type: providerTypes,
+        logoUrl: p.logoUrl,
+        openrouterApiUrl: p.openrouterApiUrl,
+        nativeApiUrl: p.nativeApiUrl,
+        totalModels: p.models.length,
+        families: families
     };
+  }).sort((a, b) => {
+      // Put OpenRouter at the end
+      if (a.name === 'OpenRouter') return 1;
+      if (b.name === 'OpenRouter') return -1;
+      return a.name.localeCompare(b.name);
   });
-  
-  fs.writeFileSync(OUTPUT, JSON.stringify(groupedData, null, 2));
-  console.log(`Dynamic grouping complete! Saved to ${OUTPUT}`);
-  
-  console.log('\n--- Grouping Preview (Refined) ---');
-  ['Openai', 'Anthropic', 'Google', 'Meta-llama', 'Deepseek'].forEach(name => {
-    const p = groupedData.find(x => x.name === name);
-    if (p) {
-      console.log(`\n🏢 ${p.name} (${p.totalModels} models):`);
-      p.families.forEach(f => {
-        console.log(`  📂 ${f.familyName} (${f.models.length} 迭代/变体)`);
-        f.models.slice(0, 2).forEach(m => console.log(`      - ${m.name}`));
-        if (f.models.length > 2) console.log(`      ...`);
-      });
-    }
-  });
+
+  fs.writeFileSync(OUTPUT, JSON.stringify(result, null, 2));
+  console.log(`Aggregated grouping complete! Saved to ${OUTPUT}`);
+  console.log(`Consolidated into ${result.length} provider entries.`);
 }
 
 run();
