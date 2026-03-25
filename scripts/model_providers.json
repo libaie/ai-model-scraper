@@ -8249,11 +8249,10 @@
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "description": "GLM-5 is Z.ai’s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-        "contextLength": 202752,
+        "contextLength": 80000,
         "pricing": {
-          "prompt": "0.0000008",
-          "completion": "0.00000256",
-          "input_cache_read": "0.00000016"
+          "prompt": "0.00000072",
+          "completion": "0.0000023"
         },
         "architecture": {
           "modality": "text->text",

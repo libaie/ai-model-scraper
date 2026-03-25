@@ -8249,11 +8249,10 @@
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "description": "GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。",
-        "contextLength": 202752,
+        "contextLength": 80000,
         "pricing": {
-          "prompt": "0.0000008",
-          "completion": "0.00000256",
-          "input_cache_read": "0.00000016"
+          "prompt": "0.00000072",
+          "completion": "0.0000023"
         },
         "architecture": {
           "modality": "text->text",

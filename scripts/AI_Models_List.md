@@ -5,7 +5,7 @@
 ## 🏢 Anthropic (13 个模型)
 **原生 API 地址**: `https://api.anthropic.com/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `VLM`
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 Claude 3 系列
 
@@ -73,7 +73,7 @@
 ## 🏢 Bytedance (1 个模型)
 **原生 API 地址**: `https://ark.cn-beijing.volces.com/api/v3`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `VLM`
+**提供能力**: `LLM`, `VLM`
 
 ### 📂 其他型号/迭代
 
@@ -146,7 +146,7 @@
 ## 🏢 Google (28 个模型)
 **原生 API 地址**: `https://generativelanguage.googleapis.com/v1beta`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
+**提供能力**: `AUDIO`, `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
 
 ### 📂 Gemini 2.0 系列
 
@@ -204,7 +204,7 @@
 ## 🏢 Jina (1 个模型)
 **原生 API 地址**: `https://api.jina.ai/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `EMBEDDING`
+**提供能力**: `EMBEDDING`, `LLM`
 
 ### 📂 其他型号/迭代
 
@@ -573,14 +573,14 @@
 ## 🏢 Voyageai (2 个模型)
 **原生 API 地址**: `https://api.voyageai.com/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `LLM`
+**提供能力**: `EMBEDDING`, `LLM`
 
 ### 📂 其他型号/迭代
 
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Voyage AI: Voyage 3** | 📝 语言模型 | `voyageai/voyage-3` | 32K | 输入 $0.12/1M, 输出 $0/1M | 最先进的通用嵌入模型。 |
-| **Voyage AI: Voyage 3 Lite** | 📝 语言模型 | `voyageai/voyage-3-lite` | 32K | 输入 $0.04/1M, 输出 $0/1M | 快速且经济高效的通用嵌入模型。 |
+| **Voyage AI: Voyage 3** | 🔢 Embedding | `voyageai/voyage-3` | 32K | 输入 $0.12/1M, 输出 $0/1M | 最先进的通用嵌入模型。 |
+| **Voyage AI: Voyage 3 Lite** | 🔢 Embedding | `voyageai/voyage-3-lite` | 32K | 输入 $0.04/1M, 输出 $0/1M | 快速且经济高效的通用嵌入模型。 |
 
 ## 🏢 X-ai (10 个模型)
 **原生 API 地址**: `https://api.x.ai/v1`  
@@ -605,7 +605,7 @@
 ## 🏢 OpenRouter (107 个模型)
 **原生 API 地址**: `https://openrouter.ai/api/v1`  
 **OpenRouter 地址**: `https://openrouter.ai/api/v1/chat/completions`  
-**提供能力**: `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
+**提供能力**: `AUDIO`, `EMBEDDING`, `IMAGE`, `LLM`, `VLM`
 
 ### 📂 Ai21
 
@@ -898,7 +898,7 @@
 | 模型名称 | 类型 | ID | 上下文 | 价格 (1M Tokens) | 描述 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Z.ai: GLM 5 Turbo** | 📝 语言模型 | `z-ai/glm-5-turbo` | 202.752K | 输入 $1.2/1M, 输出 $4/1M | GLM-5 Turbo 是 Z.ai 的新模型，专为在 OpenClaw 场景等代理驱动环境中实现快速推理和强大性能而设计。它针对涉及长执行链的现实世界代理工作流程进行了深度优化，改进了复杂指令分解、工具使用、计划和持久执行以及扩展任务的整体稳定性。 |
-| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 202.752K | 输入 $0.8/1M, 输出 $2.56/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
+| **Z.ai: GLM 5** | 📝 语言模型 | `z-ai/glm-5` | 80K | 输入 $0.72/1M, 输出 $2.3/1M | GLM-5 是 Z.ai 的旗舰开源基础模型，专为复杂系统设计和长期代理工作流程而设计。它专为专家开发人员打造，可在大规模编程任务中提供生产级性能，可与领先的闭源模型相媲美。凭借先进的代理规划、深度后端推理和迭代自我修正，GLM-5 超越了代码生成，进入了全系统构建和自主执行。 |
 | **Z.ai: GLM 4.7 Flash** | 📝 语言模型 | `z-ai/glm-4.7-flash` | 202.752K | 输入 $0.06/1M, 输出 $0.4/1M | 作为30B级SOTA型号，GLM-4.7-Flash提供了平衡性能和效率的新选择。它针对代理编码用例、强化编码能力、长期任务规划和工具协作进行了进一步优化，并在当前多个公共基准排行榜上取得了同规模开源模型中的领先表现。 |
 | **Z.ai: GLM 4.7** | 📝 语言模型 | `z-ai/glm-4.7` | 202.752K | 输入 $0.39/1M, 输出 $1.75/1M | GLM-4.7是Z.ai最新的旗舰型号，在两个关键方面进行了升级：增强的编程能力和更稳定的多步推理/执行。它展示了执行复杂代理任务的显着改进，同时提供更自然的对话体验和卓越的前端美观。 |
 | **Z.ai: GLM 4.6V** | 👁️ 视觉多模态 | `z-ai/glm-4.6v` | 131.072K | 输入 $0.3/1M, 输出 $0.9/1M | GLM-4.6V 是一种大型多模态模型，专为跨图像、文档和混合媒体的高保真视觉理解和长上下文推理而设计。它支持多达 128K 令牌，直接处理复杂的页面布局和图表作为视觉输入，并集成本机多模式函数调用以将感知与下游工具执行连接起来。该模型还支持交错图像文本生成和 UI 重建工作流程，包括屏幕截图到 HTML 合成和迭代可视化编辑。 |

@@ -54,50 +54,72 @@ function getFamily(modelName) {
   return '其他型号/迭代';
 }
 
-function getModalityTag(arch, name) {
+function getModalityTag(arch, name, types) {
   const lowerName = name.toLowerCase();
-  if (lowerName.includes('embedding') || lowerName.includes('embed')) return '🔢 Embedding';
-  if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) return '🎨 图像生成';
-  if (lowerName.includes('whisper')) return '🎵 音频处理';
+  
+  if (types.includes('embeddings')) return '🔢 Embedding';
+  if (types.includes('imageGen')) return '🎨 图像生成';
+  
   if (arch) {
-    const outputs = arch.output_modalities || [];
-    if (outputs.includes('image')) return '🎨 图像生成';
     const inputs = arch.input_modalities || [];
     if (inputs.includes('image') && inputs.includes('audio') && inputs.includes('video')) return '🌌 全模态 (图/文/音/视)';
     if (inputs.includes('image')) return '👁️ 视觉多模态';
     if (inputs.includes('audio')) return '🎵 音频多模态';
   }
+  
+  if (lowerName.includes('vision') || lowerName.includes('-vl')) return '👁️ 视觉多模态';
   return '📝 语言模型';
 }
 
 function getModelTypes(arch, name) {
   const lowerName = name.toLowerCase();
   const types = new Set();
-  if (lowerName.includes('embedding') || lowerName.includes('embed')) {
-    types.add('embeddings'); return Array.from(types); 
-  }
-  if (lowerName.includes('dall-e') || lowerName.includes('midjourney') || lowerName.includes('stable diffusion') || lowerName.includes('flux')) {
-    types.add('imageGen'); types.add('text');
-  }
+  
+  // 1. Inputs Analysis
   let inputs = arch ? arch.input_modalities || [] : [];
-  let outputs = arch ? arch.output_modalities || [] : [];
-  if (outputs.includes('text') || outputs.length === 0) types.add('text');
-  if (outputs.includes('image')) types.add('imageGen');
-  if (inputs.includes('image') || lowerName.includes('vision') || lowerName.includes('-vl')) types.add('image');
-  if (inputs.includes('audio') || lowerName.includes('audio') || lowerName.includes('whisper')) types.add('audio');
+  if (inputs.includes('text')) types.add('text');
+  if (inputs.includes('image')) types.add('image');
+  if (inputs.includes('audio')) types.add('audio');
   if (inputs.includes('video')) types.add('video');
+
+  // 2. Outputs Analysis
+  let outputs = arch ? arch.output_modalities || [] : [];
+  if (outputs.includes('text')) types.add('text');
+  if (outputs.includes('image')) types.add('imageGen');
+  if (outputs.includes('embedding')) types.add('embeddings');
+
+  // 3. Name Heuristics (Fallback and Refinement)
+  if (lowerName.includes('embedding') || lowerName.includes('embed') || lowerName.includes('voyage')) {
+    types.add('embeddings');
+  }
+  if (lowerName.includes('dall-e') || lowerName.includes('flux') || lowerName.includes('midjourney')) {
+    types.add('imageGen');
+  }
+  if (lowerName.includes('vision') || lowerName.includes('-vl')) {
+    types.add('image');
+  }
+  if (lowerName.includes('whisper')) {
+    types.add('audio');
+  }
+
+  // 4. Default for LLMs
+  if (types.size === 0 || (types.size === 1 && types.has('text'))) {
+      types.add('text');
+  }
+
   return Array.from(types).sort();
 }
 
 function getProviderTypes(providerModels) {
   const types = new Set();
   providerModels.forEach(m => {
-    const tag = m.tag || '';
-    if (tag.includes('语言')) types.add('LLM');
-    if (tag.includes('视觉') || tag.includes('全模态')) types.add('VLM');
-    if (tag.includes('图像生成')) types.add('IMAGE');
-    if (tag.includes('音频')) types.add('AUDIO');
-    if (tag.includes('Embedding')) types.add('EMBEDDING');
+    (m.type || []).forEach(t => {
+        if (t === 'text') types.add('LLM');
+        if (t === 'image') types.add('VLM');
+        if (t === 'imageGen') types.add('IMAGE');
+        if (t === 'audio') types.add('AUDIO');
+        if (t === 'embeddings') types.add('EMBEDDING');
+    });
   });
   return Array.from(types).sort();
 }
@@ -107,9 +129,7 @@ function run() {
   const finalProvidersMap = new Map();
 
   data.forEach(p => {
-    // Decision Rule: Only providers with a confirmed, non-Unknown native API URL are treated as Top-Tier
     const isOfficial = p.nativeApiUrl && p.nativeApiUrl !== 'Unknown';
-    
     let targetProviderName = isOfficial ? p.name : 'OpenRouter';
     
     if (!finalProvidersMap.has(targetProviderName)) {
@@ -126,15 +146,13 @@ function run() {
     const targetP = finalProvidersMap.get(targetProviderName);
     
     p.models.forEach(model => {
-      let cleanName = model.name.replace(new RegExp('^' + p.name + '\\s*:\\s*', 'i'), '');
+      // Safer clean name logic
+      let cleanName = model.name.includes(':') ? model.name.split(':')[1].trim() : model.name;
       
-      // Rule: 
-      // 1. For Official top-tier: family = Product Series (GPT-4, etc.)
-      // 2. For OpenRouter: family = The original Provider Name (Ai21, Aion, etc.)
-      const familyName = isOfficial ? getFamily(cleanName) : p.name;
-      
-      model.tag = getModalityTag(model.architecture, cleanName);
       model.type = getModelTypes(model.architecture, cleanName);
+      model.tag = getModalityTag(model.architecture, cleanName, model.type);
+      
+      const familyName = isOfficial ? getFamily(cleanName) : p.name;
       
       targetP.models.push(model);
       
