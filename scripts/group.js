@@ -124,6 +124,13 @@ function getProviderTypes(providerModels) {
   return Array.from(types).sort();
 }
 
+function formatContext(len) {
+  if (!len || len === 0) return '未知';
+  if (len >= 1000000) return (Math.round(len / 100000) / 10) + 'M';
+  if (len >= 1000) return (Math.round(len / 100) / 10) + 'K';
+  return len.toString();
+}
+
 function run() {
   const data = JSON.parse(fs.readFileSync(INPUT, 'utf8'));
   const finalProvidersMap = new Map();
@@ -146,11 +153,11 @@ function run() {
     const targetP = finalProvidersMap.get(targetProviderName);
     
     p.models.forEach(model => {
-      // Safer clean name logic
       let cleanName = model.name.includes(':') ? model.name.split(':')[1].trim() : model.name;
       
       model.type = getModelTypes(model.architecture, cleanName);
       model.tag = getModalityTag(model.architecture, cleanName, model.type);
+      model.contextWindow = formatContext(model.contextLength); // Added human readable field
       
       const familyName = isOfficial ? getFamily(cleanName) : p.name;
       
